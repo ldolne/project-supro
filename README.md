@@ -1,5 +1,8 @@
 # README
 
+This project is about... Here's a link to the website we built: [Project Supro](https://ldolne.github.io/project-supro/ "Project Supro")
+
+
 # Project Title
 
 One Paragraph of project description goes here
