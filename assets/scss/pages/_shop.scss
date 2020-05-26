@@ -1,0 +1,33 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+// VARIABLES
+// COLORS
+$color-black: #222;
+$color-white: white;
+$color-grey: #999;
+$color-orange: #f68773;
+
+// FONTS
+$font-family-main: 'Roboto', sans-serif;
+
+
+// SCSS
+
+body
+{
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $font-family-main;
+    font-size: 1rem;
+}
+
+header
+{
+    ul
+    {
+        li
+        {
+            display: inline-block;
+        }
+    }
+}
