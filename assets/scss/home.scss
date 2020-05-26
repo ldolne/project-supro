@@ -1,0 +1,297 @@
+$color-grey: #999;
+$color-orange: #f68773;
+$color-grey: #999;
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.titreSection{
+    margin-top: 80px;
+    width: 100%;
+    h2{
+        margin-bottom: 0;
+    }
+    p{
+        margin-top: 5px;
+        color: $color-grey;
+        font-size: 0.8rem;
+    }
+}
+.highlight{
+    background-image: url(../img/home/sl2-1.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobileNo{
+    display: none;
+}
+
+.socialBar{
+    width: 150px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    li{
+        margin: 10px;
+        a{
+            color: $color-grey;
+        }
+    }
+}
+
+
+.groupTextCentral{
+    margin-top: 200px;
+    margin-left: 30px;
+    .bigFont{
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .orange{
+        color: $color-orange;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        font-size: 0.8rem;
+        border-bottom: 2px solid black;
+    }
+}
+
+
+.highlight3{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        width: 100%;
+        
+        height: 300px;
+   
+        
+    }
+    .hairBand{
+        background-image: url(../img/home/banner_h1_1.jpg);
+        background-position: right;
+        background-size: cover;
+        padding-left: 40px;
+        // display: flex;
+        // flex-direction: column;
+        h2{
+            width: 150px;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 2rem;            
+        }
+        p{
+            margin-bottom: 5px;
+            margin-top: 80px;
+            color: $color-grey;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            font-size: 0.8rem;
+            border-bottom: 2px solid black;
+        }
+        
+    }
+    .studded{
+        background-image: url(../img/home/banner_h1_2.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        h2{
+            width: 250px;
+            margin: 0 auto;
+            color: white;
+            font-size: 2rem; 
+
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 10px;
+            
+            font-size: 0.8rem;
+            border-bottom: 2px solid white;
+        }
+        p{
+            color: white;
+            margin-top: 80px;
+            margin-bottom: 10px;
+        }
+        
+    }
+    .specialPrice{
+        background-image: url(../img/home/banner_h1_3.jpg);
+        background-position: left;
+        background-size: cover;
+        text-align: right;
+        
+        h2{
+            
+            margin-top: 0;
+            margin-bottom: 5px;
+            margin-right: 50px;
+            font-size: 2.2rem; 
+            
+            
+            
+            
+            
+                       
+        }
+        p{
+            margin-bottom: 5px;
+            margin-top: 80px;
+            margin-right: 50px;
+            color: $color-grey;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-right: 50px;
+            font-size: 0.8rem;
+            border-bottom: 2px solid black;
+            
+        }
+    }
+  
+}
+.topSellers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .topType1{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        img{
+            width: 80%;
+        }
+        h3{
+            width: 50%;
+            font-size: 2rem;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            font-size: 0.8rem;
+            border-bottom: 2px solid black;
+        }
+        p{
+            color: $color-grey;
+        }
+    }
+    .topType2{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        img{
+            width: 100%;
+        }
+        h3{
+            width: 100%;
+            font-size: 2rem;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            font-size: 0.8rem;
+            border-bottom: 2px solid black;
+        }
+        p{
+            color: $color-grey;
+        }
+
+    }
+}
+
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    li{
+        width: 33%;
+        
+        font-size: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: $color-grey;
+    }
+}
+
+
+.listProduct{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 100%;
+    .product{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        
+        img{
+            width: 100%;
+        }
+        h3{
+            width: 100%;
+        }
+        .rankingStars{
+            width: 50%;
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+            li{
+                width: 20%;
+                .fas{
+                    color: $color-orange;
+                }
+                .far{
+                    color: $color-grey;
+                }
+            }
+        }
+        p{
+            width: 50%;
+            color: $color-grey;
+            margin-top: 0;
+        }
+
+    
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        border-bottom: 2px solid black;
+    }
+}
