@@ -178,12 +178,12 @@
 .listProduct {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  justify-content: space-between;
   width: 100%; }
   .listProduct .product {
     display: flex;
     flex-direction: column;
-    width: 40%; }
+    width: 45%; }
     .listProduct .product img {
       width: 100%; }
     .listProduct .product h3 {

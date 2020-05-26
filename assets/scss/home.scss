@@ -248,12 +248,12 @@ $color-grey: #999;
 .listProduct{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    justify-content: space-between;
     width: 100%;
     .product{
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 45%;
         
         img{
             width: 100%;
