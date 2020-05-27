@@ -3,22 +3,51 @@
 <link rel="stylesheet" href="assets/scss/style.css">
     </head>
     <body>
-        <i class="fas fa-ellipsis-v"></i>
-        <img src="assets/img/home/logo.png" class="logo"/></br>
 
-<i class="fas fa-times fa-2x"></i>
-<ul>
-            <li>home</li>
-            <li>shop</li>
+<div id="main" class="hidden768">
+    <div id="mysidenav" classe="sidenav hidden768">
+        <a href="javascript:void(0)" class="closebtn" onclick="closenav()"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="shop.html">shop</a></li>
             <li>collection</li>
             <li>pages</li>
             <li>blog</li>
-            <li>contact</li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <p><strong class="contact">contact us</strong></br>
+            69 Halsey St, Ny 10002, New York, United States support.center@unero.co</br>
+            (0091) 8547 632521</p>
+</div>
+<div id="mysidenav" class="sidenav">
+    <a href="javascript:void(0)" onclick="openNav()">
+    <i class="fas fa-ellipsis-v"></i></a>
+</div>
+    
+        <img src="assets/img/home/logo.png" class="logo"/>
+<ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li>collection</li>
+            <li>pages</li>
+            <li>blog</li>
+            <li><a href="contact.html">contact</a></li>
         </ul>
 <p><strong class="contact">contact us</strong></br>
 69 Halsey St, Ny 10002, New York, United States support.center@unero.co</br>
 (0091) 8547 632521</p>
-<script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
- 
+<script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous">
+    function openNav() {
+        document .getElementById("mysidenav").style.width="0";
+        document .getElementById("main").style.marginLeft="250px";
+        document .body.style.backgroundColor="rgba(0,0,0,0.4)"
+    }
+    function closeNav(){
+        document.getElementById("mysidenav").style.width="0";
+        document .getElementById("main").style.marginLeft="0"
+        document .body.style.backgroundColor="white"
+    }
+</script>
 </body>
 </html>
