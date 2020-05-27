@@ -59,6 +59,8 @@
   .highlight3 div {
     width: 100%;
     height: 300px; }
+    .highlight3 div p, .highlight3 div h2, .highlight3 div a {
+      margin-left: 40px; }
   .highlight3 .hairBand {
     background-image: url(../img/home/banner_h1_1.jpg);
     background-position: right;
@@ -140,6 +142,7 @@
       color: black;
       text-decoration: none;
       text-transform: uppercase;
+      width: -moz-fit-content;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
     .topSellers .topType1 p {
@@ -157,6 +160,7 @@
       color: black;
       text-decoration: none;
       text-transform: uppercase;
+      width: -moz-fit-content;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
     .topSellers .topType2 p {
@@ -278,14 +282,19 @@
       margin-top: 5px; }
 
 .latestNews .titreSection {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
   .latestNews .titreSection a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
     border-bottom: 2px solid black;
-    width: fit-content; }
+    width: fit-content;
+    width: -moz-fit-content; }
 
 .latestNews .news {
   display: flex;
@@ -307,8 +316,117 @@
     border-bottom: 2px solid black;
     width: -moz-fit-content; }
   .latestNews .news .infoNews {
-    display: flex; }
+    display: flex;
+    margin-bottom: 0; }
     .latestNews .news .infoNews .author {
       color: #f68773;
       font-weight: bold;
-      margin-right: 20px; }
+      margin-right: 20px;
+      margin-bottom: 10px; }
+    .latestNews .news .infoNews .dateNews {
+      margin-bottom: 10px; }
+
+.newsletter .inputSubmit input {
+  text-decoration: none; }
+
+.imageWall {
+  width: 90%;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  display: flex; }
+  .imageWall img {
+    width: 33%; }
+  .imageWall .desktopOnly {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  .topType1 {
+    display: none; }
+  .topType2 {
+    display: flex; }
+    .topType2 img {
+      width: 80%;
+      order: 2; }
+    .topType2 .boxDescription {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      z-index: 1; }
+      .topType2 .boxDescription h3 {
+        font-size: 3rem; }
+  .listProduct .product .rankingStars {
+    width: 25%; }
+  .decompte {
+    width: 60%; }
+  .category li {
+    width: 20%; }
+  .latestNews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .latestNews .newsTablet {
+      width: 45%; }
+  .newsletter {
+    display: flex;
+    width: 100%; }
+    .newsletter .titreSection {
+      width: 50%;
+      margin-top: 0; }
+    .newsletter .inputSubmit {
+      width: 50%;
+      display: flex; }
+      .newsletter .inputSubmit .inputEmail {
+        width: 70%; }
+      .newsletter .inputSubmit .inputSubmit {
+        width: 30%; }
+  .imageWall {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: flex; }
+    .imageWall img {
+      width: 33%; }
+    .imageWall .tabletOnly {
+      display: block; } }
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100%; }
+  .highlight {
+    height: 100vh;
+    background-image: url(../img/home/abc.jpg); }
+    .highlight .socialBar {
+      display: flex;
+      flex-direction: column; }
+  .highlight3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    .highlight3 div {
+      width: 33.33%; }
+    .highlight3 .hairBand {
+      padding: 0; }
+      .highlight3 .hairBand p, .highlight3 .hairBand h2, .highlight3 .hairBand a {
+        margin-left: 40px;
+        padding: 0; }
+  .topSellers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto; }
+    .topSellers .topType1 {
+      width: 30%;
+      display: flex;
+      flex-direction: column; }
+    .topSellers .topType2 {
+      width: 60%; }
+  .imageWall .desktopOnly {
+    display: block; } }

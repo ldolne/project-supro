@@ -2,6 +2,9 @@ $color-grey: #999;
 $color-orange: #f68773;
 $color-grey: #999;
 
+
+
+
 .container{
     width: 90%;
     margin: 0 auto;
@@ -78,7 +81,10 @@ $color-grey: #999;
         width: 100%;
         
         height: 300px;
-   
+        p, h2, a{
+            margin-left: 40px;
+            
+        }
         
     }
     .hairBand{
@@ -193,7 +199,7 @@ $color-grey: #999;
             color: black;
             text-decoration: none;
             text-transform: uppercase;
-            
+            width: -moz-fit-content;
             font-size: 0.8rem;
             border-bottom: 2px solid black;
         }
@@ -216,7 +222,7 @@ $color-grey: #999;
             color: black;
             text-decoration: none;
             text-transform: uppercase;
-            
+            width: -moz-fit-content;
             font-size: 0.8rem;
             border-bottom: 2px solid black;
         }
@@ -381,6 +387,10 @@ $color-grey: #999;
 .latestNews{
     .titreSection{
         margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
         a{
             color: black;
             text-decoration: none;
@@ -388,6 +398,7 @@ $color-grey: #999;
             font-size: 1rem;
             border-bottom: 2px solid black;
             width: fit-content;
+            width: -moz-fit-content;
             
         }
 
@@ -417,12 +428,193 @@ $color-grey: #999;
         }
         .infoNews{
             display: flex;
+            margin-bottom: 0;
             .author{
                 color: $color-orange;
                 font-weight: bold;
                 margin-right: 20px;
+                margin-bottom: 10px;
+            }
+            .dateNews{
+                margin-bottom: 10px;
             }
             
+        }
+    }
+    
+}
+
+
+.newsletter{
+    .inputSubmit{
+        input{
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.imageWall{
+        width: 90%;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        display: flex;
+        
+        img{
+            width: 33%;
+        }
+        .desktopOnly{
+            display: none;
+        }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+  .topType1{
+      display: none;
+  }
+
+
+  .topType2{
+      display: flex;
+      img{
+          width: 80%;
+          order: 2;
+      }
+      .boxDescription{
+          width: 20%;
+          display: flex;
+          flex-direction: column;
+          order: 1;
+          z-index: 1;
+        h3{
+            font-size: 3rem;
+        }
+      }
+  }
+ .listProduct{
+     .product{
+         .rankingStars{
+             width: 25%;
+         }
+     }
+ }
+  .decompte{
+      width: 60%;
+  }
+  .category{
+      li{
+          width: 20%;
+      }
+  }
+  .latestNews{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .newsTablet{
+          width: 45%;
+      }
+  }
+  .newsletter{
+      display: flex;
+      width: 100%;
+      .titreSection{
+          width: 50%;
+          margin-top: 0;
+      }
+      .inputSubmit{
+          width: 50%;
+          display: flex;
+          .inputEmail{
+              width: 70%;
+          }
+          .inputSubmit{
+              width: 30%;
+          }
+      }
+  }
+  .imageWall{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: flex;
+    
+    img{
+        width: 33%;
+    }
+    .tabletOnly{
+        display: block;
+    }
+}
+}
+@media screen and (min-width: 992px){
+    .container{
+        width: 100%;
+    }
+
+
+
+    .highlight{
+        height: 100vh;
+        background-image: url(../img/home/abc.jpg);
+        .socialBar{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .highlight3{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        div{
+            width: 33.33%;
+            
+
+        }
+        .hairBand{
+            padding: 0;
+            p, h2, a{
+                margin-left: 40px;
+                padding: 0;
+                
+            }
+        }
+    }
+
+
+    .topSellers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        .topType1{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        .topType2{
+            width: 60%;
+        }
+    }
+
+
+
+    .imageWall{
+        .desktopOnly{
+            display: block;
         }
     }
 }
