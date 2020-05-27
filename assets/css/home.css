@@ -196,9 +196,9 @@
       margin-top: 0; }
       .listProduct .product .rankingStars li {
         width: 20%; }
-        .listProduct .product .rankingStars li .fas {
+        .listProduct .product .rankingStars li .orangeStar {
           color: #f68773; }
-        .listProduct .product .rankingStars li .far {
+        .listProduct .product .rankingStars li .greyStar {
           color: #999; }
     .listProduct .product p {
       width: 50%;
@@ -212,3 +212,103 @@
     margin: 0 auto;
     font-size: 0.8rem;
     border-bottom: 2px solid black; }
+
+.dealDay {
+  margin-top: 30px;
+  background-image: url(../img/home/deals_image.jpg);
+  background-position: center; }
+  .dealDay .dealDayInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; }
+    .dealDay .dealDayInfo h2 {
+      margin-top: 80px;
+      font-size: 1.2rem;
+      color: #999;
+      font-weight: lighter; }
+    .dealDay .dealDayInfo h3 {
+      font-size: 2rem;
+      margin: 0; }
+    .dealDay .dealDayInfo .dealTag {
+      border-radius: 5%;
+      padding: 5px;
+      width: 20%;
+      background-color: #f68773;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px; }
+    .dealDay .dealDayInfo .dealTagStock {
+      display: none; }
+  .dealDay a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-bottom: 70px; }
+  .dealDay .prices {
+    display: flex;
+    font-weight: bold; }
+    .dealDay .prices p {
+      width: 15%; }
+    .dealDay .prices .oldPrice {
+      text-decoration: line-through;
+      color: #999; }
+
+.decompte {
+  padding: 0;
+  margin-bottom: 70px;
+  display: flex;
+  list-style: none;
+  background-color: white;
+  justify-content: center;
+  text-align: center; }
+  .decompte li {
+    width: 20%; }
+    .decompte li .numDecompte {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 0; }
+    .decompte li .infoDecompte {
+      color: #999;
+      margin-top: 5px; }
+
+.latestNews .titreSection {
+  margin-bottom: 70px; }
+  .latestNews .titreSection a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    width: fit-content; }
+
+.latestNews .news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 70px; }
+  .latestNews .news img {
+    display: block;
+    width: 100%; }
+  .latestNews .news h3 {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 30px; }
+  .latestNews .news a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    width: -moz-fit-content; }
+  .latestNews .news .infoNews {
+    display: flex; }
+    .latestNews .news .infoNews .author {
+      color: #f68773;
+      font-weight: bold;
+      margin-right: 20px; }
