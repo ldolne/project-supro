@@ -1,0 +1,131 @@
+@import url(../../node_modules/normalize.css/normalize.css);
+@use 'pages/shop';
+body {
+  background-color: white;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem; }
+
+main {
+  background-color: pink;
+  max-width: 70%;
+  margin: auto;
+  padding: 2%; }
+
+h3 {
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0; }
+
+ul {
+  list-style-type: none; }
+
+.path {
+  margin-bottom: 7%; }
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(auto, 1fr));
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "shoes shopBy" "shoes compareProducts" "shoes .";
+  gap: 2%; }
+
+.shoes {
+  grid-area: shoes;
+  display: grid;
+  grid-template-rows: auto repeat(4, minmax(auto, 1fr)) auto;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-areas: "title title title" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "item10 item11 item12" ". pageNumber .";
+  gap: 1%; }
+  .shoes .title {
+    grid-area: title;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .shoes .title h2 {
+      flex: 1;
+      margin: 0;
+      padding: 0; }
+    .shoes .title ul {
+      flex: 1; }
+    .shoes .title li {
+      display: inline-block;
+      padding-left: 3%;
+      padding-right: 3%; }
+      .shoes .title li.order-em {
+        font-weight: 700; }
+  .shoes .item {
+    background-color: green;
+    padding: 2%; }
+    .shoes .item img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto; }
+  .shoes .item1 {
+    grid-area: item1; }
+  .shoes .item2 {
+    grid-area: item2; }
+  .shoes .item3 {
+    grid-area: item3; }
+  .shoes .item4 {
+    grid-area: item4; }
+  .shoes .item5 {
+    grid-area: item5; }
+  .shoes .item6 {
+    grid-area: item6; }
+  .shoes .item7 {
+    grid-area: item7; }
+  .shoes .item8 {
+    grid-area: item8; }
+  .shoes .item9 {
+    grid-area: item9; }
+  .shoes .item10 {
+    grid-area: item10; }
+  .shoes .item11 {
+    grid-area: item11; }
+  .shoes .item12 {
+    grid-area: item12; }
+  .shoes .pageNumber {
+    grid-area: pageNumber; }
+    .shoes .pageNumber li {
+      display: inline-block; }
+
+.shopBy {
+  grid-area: shopBy; }
+
+.compareProducts {
+  grid-area: compareProducts; }
+
+.rankingStars {
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0; }
+  .rankingStars li {
+    display: inline-block;
+    color: #f68773; }
+
+.price-tag {
+  display: inline-block;
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0;
+  color: #999; }
+  .price-tag.striked {
+    text-decoration-line: line-through; }
+
+.size-tag {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1%; }
+
+.color-black {
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0;
+  color: #222; }
+
+.color-blue {
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0;
+  color: #1857f7; }
