@@ -2,9 +2,6 @@
     .contact{
         color: #222;
     }
-    body{
-        color:#999;
-    }
 
     p{
         margin-left: 10px;
@@ -23,12 +20,55 @@
     i{
         padding:10px;
     }
+    a:link{
+        text-decoration:none;
+        color: #999;
+}
+a:hover{
+        text-decoration:none;
+        color: #f68773;
+}
+a:visited{
+    text-decoration:none;
+}
+.sidenav{
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left:0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top:60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #999;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #f68773;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top:0;
+    right:25px;
+    font-size: 36px;
+    margin-left:10px;
+}
+#main{
+    transition: .5s;
+    padding:20px;
+}
 }
 @media only screen and (min-width: 600px){
     .contact{
         color: #222;
-    }
-    .logo{
     }
     body{
         color:#999;
@@ -49,10 +89,57 @@
         margin-bottom: 15px;
     }
     i{
-        padding:10px
+        padding:10px;
     }
+    a:link{
+        text-decoration:none;
+        color: #999;
+}
+a:hover{
+        text-decoration: none;
+        color: #f68773;
+}
+a:visited{
+    text-decoration: none;
+}
+.sidenav{
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left:0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top:60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #999;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #f68773;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top:0;
+    right:25px;
+    font-size: 36px;
+    margin-left:10px;
+}
+#main{
+    transition: margin-left .5s;
+    padding:20px;
 }
 @media only screen and (min-width: 768px){
+.hidden768{
+    display: none;
+}
 .logo{
     display: inherit;
     height: 30px;
@@ -62,7 +149,6 @@
 }
 body{
     display:flex;
-    color: #222;
 }
 ul{
     display: flex;
@@ -77,6 +163,21 @@ visibility: hidden;
 }
 i{
 visibility: hidden;
+   }
+a:link{
+        text-decoration:none;
+        color: #222;
+}
+a:hover{
+        text-decoration: none;
+        color: #f68773;
+}
+a:visited{
+    text-decoration: none;
+    }
 }
 
+@media screen and (max-height:450px){
+    .sidenav{padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
