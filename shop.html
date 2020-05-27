@@ -7,31 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/pages/shop.css">
     <script src="https://kit.fontawesome.com/945bf57f6d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </head>
 <body>
     <!-- header -->
     <main>
         <div class="path">
-            <p>Home · Fashion · Shoes</p>
+            <p>Home · Fashion · </p>
+            <p>Shoes</p>
         </div>
         <div class="container">
             <section class="shoes">
                 <div class="title">
                     <h2>Shoes</h2>
                     <ul>
-                        <li class="order-em">Items 1-12 of 36</li>
-                        <li class="order-em">Sort By</li>
-                        <li>Position</li>
-                        <li><img src="" alt="">
-                            Flèche bas</li>
-                        <li><img src="" alt="">
-                            Flèche haut</li>
-                        <li><img src="" alt="">
-                            Affichage 1
-                        </li>
-                        <li><img src="" alt="">
-                            Affichage 2
-                        </li>
+                        <li class="sortOptions">Items 1-12 of 36</li>
+                        <li class="sortOptions">Sort By</li>
+                        <li class="sortOptions-option"><a href="#">Position</a></li>
+                        <li><a href="#"><ion-icon class="sortOptions-option" name="chevron-down-outline"></ion-icon></a><a href="#"><ion-icon class="sortOptions-option" name="arrow-up-outline"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="sortOptions-option" name="apps-outline"></ion-icon></a><a href="#"><ion-icon class="sortOptions-option" name="list-outline"></ion-icon></a></li>
                     </ul>
                 </div>
                 <div class="item item1">
@@ -70,7 +64,10 @@
                     <img src="assets/img/shop/prd_12_1_4.jpg" alt="Item 5">
                     <h3>Pink Leather Watch</h3>
                     <p class="price-tag">$95.99</p>
-                    <img src="" alt="Size M"><img src="" alt="Size XS">
+                    <div>
+                        <p class="size-tag">M</p>
+                        <p class="size-tag">XS</p>
+                    </div>
                 </div>
                 <div class="item item6">
                     <img src="assets/img/shop/prd_01_1_1_1.jpg" alt="Item 6">
@@ -130,10 +127,10 @@
                 </div>
                 <div class="pageNumber">
                     <ul>
-                        <li>01</li>
-                        <li>02</li>
-                        <li>03</li>
-                        <li><img src="" alt="Next"></li>
+                        <li class="first"><a href="#">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#"><ion-icon name="caret-forward-circle-outline"></ion-icon></a></li>
                     </ul>
                 </div>
             </section>
@@ -142,9 +139,9 @@
                 <div class="color">
                     <h3>Color</h3>
                     <ul>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
+                        <li><i class="fas fa-circle color-black"></i>Black</li>
+                        <li><i class="fas fa-circle color-blue"></i>Blue</li>
+                        <li><i class="fas fa-circle color-brown"></i>Brown</li>
                     </ul>
                 </div>
                 <div class="size">
@@ -157,15 +154,15 @@
                 </div>
                 <div class="price">
                     <h3>Price</h3>
-                    <!-- barre de prix??? -->
+                    <img src="assets/img/shop/supro_price_bar.png" alt="Price Bar">
                 </div>
                 <div class="brand">
                     <h3>Brand</h3>
-                    <div>
+                    <div class="selection">
                         <label for="creative">Creative</label>
                         <input type="checkbox" id="creative" name="brand" value="creative">
                     </div>
-                    <div>
+                    <div class="selection">
                         <label for="creative">Wellness</label>
                         <input type="checkbox" id="wellness" name="brand" value="wellness">
                     </div>
