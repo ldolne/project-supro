@@ -1,49 +1,88 @@
 @import url(../../node_modules/normalize.css/normalize.css);
-@use 'pages/shop';
+h2, h3, .path p:last-child {
+  color: #222; }
+
+/*%grid-template
+{
+    grid-template-rows: auto repeat(2, minmax(auto, 1fr));
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "shoes shopBy"
+    "shoes compareProducts"
+    "shoes .";   
+}*/
 body {
   background-color: white;
-  color: #222;
+  color: #999;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem; }
+  font-size: 0.8rem; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 0.9rem; } }
+  @media (min-width: 992px) {
+    body {
+      font-size: 1rem; } }
 
 main {
-  background-color: white;
-  max-width: 70%;
+  background-color: green;
+  max-width: 100%;
+  max-height: 100%;
   margin: auto;
   padding: 4% 2%; }
-
-label, input {
-  color: #999; }
+  @media (min-width: 768px) {
+    main {
+      max-width: 90%; } }
+  @media (min-width: 992px) {
+    main {
+      max-width: 70%; } }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #999; }
 
 ul {
   list-style-type: none; }
 
 .path {
   margin-bottom: 7%; }
-  .path p, .path ul {
+  .path p {
     display: inline; }
-  .path p:nth-child(1), .path ul:nth-child(1) {
-    color: #999; }
-  .path p:nth-child(2), .path ul:nth-child(2) {
-    color: #222; }
 
 .container {
   display: grid;
-  grid-template-rows: auto repeat(2, minmax(auto, 1fr));
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "shoes shopBy" "shoes compareProducts" "shoes .";
-  gap: 2%; }
+  grid-auto-rows: auto;
+  grid-template-columns: auto;
+  gap: 2%;
+  grid-template-areas: "shopBy" "shoes" "compareProducts"; }
+  @media (min-width: 768px) {
+    .container {
+      grid-template-rows: auto repeat(2, minmax(auto, 1fr));
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: "shoes shopBy" "shoes compareProducts" "shoes ."; } }
+  @media (min-width: 992px) {
+    .container {
+      grid-template-rows: auto repeat(2, minmax(auto, 1fr));
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: "shoes shopBy" "shoes compareProducts" "shoes ."; } }
 
 .shoes {
   grid-area: shoes;
   display: grid;
-  grid-template-rows: auto repeat(4, minmax(auto, 1fr)) auto;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-areas: "title title title" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "item10 item11 item12" ". pageNumber .";
+  grid-auto-rows: minmax(auto, 1fr);
+  grid-template-rows: auto repeat(12, minmax(auto, 1fr)) auto;
+  grid-template-columns: auto;
+  grid-template-areas: "title" "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10" "item11" "item12" "pageNumber";
   gap: 1%; }
+  @media (min-width: 768px) {
+    .shoes {
+      grid-template-rows: auto repeat(6, minmax(auto, 1fr)) auto;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-areas: "title title" "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10" "item11 item12" "pageNumber pageNumber"; } }
+  @media (min-width: 992px) {
+    .shoes {
+      grid-template-rows: auto repeat(4, minmax(auto, 1fr)) auto;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      grid-template-areas: "title title title" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "item10 item11 item12" ". pageNumber ."; } }
   .shoes h3 {
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0; }
@@ -71,7 +110,7 @@ ul {
   .shoes ion-icon {
     padding-right: 6px; }
   .shoes .item {
-    background-color: white;
+    background-color: pink;
     padding: 2%; }
     .shoes .item img {
       display: block;
@@ -135,6 +174,10 @@ ul {
     font-size: 0.8rem;
     color: #999;
     text-align: center; }
+
+.price img {
+  max-width: 100%;
+  height: auto; }
 
 .compareProducts {
   grid-area: compareProducts; }
