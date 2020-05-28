@@ -63,5 +63,6 @@ select::after{
     .flex{
         display: flex;
         flex-direction: column;
+        
     }
 }
