@@ -187,7 +187,8 @@
   .listProduct .product {
     display: flex;
     flex-direction: column;
-    width: 45%; }
+    width: 45%;
+    margin-bottom: 50px; }
     .listProduct .product img {
       width: 100%; }
     .listProduct .product h3 {
@@ -359,8 +360,10 @@
       z-index: 1; }
       .topType2 .boxDescription h3 {
         font-size: 3rem; }
-  .listProduct .product .rankingStars {
-    width: 25%; }
+  .listProduct .product {
+    margin-bottom: 80px; }
+    .listProduct .product .rankingStars {
+      width: 25%; }
   .decompte {
     width: 60%; }
   .category li {
@@ -486,9 +489,11 @@
         .newArrival .titreSection ul li {
           text-align: right; }
     .newArrival .listProduct .product {
-      width: 30%; }
+      width: 30%;
+      margin-bottom: 80px; }
     .newArrival .listProduct a {
-      width: 20%; }
+      width: fit-content;
+      font-size: 1.2rem; }
   .dealDay .dealDayInfo .dealTagGroup .dealTag {
     width: 7%; }
   .dealDay .dealDayInfo .dealTagGroup .dealTagStock {

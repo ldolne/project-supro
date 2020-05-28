@@ -260,6 +260,7 @@ $color-grey: #999;
         display: flex;
         flex-direction: column;
         width: 45%;
+        margin-bottom: 50px;
         
         img{
             width: 100%;
@@ -506,6 +507,7 @@ $color-grey: #999;
   }
  .listProduct{
      .product{
+        margin-bottom: 80px;
          .rankingStars{
              width: 25%;
          }
@@ -694,10 +696,11 @@ $color-grey: #999;
         .listProduct{
             .product{
                 width: 30%;
+                margin-bottom: 80px;
             }
             a{
-                width: 20%;
-                
+                width: fit-content;
+                font-size: 1.2rem;
 
             }
         }
