@@ -2,7 +2,7 @@
     display: grid;
     grid-column: 1/4;
     grid-row:1;
-    border-top: 1.5px solid #999    
+    border-top: 1.5px solid #999;   
 }
 .title{
 font-weight: bold;
@@ -32,13 +32,10 @@ color:#222;
 }
 body{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3 100%);
     grid-template-rows: 50% 50%;
     color:#999;
     font-family: "Roboto", sans-serif;
-}
-td{
-    margin: none;
 }
 p{
     display: flex;
@@ -54,4 +51,10 @@ ul{
 select{
     background-color: white;
     width: 100px;
+}
+@media screen and (max-width: 768px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
 }
