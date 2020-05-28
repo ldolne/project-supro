@@ -6,11 +6,13 @@
     <title>Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/pages/shop.css">
+    <link rel="stylesheet" href="header.css">
     <script src="https://kit.fontawesome.com/945bf57f6d.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </head>
 <body>
     <!-- header -->
+    <!-- fin header  -->
     <main>
         <div class="path">
             <p><a href="#">Home ·</a></p>
@@ -18,15 +20,15 @@
             <p>Shoes</p>
         </div>
         <div class="container">
-            <section class="shoes">
+            <section class="block shoes">
                 <div class="title">
                     <h2>Shoes</h2>
                     <ul>
                         <li class="sortOptions">Items 1-12 of 36</li>
                         <li class="sortOptions">Sort By</li>
-                        <li class="sortOptions-option"><a href="#">Position</a></li>
-                        <li><a href="#"><ion-icon class="sortOptions-option" name="chevron-down-outline"></ion-icon></a><a href="#"><ion-icon class="sortOptions-option" name="arrow-up-outline"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon class="sortOptions-option" name="apps-outline"></ion-icon></a><a href="#"><ion-icon class="sortOptions-option" name="list-outline"></ion-icon></a></li>
+                        <li class="sortOptions-value"><a href="#">Position</a></li>
+                        <li><a href="#"><ion-icon name="chevron-down-outline"></ion-icon></a><a href="#"><ion-icon class="sortOptions-option" name="arrow-up-outline"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="apps-outline"></ion-icon></a><a href="#"><ion-icon class="sortOptions-option" name="list-outline"></ion-icon></a></li>
                     </ul>
                 </div>
                 <div class="item item1">
@@ -46,8 +48,8 @@
                     </ul>
                     <p class="price-tag">$59.00</p>
                     <div>
-                        <i class="fas fa-circle color black"></i>
-                        <i class="fas fa-circle color-blue"></i>
+                        <i class="fas fa-circle circle-color black"></i>
+                        <i class="fas fa-circle circle-color-blue"></i>
                     </div>
                 </div>
                 <div class="item item3">
@@ -135,18 +137,18 @@
                     </ul>
                 </div>
             </section>
-            <section class="shopBy">
+            <section class="block shopBy">
                 <h2>Shop By</h2>
                 <div class="color">
-                    <h3>Color</h3>
+                    <h3>COLOR</h3>
                     <ul>
-                        <li><i class="fas fa-circle color-black"></i>Black</li>
-                        <li><i class="fas fa-circle color-blue"></i>Blue</li>
-                        <li><i class="fas fa-circle color-brown"></i>Brown</li>
+                        <li><i class="fas fa-circle circle-color-black"></i>Black</li>
+                        <li><i class="fas fa-circle circle-color-blue"></i>Blue</li>
+                        <li><i class="fas fa-circle circle-color-brown"></i>Brown</li>
                     </ul>
                 </div>
                 <div class="size">
-                    <h3>Size</h3>
+                    <h3>SIZE</h3>
                     <ul>
                         <li>XS</li>
                         <li>S</li>
@@ -154,11 +156,11 @@
                     </ul>
                 </div>
                 <div class="price">
-                    <h3>Price</h3>
+                    <h3>PRICE</h3>
                     <img src="assets/img/shop/supro_price_bar.png" alt="Price Bar">
                 </div>
                 <div class="brand">
-                    <h3>Brand</h3>
+                    <h3>BRAND</h3>
                     <div class="selection">
                         <label for="creative">Creative</label>
                         <input type="checkbox" id="creative" name="brand" value="creative">
@@ -169,7 +171,7 @@
                     </div>
                 </div>
             </section>
-            <section class="compareProducts">
+            <section class="block compareProducts">
                 <h2>Compare Products</h2>
                 <p>You have no items to compare.</p>
             </section>

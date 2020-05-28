@@ -7,13 +7,17 @@
 $color-black: #222;
 $color-white: white;
 $color-grey: #999;
-$color-lightgray: #eeeeee;
+$color-lightgray: #eaeaea;
 $color-orange: #f68773;
 $color-blue: #1857f7;
 $color-brown: #945454;
 
 // FONTS
 $font-family-main: 'Roboto', sans-serif;
+$font-size-small: 0.6rem;
+$font-size-medium: 0.7rem;
+$font-size-large: 0.8rem;
+
 
 // MEDIA QUERIES
 // Breakpoint manager
@@ -42,69 +46,70 @@ $font-family-main: 'Roboto', sans-serif;
     color: $color-black;
 }
 
-/*%grid-template
-{
-    grid-template-rows: auto repeat(2, minmax(auto, 1fr));
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-    "shoes shopBy"
-    "shoes compareProducts"
-    "shoes .";   
-}*/
-
-// SCSS
+// MAIN ELEMENTS
 
 body
 {
     background-color: $color-white;
     color: $color-grey;
     font-family: $font-family-main;
-    font-size: 0.8rem;
+    font-size: $font-size-small;
+    line-height: 1.8rem;
 
     @include media(medium)
     {
-        font-size: 0.9rem;
+        font-size: $font-size-medium;
     }
 
     @include media(large)
     {
-        font-size: 1rem;
+        font-size: $font-size-large;
     }
 }
 
 main
 {
-    background-color: green; //debug
+    background-color: $color-white; //debug
     max-width: 100%;
-    max-height: 100%;
     margin: auto;
     padding: 2%;
 
     @include media(medium)
     {
-        max-width: 90%;
+        max-width: 70%;
+        min-width: 700px;
     }
 
     @include media(large)
     {
         max-width: 70%;
+        min-width: 950px;
     }
-}
 
-h2, h3
-{
-    @extend %color-black;
-}
+    h2
+    {
+        @extend %color-black;
+        font-size: 1.5rem;
+    }
 
-a
-{
-    text-decoration: none;
-    color: $color-grey;
-}
+    h3
+    {
+        @extend %color-black;
+        font-size: $font-size-large;
+        margin: 1% 1% 1% 0;
+        padding: 1% 1% 1% 0;
+    }
 
-ul
-{
-    list-style-type: none;
+    a
+    {
+        text-decoration: none;
+        color: $color-grey;
+    }
+
+    ul
+    {
+        list-style-type: none;
+    }
 }
 
 .path
@@ -124,10 +129,9 @@ ul
 
 .container
 {
-    //display: grid;
-    grid-template-rows: 100px 1fr 100px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
     grid-template-columns: auto;
-    gap: 2%;
     grid-template-areas:
     "shopBy"
     "shoes"
@@ -154,12 +158,17 @@ ul
     }
 }
 
+.block
+{
+    margin: 2%;
+}
+
 .shoes
 {   
     grid-area: shoes;
 
     display: grid;
-    grid-template-rows: 1fr repeat(12, minmax(auto, 1fr)) auto;
+    grid-template-rows: auto repeat(12, minmax(auto, 1fr)) auto;
     grid-template-columns: auto;
     grid-template-areas:
     "title"
@@ -176,7 +185,6 @@ ul
     "item11"
     "item12"
     "pageNumber";
-    gap: 1%;
 
     @include media(medium)
     {
@@ -191,6 +199,7 @@ ul
         "item9 item10"
         "item11 item12"
         ". pageNumber";
+        gap: 1%;
     }
 
     @include media(large)
@@ -204,169 +213,204 @@ ul
         "item7 item8 item9"
         "item10 item11 item12"
         ". pageNumber .";
+        gap: 1%;
+    }
+}
+
+.title
+{
+    grid-area: title;
+    display: flex;
+    flex-flow: column wrap;
+
+    h2
+    {
+        flex: 1;
+        margin: 0;
+        padding: 0;
     }
 
-    h3
+    ul
     {
-        margin: 1% 1% 1% 0;
-        padding: 1% 1% 1% 0;
+        flex: 1;
+        justify-self: right;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        @include media(medium)
+        {
+            min-width: 90%;
+            text-align: right;
+        }
+
+        @include media(large)
+        {
+            min-width: 90%;
+            text-align: right;
+        }
     }
 
-    .title
+    li
     {
-        grid-area: title;
-        display: flex;
+        display: inline-block;
+        padding-left: 5%;
+
+        &.sortOptions
+        {
+            font-weight: 700;
+            @extend %color-black;
+        }
+
+        &.sortOptions-value
+        {
+            padding-left: 1%;
+        }
+    }
+
+    @include media(medium)
+    {
         flex-flow: row wrap;
         justify-content: space-between;
+        align-items: flex-end;
+    }
 
-        h2
-        {
-            flex: 1;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul
-        {
-            flex: 1;
-        }
-
-        li
-        {
-            display: inline-block;
-            padding-left: 5%;
-
-            &.sortOptions
-            {
-                font-weight: 700;
-                color: $color-black;
-            }
-
-            &.sortOptions-option
-            {
-                padding-left: 1%;
-
-                a
-                {
-                    color: $color-grey;
-                }
-            }
-        }
+    @include media(large)
+    {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     ion-icon
     {
         padding-right: 6px;
     }
+}
 
-    .item
+.item
+{
+    background-color: $color-white; //debug
+    text-align: center;
+
+    img
     {
-        background-color: pink; //debug
-        padding: 2%;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
 
-        img
+    @include media(medium)
+    {
+        text-align: justify;
+    }
+
+    @include media(large)
+    {
+        text-align: justify;
+    }
+}
+
+.item1
+{
+    grid-area: item1;
+}
+
+.item2
+{
+    grid-area: item2; 
+}
+
+.item3
+{
+    grid-area: item3;
+}
+
+.item4
+{
+    grid-area: item4;
+}
+
+.item5
+{
+    grid-area: item5;
+}
+
+.item6
+{
+    grid-area: item6;
+}
+
+.item7
+{
+    grid-area: item7;
+}
+
+.item8
+{
+    grid-area: item8;
+}
+
+.item9
+{
+    grid-area: item9;
+}
+
+.item10
+{
+    grid-area: item10;
+}
+
+.item11
+{
+    grid-area: item11;
+}
+
+.item12
+{
+    grid-area: item12;
+}
+
+.pageNumber
+{
+    grid-area: pageNumber;
+    text-align: center;
+
+    li
+    {
+        display: inline-block;
+        padding-right: 5%;
+
+        a
         {
-            display: block;
-            margin: auto;
-            max-width: 100%;
-            height: auto;
+            @extend %color-black;
         }
     }
 
-    .item1
+    .first
     {
-        grid-area: item1;
-    }
-    
-    .item2
-    {
-        grid-area: item2; 
+        padding-bottom: 2%;
+        border-bottom: 1px solid $color-black;
     }
 
-    .item3
+    ion-icon
     {
-        grid-area: item3;
-    }
-
-    .item4
-    {
-        grid-area: item4;
-    }
-
-    .item5
-    {
-        grid-area: item5;
-    }
-
-    .item6
-    {
-        grid-area: item6;
-    }
-
-    .item7
-    {
-        grid-area: item7;
-    }
-
-    .item8
-    {
-        grid-area: item8;
-    }
-
-    .item9
-    {
-        grid-area: item9;
-    }
-
-    .item10
-    {
-        grid-area: item10;
-    }
-
-    .item11
-    {
-        grid-area: item11;
-    }
-
-    .item12
-    {
-        grid-area: item12;
-    }
-
-    .pageNumber
-    {
-        grid-area: pageNumber;
-
-        li
-        {
-            display: inline-block;
-            color: $color-black;
-            padding-right: 5%;
-
-            a
-            {
-                color: $color-black;
-            }
-        }
-
-        & .first
-        {
-            padding-bottom: 2%;
-            border-bottom: 1px solid $color-black;
-        }
-
-        ion-icon
-        {
-            font-size: 32px;
-            vertical-align: middle;
-            color: $color-grey;
-        }
+        font-size: 32px;
+        vertical-align: middle;
+        color: $color-grey;
     }
 }
 
 .shopBy
 {
     grid-area: shopBy;
+
+    h2
+    {
+        margin: 0 0 1% 0;
+        padding: 0 0 1% 0;
+    }
 }
 
 .color
@@ -386,11 +430,10 @@ ul
         li
         {
             display: inline-block;
-            width: 5%;
+            min-width: 5%;
             padding: 1% 3%;
             background-color: $color-white;
-            border: 1px solid $color-grey;
-            font-size: 0.8rem;
+            border: 1px solid $color-lightgray;
             color: $color-grey;
             text-align: center;
         }
@@ -405,51 +448,6 @@ ul
         height: auto;
     }
 }
-
-.compareProducts
-{
-    grid-area: compareProducts;
-}
-
-.rankingStars
-{
-    margin: 1% 1% 1% 0;
-    padding: 1% 1% 1% 0;
-
-    li
-    {
-        display: inline-block;
-        color: $color-orange;
-    }
-
-}
-
-.price-tag
-{
-    display: inline-block;
-    margin: 1% 1% 1% 0;
-    padding: 1% 1% 1% 0;
-    color: $color-grey;
-
-    &.striked
-    {
-        text-decoration-line: line-through;
-    }
-}
-
-.size-tag
-{
-    display: inline-block;
-    min-width: 16px;
-    min-height: 16px;
-    background-color: $color-lightgray;
-    color: $color-grey;
-    border-radius: 50%;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 1%;
-}
-
 
 .selection
 {
@@ -468,33 +466,67 @@ ul
     }
 }
 
-.color-black
+.compareProducts
+{
+    grid-area: compareProducts;
+}
+
+
+// DETAILS 
+
+.rankingStars
+{
+    margin: 1% 1% 1% 0;
+    padding: 1% 1% 1% 0;
+
+    li
+    {
+        display: inline-block;
+        color: $color-orange;
+    }
+}
+
+.price-tag
+{
+    display: inline-block;
+    margin: 1% 1% 1% 0;
+    padding: 1% 1% 1% 0;
+
+    &.striked
+    {
+        text-decoration-line: line-through;
+    }
+}
+
+.size-tag
+{
+    display: inline-block;
+    min-width: 16px;
+    min-height: 16px;
+    background-color: $color-lightgray;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1%;
+}
+
+.circle-color-black
 {
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0;
     color: $color-black;
 }
 
-.color-blue
+.circle-color-blue
 {
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0;
     color: $color-blue;
 }
 
-.color-brown
+.circle-color-brown
 {
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0;
     color: $color-brown;
 }
-
-
-// Extra small devices (phones, 600px and down)
-//@media only screen and (max-width: 768px) {...}
-
-//Medium devices (landscape tablets, 768px and up)
-//@media only screen and (min-width: 768px) and (max-width: 992px) {...}
-
-//Large devices (laptops/desktops, 992px and up) 
-//@media only screen and (min-width: 992px) {...}
