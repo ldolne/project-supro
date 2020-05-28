@@ -175,9 +175,12 @@
   .category li {
     width: 33%;
     font-size: 1rem; }
-  .category a {
-    text-decoration: none;
-    color: #999; }
+  .category .fontBlack {
+    color: black;
+    text-decoration: none; }
+  .category .fontgrey {
+    color: #999;
+    text-decoration: none; }
 
 .listProduct {
   display: flex;
@@ -444,7 +447,8 @@
     flex-direction: row;
     width: 100%; }
     .highlight3 div {
-      width: 33.33%; }
+      width: 33.33%;
+      height: 400px; }
     .highlight3 .hairBand {
       padding: 0; }
       .highlight3 .hairBand p, .highlight3 .hairBand h2, .highlight3 .hairBand a {
@@ -462,11 +466,11 @@
       display: flex;
       flex-direction: column;
       height: 600px;
-      align-self: center; }
+      margin-top: 200px; }
       .topSellers .topType1 h3 {
         width: 70%;
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         height: 10px;
         font-size: 1.8rem; }
     .topSellers .imageDroiteDesktop img {
@@ -484,10 +488,11 @@
       .newArrival .titreSection .titreBlock {
         width: 30%; }
       .newArrival .titreSection ul {
-        width: 30%;
+        width: 50%;
         align-self: flex-end; }
         .newArrival .titreSection ul li {
-          text-align: right; }
+          text-align: right;
+          min-width: 60px; }
     .newArrival .listProduct .product {
       width: 30%;
       margin-bottom: 80px; }
