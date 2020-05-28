@@ -49,8 +49,15 @@ ul{
     list-style-type: none;
 }
 select{
-    background-color: white;
+    border-radius: 2px;
     width: 100px;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+}
+select::after{
+    border: solid transparent;
+    content: "";
 }
 @media screen and (max-width: 768px){
     .flex{
