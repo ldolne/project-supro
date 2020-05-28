@@ -1,0 +1,96 @@
+$color-grey: #999;
+$color-orange: #f68773;
+$color-grey: #999;
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+    .footBlock1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between ;
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $color-grey;
+            }
+        }
+        
+        .supro{
+            display: none;
+        }
+        .help{
+            width: 40%;
+        }
+        .about{
+            width: 40%;
+        }
+        .shop{
+            width: 40%;
+        }
+        .language{
+            width: 40%;
+        }
+        .currency{
+            width: 40%;
+        }
+    }
+
+    .footBlock2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        border-top: 1px solid $color-grey;
+        .copyright{
+            width: 100%;
+            p{
+                width: 100%;
+                color: $color-grey;
+            }
+            a{
+                margin-right: 20px;
+                text-decoration: none;
+                color: $color-grey;
+            }
+        }
+        .social{
+            display: none;
+        }
+        .pay{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        .footBlock1{
+ 
+            .help{
+                width: 30%;
+                
+            }
+            .about{
+                width: 30%;
+            }
+            .shop{
+                width: 30%;
+            }
+            .language{
+                width: 30%;
+            }
+            .currency{
+                width: 65%;
+            }
+        }
+    }
+}

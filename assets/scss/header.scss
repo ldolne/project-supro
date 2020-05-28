@@ -1,5 +1,5 @@
 header{
-    nav{
+    .nav{
         overflow: hidden;
         position: fixed; /* Set the navbar to fixed position */
         top: 0; /* Position the navbar at the top of the page */
@@ -23,6 +23,7 @@ header{
             justify-content: flex-end;
             li{
                 margin-right: 15px;
+                list-style: none;
                 a{
                     text-decoration: none;
                     color: black;

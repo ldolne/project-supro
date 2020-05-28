@@ -1,0 +1,60 @@
+footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  footer .footBlock1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .footBlock1 ul {
+      padding: 0;
+      list-style: none; }
+      footer .footBlock1 ul li {
+        margin-bottom: 10px; }
+      footer .footBlock1 ul a {
+        text-decoration: none;
+        color: #999; }
+    footer .footBlock1 .supro {
+      display: none; }
+    footer .footBlock1 .help {
+      width: 40%; }
+    footer .footBlock1 .about {
+      width: 40%; }
+    footer .footBlock1 .shop {
+      width: 40%; }
+    footer .footBlock1 .language {
+      width: 40%; }
+    footer .footBlock1 .currency {
+      width: 40%; }
+  footer .footBlock2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-top: 1px solid #999; }
+    footer .footBlock2 .copyright {
+      width: 100%; }
+      footer .footBlock2 .copyright p {
+        width: 100%;
+        color: #999; }
+      footer .footBlock2 .copyright a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #999; }
+    footer .footBlock2 .social {
+      display: none; }
+    footer .footBlock2 .pay {
+      display: none; }
+
+@media screen and (min-width: 768px) {
+  footer .footBlock1 .help {
+    width: 30%; }
+  footer .footBlock1 .about {
+    width: 30%; }
+  footer .footBlock1 .shop {
+    width: 30%; }
+  footer .footBlock1 .language {
+    width: 30%; }
+  footer .footBlock1 .currency {
+    width: 65%; } }
