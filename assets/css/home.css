@@ -62,9 +62,7 @@
     .highlight3 div p, .highlight3 div h2, .highlight3 div a {
       margin-left: 40px; }
   .highlight3 .hairBand:hover {
-    background-image: url(../img/home/banner_h1_1.jpg);
-    background-position: right;
-    background-size: 110%; }
+    background-image: url(../img/home/banner_h1_1.jpg); }
   .highlight3 .hairBand {
     background-image: url(../img/home/banner_h1_1.jpg);
     background-position: right;
@@ -364,7 +362,7 @@
       display: flex;
       flex-direction: column;
       order: 1;
-      z-index: 1; }
+      z-index: 2; }
       .topType2 .boxDescription h3 {
         font-size: 3rem; }
   .listProduct .product {
