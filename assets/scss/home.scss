@@ -322,19 +322,23 @@ $color-grey: #999;
             font-size: 2rem;
             margin: 0;
         }
-        .dealTag{
-            border-radius: 5%;
-            padding: 5px;
-            width: 20%;
-            background-color: $color-orange;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 50px;
+        .dealTagGroup{
+            display: flex;
+            .dealTag{
+                border-radius: 5%;
+                padding: 5px;
+                width: 20%;
+                background-color: $color-orange;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .dealTagStock{
+                display: none;
+            }
         }
-        .dealTagStock{
-            display: none;
-        }
+   
 
     }
     a{
@@ -351,7 +355,7 @@ $color-grey: #999;
         display: flex;
         font-weight: bold;
         p{
-            width: 15%;
+            width: 70px;
         }
         .oldPrice{
             text-decoration: line-through;
@@ -562,7 +566,48 @@ $color-grey: #999;
     .container{
         width: 100%;
     }
-
+    .highlight{
+        background-image: url(../img/home/abc.jpg);
+        background-color: #F2EDE9;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+            
+        
+        .groupTextCentral{
+            width: 40%;
+            order: 2;
+            .smallOnly{
+                display: none;
+            }
+            .mobileNo{
+                display: block;
+              
+            }
+            p{
+                color: $color-orange;
+                font-size: 1rem;
+            }
+            h1{
+                font-size: 6rem;
+                width: 400px;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+         
+        }
+        .socialBar{
+            width: 60%;
+            order: 1;
+            li{
+                margin-left: 90px;
+            }
+        }
+    }
 
 
     .highlight{
@@ -604,11 +649,117 @@ $color-grey: #999;
             width: 30%;
             display: flex;
             flex-direction: column;
+            height: 600px;
+            align-self: center;
+            
+            h3{
+                width: 70%;
+                margin-top: 0;
+                margin-bottom: 50px;
+                height: 10px;
+                font-size: 1.8rem;
+            }
+        }
+        .imageDroiteDesktop{
+            img{
+                margin-left: 20%;
+            }
+            h3, p, a{
+                margin-left: 20%;
+            }
         }
         .topType2{
             width: 60%;
         }
     }
+
+    .newArrival{
+        width: 70%;
+        margin: 0 auto;
+        .titreSection{
+            display: flex;
+            justify-content: space-between;
+            
+            .titreBlock{
+                width: 30%;
+            }
+            ul{
+                width: 30%;
+                align-self: flex-end;
+                li{
+                    text-align: right;
+                }
+            }
+        }
+        .listProduct{
+            .product{
+                width: 30%;
+            }
+            a{
+                width: 20%;
+                
+
+            }
+        }
+    }
+        
+    .dealDay{
+        .dealDayInfo{
+            .dealTagGroup{
+                .dealTag{
+                    width: 7%;
+                }
+                .dealTagStock{
+                    display: inline-block;
+                    border-radius: 5%;
+                    padding: 5px;
+                    width: 7%;
+                    background-color: #0AA605;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    margin-left: 20px;
+                    
+                }
+            }
+
+            .decompte{
+                width: 40%;
+            }
+        }
+    }
+
+    .latestNews{
+        width: 70%;
+        margin: 0 auto;
+        .titreSection{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .titreBlock{
+                width: 30%;
+            }
+            a{
+                
+                align-self: flex-end;
+              
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .news{
+            width: 30%;
+        }
+    }
+
+    .newsletter{
+        width: 70%;
+        margin: 0 auto;
+    }
+
 
 
 
