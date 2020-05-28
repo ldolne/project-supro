@@ -61,6 +61,9 @@ footer{
                 text-decoration: none;
                 color: $color-grey;
             }
+            b{
+                color: black;
+            }
         }
         .social{
             display: none;
@@ -73,8 +76,10 @@ footer{
 
 @media screen and (min-width: 768px){
     footer{
+        width: 100%;
         .footBlock1{
- 
+            width: 90%;
+            margin: 0 auto;
             .help{
                 width: 30%;
                 
@@ -90,6 +95,90 @@ footer{
             }
             .currency{
                 width: 65%;
+            }
+        }
+        .footBlock2{
+            .copyright{
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    footer{
+        .footBlock1{
+            .supro{
+                margin-top: 25px;
+                display: block;
+                width: 30%;
+                color: $color-grey;
+                i{
+                    margin-right: 5px;
+                }
+                
+            }
+            .help{
+                width: 20%;
+            }
+            .about{
+                width: 20%;
+            }
+            .shop{
+                width: 20%;
+            }
+            .language{
+                display: none;
+            }
+            .currency{
+                display: none;
+            }
+        }
+        .footBlock2{
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            border-top: none;
+
+            .copyright{
+                width: 40%;
+                margin: 0;
+                a{
+                    display: none;
+                }
+                
+            }
+            .social{
+                display: block;
+                // width: 30%;
+                margin: 0 auto;
+                ul{
+                    padding: 0;
+                    display: flex;
+                    list-style: none;
+                    li{
+                        margin-right: 10px;
+                        a{
+                            text-decoration: none;
+                            color: $color-grey;
+                        }
+                    }
+                }
+            }
+            .pay{
+                display: block;
+                width: 40%;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        margin-right: 5px;
+                    }
+                }
             }
         }
     }
