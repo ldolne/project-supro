@@ -1,0 +1,75 @@
+@import "../../node_modules/normalize.css/normalize.css";
+//@use 'pages/product';
+
+
+// VARIABLES
+// COLORS
+$color-black: #222;
+$color-white: white;
+$color-grey: #999;
+$color-lightgray: #eaeaea;
+$color-orange: #f68773;
+$color-blue: #1857f7;
+$color-brown: #945454;
+
+// FONTS
+$font-family-main: 'Roboto', sans-serif;
+$font-size-small: 0.6rem;
+$font-size-medium: 0.7rem;
+$font-size-large: 0.8rem;
+
+
+// MEDIA QUERIES
+// Breakpoint manager
+@mixin media($breakpoint)
+{
+    @if $breakpoint == medium 
+    {
+        @media (min-width: 768px) 
+        { 
+            @content; 
+        }
+    }
+    @else if $breakpoint == large 
+    {
+        @media (min-width: 992px)
+        { 
+            @content; 
+        }
+    }
+}
+
+// SILENT CLASSES
+
+%color-black
+{
+    color: $color-black;
+}
+
+// MAIN ELEMENTS
+
+body
+{
+    background-color: $color-white;
+    color: $color-grey;
+    font-family: $font-family-main;
+    font-size: $font-size-small;
+    line-height: 1.8rem;
+
+    @include media(medium)
+    {
+        font-size: $font-size-medium;
+    }
+
+    @include media(large)
+    {
+        font-size: $font-size-large;
+    }
+}
+
+main
+{
+    background-color: $color-white; //debug
+    max-width: 100%;
+    margin: auto;
+    padding: 2%;
