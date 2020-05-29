@@ -672,7 +672,7 @@ $color-grey: #999;
             width: 30%;
             display: flex;
             flex-direction: column;
-            height: 600px;
+            height: 400px;
             margin-top: 200px;
             
             
@@ -694,8 +694,18 @@ $color-grey: #999;
                 margin-left: 20%;
             }
         }
+
         .topType2{
             width: 60%;
+            // margin-bottom: 0;
+            
+            
+            
+            .boxDescription{
+                background-color: white;
+                
+            }
+            
         }
     }
 
@@ -798,5 +808,5 @@ $color-grey: #999;
         }
     }
 
-    
+
 }

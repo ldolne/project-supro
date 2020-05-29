@@ -108,10 +108,12 @@ footer{
 @media screen and (min-width: 992px){
     footer{
         .footBlock1{
+            width: 70%;
+            margin: 0 auto;
             .supro{
                 margin-top: 25px;
                 display: block;
-                width: 30%;
+                width: 35%;
                 color: $color-grey;
                 i{
                     margin-right: 5px;
