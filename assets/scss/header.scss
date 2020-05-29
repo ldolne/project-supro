@@ -1,6 +1,8 @@
 $color-grey: #999;
+$other-grey: #3A3D45;
 header{
     nav{
+        height: 50px;
         overflow: hidden;
         position: fixed; /* Set the navbar to fixed position */
         top: 0; /* Position the navbar at the top of the page */
@@ -14,9 +16,9 @@ header{
             display: none;
         }
         .logo{
-            margin-top: 16px;
+            margin-top: 10px;
             margin-bottom: 16px;
-            margin-left: 40px;
+            margin-left: 20px;
         }
         .icones{
             width: 60%;
@@ -27,16 +29,18 @@ header{
                 list-style: none;
                 a{
                     text-decoration: none;
-                    color: black;
+                    // color: black;
+                    i{
+                        color: $other-grey;
+                    }
                 }
             }
             .settingIcon{
                 display: none;
             }
+          
         }
-        // .menuHAM{
-        //     // display: none;
-        // }
+       
  
 
            
@@ -88,6 +92,15 @@ header{
         }
         h3{
             margin-top: 100px;
+            color: black;
+        }
+        p{
+            color: $color-grey;
+        }
+        .closeMenu{
+            margin-left: 30px;
+            margin-top: 20px;
+            color: $color-grey;
         }
        
 }
@@ -117,15 +130,34 @@ header{
                 }
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: $other-grey;
                     font-weight: bolder;
                 }
             }
             .search{
-
-                width: 10%;
-                margin-top: 16px;
-                margin-bottom: 16px;
+                input[type=text]{
+                    border-radius: 50px;
+                    width: 200px;
+                    height: 25px;
+                    border: none;
+                    margin: 0 auto;
+                    background-image: url(../img/home/Loupe.svg);
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-origin: content-box;
+                    margin-right: 20px;
+                    background-size: 8%;
+                    color: $color-grey;
+                    
+                    
+                    
+                    
+                }
+                border: 1px solid $color-grey;
+                border-radius: 50px;
+                margin-top: 9px;
+                height: 30px;
+                width: 210px;
             }
             .icones{
                 width: 20%;

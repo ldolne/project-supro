@@ -15,38 +15,39 @@
 <!-- debut header -->
     <header>
         <nav>
-            <a class="logo" href="index.html" alt="logo">
-                <img src="assets/img/home/logo.png" alt="">
+            <a class="logo" href="index.html">
+                <img src="assets/img/home/logo.png" alt="logo">
             </a>
             <ul class="navigation NOTnavMobile">
-                <li><a href="">Home</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Pages</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <div class="search NOTnavMobile">
-                <input type="text" placeholder="search" size="10">
+                <input type="text" placeholder="  Start searching..." >
             </div>
             
             <ul class="icones">
-                <li class="searchIcon"><a href=""><i class="fas fa-search "></i></a></li>
-                <li class="userIcon"><a  href=""><i class="far fa-user "></i></a></li>
-                <li class="heartIcon"><a  href=""><i class="far fa-heart "></i></a></li>
-                <li class="cartIcon"><a  href=""><i class="fas fa-shopping-cart"></i></a></li>
-                <li class="settingIcon"><a  href=""><i class="fas fa-cog"></i></a></li>
-                <li class="hamburgerIcon"><a  href="#"><i class="fas fa-bars"></i></a></li>
+                <li class="searchIcon"><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
+                <li class="userIcon"><a  href="#"><i class="far fa-user fa-lg"></i></a></li>
+                <li class="heartIcon"><a  href="#"><i class="far fa-heart fa-lg "></i></a></li>
+                <li class="cartIcon"><a  href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                <li class="settingIcon"><a  href="#"><i class="fas fa-cog fa-lg"></i></a></li>
+                <li class="hamburgerIcon"><a  href="#"><i class="fas fa-bars fa-lg"></i></a></li>
             </ul>
         </nav>
         <div class="menuHAM">
+            <i class="fas fa-times fa-3x closeMenu"></i>
             <ul>
-                <li><a href="">Home</a><i class="fas fa-plus fa-2x"></i></li>
-                <li><a href="">Shop</a><i class="fas fa-plus fa-2x"></i></li>
-                <li><a href="">Collection</a><i class="fas fa-plus fa-2x"></i></li>
-                <li><a href="">Pages</a><i class="fas fa-plus fa-2x"></i></li>
-                <li><a href="">Blog</a><i class="fas fa-plus fa-2x"></i></li>
-                <li><a href="">Contact</a></i></li>
+                <li><a href="#">Home</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Shop</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Collection</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Pages</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Blog</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             
             <h3>Contact Us</h3>
@@ -294,7 +295,6 @@
                 <a href="">read more</a>
             </div>
                 
-            </div>
             <div class="news newsTablet">
                 <img src="assets/img/home/blog3.jpg" alt="">
                 <h3>The best street style from Berlin fashion week fall 2018</h3>
@@ -322,7 +322,7 @@
     </main>
 
 
-    <section class="Wall">
+    <div class="Wall">
         <div class="imageWall">
             <img class="desktopOnly" src="assets/img/home/blog11.png" alt="">
             <img src="assets/img/home/blog4_1.jpg" alt="">
@@ -336,7 +336,7 @@
             
             
         </div>
-    </section>
+    </div>
 
 
 <!-- debut footer -->
@@ -378,17 +378,17 @@
             </div>
             <div class="language">
                 <h3>Language</h3>
-                <select name="" id="">
-                    <option value="">English</option>
-                    <option value="">Francais</option>
-                    <option value="">Italiano</option>
+                <select name="LANG" id="LANG">
+                    <option value="EN">English</option>
+                    <option value="FR">Francais</option>
+                    <option value="IT">Italiano</option>
                 </select>
             </div>
             <div class="currency">
                 <h3>Currency</h3>
-                <select name="" id="">
-                    <option value="">USD</option>
-                    <option value="">Euro</option>
+                <select name="CUR" id="CUR">
+                    <option value="USD">USD</option>
+                    <option value="EU">Euro</option>
                     
                 </select>
             </div>
@@ -428,16 +428,16 @@
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
         const hamburger = document.querySelector(".hamburgerIcon");
+        const closeMenu = document.querySelector(".closeMenu");
         const menu = document.querySelector(".menuHAM");
         let query = window.matchMedia("(min-width: 992px)");
 
         
         hamburger.addEventListener("click", function(){
-            if(menu.classList.contains("open")){
-                menu.classList.remove("open");
-            } else {
-                menu.classList.add("open");
-            }
+            menu.classList.add("open");
+        })
+        closeMenu.addEventListener("click", function(){ 
+            menu.classList.remove("open");
         })
     });
 </script>
