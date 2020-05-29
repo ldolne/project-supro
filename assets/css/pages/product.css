@@ -1,0 +1,285 @@
+@import url(../../node_modules/normalize.css/normalize.css);
+main h2, main h3, .path p:last-child, .title li.sortOptions, .pageNumber li a {
+  color: #222; }
+
+body {
+  background-color: white;
+  color: #999;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8rem; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 0.9rem; } }
+  @media (min-width: 992px) {
+    body {
+      font-size: 1rem; } }
+
+main {
+  background-color: green;
+  max-width: 100%;
+  margin: auto;
+  padding: 2%;
+  /*@include media(medium)
+    {
+        max-width: 70%;
+        min-width: 700px;
+    }
+
+    @include media(large)
+    {
+        max-width: 70%;
+        min-width: 950px;
+    }*/ }
+  main h2 {
+    font-size: 1.5rem; }
+  main h3 {
+    font-size: 1rem;
+    margin: 1% 1% 1% 0;
+    padding: 1% 1% 1% 0; }
+  main a {
+    text-decoration: none;
+    color: #999; }
+  main ul {
+    margin: 1% 0;
+    padding-left: 0;
+    list-style-type: none; }
+    main ul li {
+      margin-right: 1%;
+      display: inline-block; }
+  main img {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    height: auto; }
+
+.path {
+  margin-bottom: 7%; }
+  .path p {
+    display: inline; }
+
+.container {
+  display: flex;
+  flex-flow: column wrap; }
+
+.block {
+  margin: 2%; }
+
+.singleProduct {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap; }
+  .singleProduct .productPhotos .thumbnails {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+  .singleProduct .productDescription .reviewNote {
+    display: flex;
+    flex-flow: row wrap; }
+
+.singleProductInfo {
+  flex: 1; }
+
+.relatedProducts {
+  flex: 1; }
+
+.shoes {
+  grid-area: shoes;
+  display: grid;
+  grid-template-rows: auto repeat(12, minmax(auto, 1fr)) auto;
+  grid-template-columns: auto;
+  grid-template-areas: "title" "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10" "item11" "item12" "pageNumber"; }
+  @media (min-width: 768px) {
+    .shoes {
+      grid-template-rows: auto repeat(6, minmax(auto, 1fr)) auto;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-areas: "title title" "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10" "item11 item12" ". pageNumber";
+      gap: 1%; } }
+  @media (min-width: 992px) {
+    .shoes {
+      grid-template-rows: auto repeat(4, minmax(auto, 1fr)) auto;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      grid-template-areas: "title title title" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "item10 item11 item12" ". pageNumber .";
+      gap: 1%; } }
+
+.title {
+  grid-area: title;
+  display: flex;
+  flex-flow: column wrap; }
+  .title h2 {
+    flex: 1;
+    margin: 0;
+    padding: 0; }
+  .title ul {
+    flex: 1;
+    justify-self: right;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .title ul {
+        min-width: 90%;
+        text-align: right; } }
+    @media (min-width: 992px) {
+      .title ul {
+        min-width: 90%;
+        text-align: right; } }
+  .title li {
+    display: inline-block;
+    padding-left: 5%; }
+    .title li.sortOptions {
+      font-weight: 700; }
+    .title li.sortOptions-value {
+      padding-left: 1%; }
+  @media (min-width: 768px) {
+    .title {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-end; } }
+  @media (min-width: 992px) {
+    .title {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-end; } }
+  .title ion-icon {
+    padding-right: 6px; }
+
+.item {
+  background-color: white;
+  text-align: center; }
+  .item img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto; }
+  @media (min-width: 768px) {
+    .item {
+      text-align: justify; } }
+  @media (min-width: 992px) {
+    .item {
+      text-align: justify; } }
+
+.item1 {
+  grid-area: item1; }
+
+.item2 {
+  grid-area: item2; }
+
+.item3 {
+  grid-area: item3; }
+
+.item4 {
+  grid-area: item4; }
+
+.item5 {
+  grid-area: item5; }
+
+.item6 {
+  grid-area: item6; }
+
+.item7 {
+  grid-area: item7; }
+
+.item8 {
+  grid-area: item8; }
+
+.item9 {
+  grid-area: item9; }
+
+.item10 {
+  grid-area: item10; }
+
+.item11 {
+  grid-area: item11; }
+
+.item12 {
+  grid-area: item12; }
+
+.pageNumber {
+  grid-area: pageNumber;
+  text-align: center; }
+  .pageNumber li {
+    display: inline-block;
+    padding-right: 5%; }
+  .pageNumber .first {
+    padding-bottom: 2%;
+    border-bottom: 1px solid #222; }
+  .pageNumber ion-icon {
+    font-size: 32px;
+    vertical-align: middle;
+    color: #999; }
+
+.shopBy {
+  grid-area: shopBy; }
+  .shopBy h2 {
+    margin: 0 0 1% 0;
+    padding: 0 0 1% 0; }
+
+.color ul {
+  padding: 0; }
+
+.size ul {
+  padding: 0; }
+  .size ul li {
+    display: inline-block;
+    min-width: 5%;
+    padding: 1% 3%;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    color: #999;
+    text-align: center; }
+
+.price img {
+  max-width: 100%;
+  height: auto; }
+
+.selection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .selection label {
+    flex: 5; }
+  .selection input[type="checkbox"] {
+    flex: 1; }
+
+.compareProducts {
+  grid-area: compareProducts; }
+
+.rankingStars {
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0; }
+  .rankingStars li {
+    display: inline-block;
+    color: #f68773; }
+
+.price-tag {
+  display: inline-block;
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0;
+  font-size: 1.4rem;
+  color: #222; }
+  .price-tag.striked {
+    text-decoration-line: line-through;
+    font-size: 1.3rem;
+    color: #999; }
+
+.size-tag {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  text-align: center; }
+
+.circle-color {
+  padding: 3%;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 50%; }
+  .circle-color.mattBlue {
+    color: #70849d; }
+  .circle-color.beige {
+    color: #cfa58f; }
+  .circle-color.pink {
+    color: #f06292; }
