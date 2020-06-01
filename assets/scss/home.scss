@@ -649,7 +649,7 @@ $color-grey: #999;
     display: flex;
     
     img{
-        width: 33%;
+        width: 20%;
     }
     .tabletOnly{
         display: block;
@@ -887,6 +887,11 @@ $color-grey: #999;
 
 
     .imageWall{
+        width: 100%;
+        display: flex;
+        img{
+            width: 14.28%;
+        }
         .desktopOnly{
             display: block;
         }
