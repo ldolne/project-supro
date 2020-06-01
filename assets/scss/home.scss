@@ -48,9 +48,12 @@ $color-grey: #999;
         margin: 10px;
         a{
             color: $color-grey;
+            
         }
         i:hover{
              color: $color-orange;
+             transition: 1s;
+             
          }
     }
 }
@@ -86,6 +89,10 @@ $color-grey: #999;
 .highlight3{
     display: flex;
     flex-wrap: wrap;
+    /* test */
+    overflow: hidden;
+    position: relative;
+    /* fin test */
     div{
         width: 100%;
         
@@ -96,19 +103,15 @@ $color-grey: #999;
         }
         
     }
-    .hairBand:hover{
-        background-image: url(../img/home/banner_h1_1.jpg);
-     
-        
-
-        
-        
-    }
     .hairBand{
         background-image: url(../img/home/banner_h1_1.jpg);
         background-position: right;
         background-size: cover;
         padding-left: 40px;
+        
+
+        
+        
         
         
         // display: flex;
@@ -229,6 +232,7 @@ $color-grey: #999;
     }
     .topType1:hover{
         color: $color-orange;
+        cursor: pointer;
     }
     .topType2{
         width: 100%;
@@ -257,6 +261,7 @@ $color-grey: #999;
     }
     .topType2:hover{
         color: $color-orange;
+        cursor: pointer;
     }
 }
 
@@ -295,14 +300,28 @@ $color-grey: #999;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    .product:hover{
+        color: $color-orange;
+        cursor: pointer;
+    }
     .product{
         display: flex;
         flex-direction: column;
         width: 45%;
         margin-bottom: 50px;
+
+
+           /* test */
+    overflow: hidden;
+    position: relative;
+            /* fin test */
         
         img{
             width: 100%;
+            transition: all 2s;
+        }
+        img:hover{
+            transform: scale(1.1);
         }
         h3{
             width: 100%;
@@ -457,11 +476,13 @@ $color-grey: #999;
         img{
             display: block;
             width: 100%;
+            cursor: pointer;
         }
         h3{
             width: 100%;
             margin-bottom: 0;
             margin-top: 30px;
+            cursor: pointer;
         }
         a{
             color: black;
@@ -480,6 +501,7 @@ $color-grey: #999;
                 font-weight: bold;
                 margin-right: 20px;
                 margin-bottom: 10px;
+                cursor: pointer;
             }
             .dateNews{
                 margin-bottom: 10px;
@@ -492,9 +514,34 @@ $color-grey: #999;
 
 
 .newsletter{
+  /**********************************************************/
     .inputSubmit{
-        input{
+        display: flex;
+        border-bottom: 0.5px solid $color-grey;
+        margin: 20px auto;
+        width: 100%;
+        color: $color-grey;
+        justify-content: space-between;
+        i{
+            margin-top: 3px;
+        }
+        input[type=text]{
+            height: 20px;
+            border: none;
+            color: $color-grey;
+            margin-left: 20px;
+            font-size: 0.8rem;
+        }
+        a{
             text-decoration: none;
+            margin-left: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            font-size: 0.7rem;
+            text-align: center;
+            width: 20%;
+            
         }
     }
 }
@@ -512,6 +559,7 @@ $color-grey: #999;
         img{
             width: 33%;
         }
+    
         .desktopOnly{
             display: none;
         }
@@ -587,7 +635,7 @@ $color-grey: #999;
           .inputEmail{
               width: 70%;
           }
-          .inputSubmit{
+          .subscribe{
               width: 30%;
           }
       }
@@ -668,6 +716,8 @@ $color-grey: #999;
         display: flex;
         flex-direction: row;
         width: 100%;
+        justify-content: space-between;
+        
         div{
             width: 33.33%;
             height: 400px;
@@ -707,7 +757,7 @@ $color-grey: #999;
             display: flex;
             flex-direction: column;
             height: 400px;
-            margin-top: 150px;
+            margin-top: 100px;
             
             
             h3{

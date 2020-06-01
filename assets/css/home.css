@@ -36,7 +36,8 @@
     .socialBar li a {
       color: #999; }
     .socialBar li i:hover {
-      color: #f68773; }
+      color: #f68773;
+      transition: 1s; }
 
 .groupTextCentral {
   margin-top: 200px;
@@ -60,14 +61,16 @@
 
 .highlight3 {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  /* test */
+  overflow: hidden;
+  position: relative;
+  /* fin test */ }
   .highlight3 div {
     width: 100%;
     height: 300px; }
     .highlight3 div p, .highlight3 div h2, .highlight3 div a {
       margin-left: 40px; }
-  .highlight3 .hairBand:hover {
-    background-image: url(../img/home/banner_h1_1.jpg); }
   .highlight3 .hairBand {
     background-image: url(../img/home/banner_h1_1.jpg);
     background-position: right;
@@ -156,7 +159,8 @@
     .topSellers .topType1 p {
       color: #999; }
   .topSellers .topType1:hover {
-    color: #f68773; }
+    color: #f68773;
+    cursor: pointer; }
   .topSellers .topType2 {
     width: 100%;
     margin-top: 40px;
@@ -177,7 +181,8 @@
     .topSellers .topType2 p {
       color: #999; }
   .topSellers .topType2:hover {
-    color: #f68773; }
+    color: #f68773;
+    cursor: pointer; }
 
 .category {
   display: flex;
@@ -204,13 +209,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%; }
+  .listProduct .product:hover {
+    color: #f68773;
+    cursor: pointer; }
   .listProduct .product {
     display: flex;
     flex-direction: column;
     width: 45%;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    /* test */
+    overflow: hidden;
+    position: relative;
+    /* fin test */ }
     .listProduct .product img {
-      width: 100%; }
+      width: 100%;
+      transition: all 2s; }
+    .listProduct .product img:hover {
+      transform: scale(1.1); }
     .listProduct .product h3 {
       width: 100%; }
     .listProduct .product .rankingStars {
@@ -328,11 +343,13 @@
   margin-bottom: 70px; }
   .latestNews .news img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
   .latestNews .news h3 {
     width: 100%;
     margin-bottom: 0;
-    margin-top: 30px; }
+    margin-top: 30px;
+    cursor: pointer; }
   .latestNews .news a {
     color: black;
     text-decoration: none;
@@ -347,12 +364,37 @@
       color: #f68773;
       font-weight: bold;
       margin-right: 20px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      cursor: pointer; }
     .latestNews .news .infoNews .dateNews {
       margin-bottom: 10px; }
 
-.newsletter .inputSubmit input {
-  text-decoration: none; }
+.newsletter {
+  /**********************************************************/ }
+  .newsletter .inputSubmit {
+    display: flex;
+    border-bottom: 0.5px solid #999;
+    margin: 20px auto;
+    width: 100%;
+    color: #999;
+    justify-content: space-between; }
+    .newsletter .inputSubmit i {
+      margin-top: 3px; }
+    .newsletter .inputSubmit input[type=text] {
+      height: 20px;
+      border: none;
+      color: #999;
+      margin-left: 20px;
+      font-size: 0.8rem; }
+    .newsletter .inputSubmit a {
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+      font-size: 0.7rem;
+      text-align: center;
+      width: 20%; }
 
 .imageWall {
   width: 90%;
@@ -408,7 +450,7 @@
       display: flex; }
       .newsletter .inputSubmit .inputEmail {
         width: 70%; }
-      .newsletter .inputSubmit .inputSubmit {
+      .newsletter .inputSubmit .subscribe {
         width: 30%; }
   .imageWall {
     width: 100%;
@@ -464,7 +506,8 @@
   .highlight3 {
     display: flex;
     flex-direction: row;
-    width: 100%; }
+    width: 100%;
+    justify-content: space-between; }
     .highlight3 div {
       width: 33.33%;
       height: 400px; }
@@ -489,7 +532,7 @@
       display: flex;
       flex-direction: column;
       height: 400px;
-      margin-top: 150px; }
+      margin-top: 100px; }
       .topSellers .topType1 h3 {
         width: 70%;
         margin-top: 0;
