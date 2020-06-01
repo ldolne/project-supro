@@ -1,5 +1,7 @@
 $color-grey: #999;
 $other-grey: #3A3D45;
+$color-orange: #f68773;
+
 header{
     nav{
         height: 50px;
@@ -32,6 +34,10 @@ header{
                     // color: black;
                     i{
                         color: $other-grey;
+                        
+                    }
+                    i:hover{
+                        color: $color-orange;
                     }
                 }
             }
@@ -124,6 +130,7 @@ header{
             .navigation{
                 width: 40%;
                 display: flex;
+                margin-right: 20px;
                 li{
                     margin-right: 12px;
                     list-style: none;
@@ -132,6 +139,11 @@ header{
                     text-decoration: none;
                     color: $other-grey;
                     font-weight: bolder;
+                    
+                }
+                a:hover{
+                    padding-bottom: 10px;
+                    border-bottom: 3px solid $color-orange;
                 }
             }
             .search{
@@ -164,6 +176,7 @@ header{
                 display: flex;
                 justify-content: flex-end;
                 list-style: none;
+                padding-left: 20px;
                 li{
                     margin-left: 8px;
                     a{

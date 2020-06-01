@@ -35,6 +35,8 @@
     margin: 10px; }
     .socialBar li a {
       color: #999; }
+    .socialBar li i:hover {
+      color: #f68773; }
 
 .groupTextCentral {
   margin-top: 200px;
@@ -52,6 +54,9 @@
     text-transform: uppercase;
     font-size: 0.8rem;
     border-bottom: 2px solid black; }
+  .groupTextCentral a:hover {
+    border-bottom: 3px solid #f68773;
+    color: #f68773; }
 
 .highlight3 {
   display: flex;
@@ -145,10 +150,13 @@
       text-decoration: none;
       text-transform: uppercase;
       width: -moz-fit-content;
+      width: fit-content;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
     .topSellers .topType1 p {
       color: #999; }
+  .topSellers .topType1:hover {
+    color: #f68773; }
   .topSellers .topType2 {
     width: 100%;
     margin-top: 40px;
@@ -163,10 +171,13 @@
       text-decoration: none;
       text-transform: uppercase;
       width: -moz-fit-content;
+      width: fit-content;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
     .topSellers .topType2 p {
       color: #999; }
+  .topSellers .topType2:hover {
+    color: #f68773; }
 
 .category {
   display: flex;
@@ -177,6 +188,10 @@
   .category li {
     width: 33%;
     font-size: 1rem; }
+  .category a {
+    text-decoration: none; }
+  .category a:hover {
+    color: #f68773; }
   .category .fontBlack {
     color: black;
     text-decoration: none; }
@@ -221,7 +236,9 @@
     text-align: center;
     margin: 0 auto;
     font-size: 0.8rem;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid black;
+    width: -moz-fit-content;
+    width: fit-content; }
 
 .dealDay {
   margin-top: 30px;
@@ -451,6 +468,10 @@
     .highlight3 div {
       width: 33.33%;
       height: 400px; }
+    .highlight3 .studded p {
+      margin-left: 0; }
+    .highlight3 .studded a {
+      margin-left: 0; }
     .highlight3 .hairBand {
       padding: 0; }
       .highlight3 .hairBand p, .highlight3 .hairBand h2, .highlight3 .hairBand a {
@@ -468,7 +489,7 @@
       display: flex;
       flex-direction: column;
       height: 400px;
-      margin-top: 200px; }
+      margin-top: 150px; }
       .topSellers .topType1 h3 {
         width: 70%;
         margin-top: 0;

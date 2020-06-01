@@ -7,6 +7,7 @@ footer{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
     
     .footBlock1{
         display: flex;
@@ -21,6 +22,10 @@ footer{
             a{
                 text-decoration: none;
                 color: $color-grey;
+            }
+            a:hover{
+                border-bottom: 3px solid $color-orange;
+                
             }
         }
         
@@ -166,6 +171,9 @@ footer{
                         a{
                             text-decoration: none;
                             color: $color-grey;
+                        }
+                        a:hover{
+                            color: $color-orange;
                         }
                     }
                 }

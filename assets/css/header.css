@@ -28,6 +28,8 @@ header nav {
         text-decoration: none; }
         header nav .icones li a i {
           color: #3A3D45; }
+        header nav .icones li a i:hover {
+          color: #f68773; }
     header nav .icones .settingIcon {
       display: none; }
 
@@ -86,7 +88,8 @@ header nav {
       display: block; }
     header nav .navigation {
       width: 40%;
-      display: flex; }
+      display: flex;
+      margin-right: 20px; }
       header nav .navigation li {
         margin-right: 12px;
         list-style: none; }
@@ -94,6 +97,9 @@ header nav {
         text-decoration: none;
         color: #3A3D45;
         font-weight: bolder; }
+      header nav .navigation a:hover {
+        padding-bottom: 10px;
+        border-bottom: 3px solid #f68773; }
     header nav .search {
       border: 1px solid #999;
       border-radius: 50px;
@@ -117,7 +123,8 @@ header nav {
       width: 20%;
       display: flex;
       justify-content: flex-end;
-      list-style: none; }
+      list-style: none;
+      padding-left: 20px; }
       header nav .icones li {
         margin-left: 8px; }
         header nav .icones li a {
