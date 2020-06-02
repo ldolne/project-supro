@@ -1,7 +1,14 @@
 $color-grey: #999;
 $color-orange: #f68773;
 $color-grey: #999;
-
+$color-black: #222;
+$color-white: white;
+$color-lightgray: #eaeaea;
+$color-blue: #1857f7;
+$color-brown: #945454;
+$color-mattBlue: #70849d;
+$color-beige: #cfa58f;
+$color-pink: #f06292;
 
 
 
@@ -206,6 +213,7 @@ $color-grey: #999;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    
     .topType1{
         width: 100%;
         margin-top: 40px;
@@ -235,11 +243,11 @@ $color-grey: #999;
         cursor: pointer;
     }
     .topType2{
-        width: 100%;
+        
         margin-top: 40px;
         margin-bottom: 80px;
         img{
-            width: 100%;
+            width: 80%;
         }
         h3{
             width: 100%;
@@ -621,6 +629,11 @@ $color-grey: #999;
       .newsTablet{
           width: 45%;
       }
+      a{
+        width: -moz-fit-content;
+        width: fit-content;
+      }
+
   }
   .newsletter{
       display: flex;
@@ -653,7 +666,7 @@ $color-grey: #999;
     }
     .tabletOnly{
         display: block;
-        
+
     }
 }
 }
@@ -750,7 +763,7 @@ $color-grey: #999;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         
         .topType1{
@@ -795,7 +808,7 @@ $color-grey: #999;
     }
 
     .newArrival{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         .titreSection{
             display: flex;
@@ -823,6 +836,16 @@ $color-grey: #999;
                 width: fit-content;
                 font-size: 1.2rem;
 
+            }
+            .color-blue{
+                padding: 3%;
+                color: blue;
+                border: 1px solid $color-lightgray;
+                border-radius: 50%;
+            }
+            .color-brown{
+                color: brown;
+                
             }
         }
     }
@@ -855,7 +878,7 @@ $color-grey: #999;
     }
 
     .latestNews{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         .titreSection{
             display: flex;
@@ -876,11 +899,14 @@ $color-grey: #999;
         }
         .news{
             width: 30%;
+            a{
+                width: fit-content;
+            }
         }
     }
 
     .newsletter{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
     }
 

@@ -1,0 +1,141 @@
+$color-grey: #999;
+$color-orange: #f68773;
+$color-grey: #999;
+$color-black: #222;
+$color-white: white;
+$color-lightgray: #eaeaea;
+$color-blue: #1857f7;
+$color-brown: #945454;
+$color-mattBlue: #70849d;
+$color-beige: #cfa58f;
+$color-pink: #f06292;
+.title{
+    width: 100%;
+    background-color: $color-mattBlue;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    height: 100px;
+    padding-top: 30px;
+    
+
+}
+.container{
+    
+    margin: 0 auto;
+    width: 90%;
+}
+
+.boxUP{
+    width: 100%;
+    margin-bottom: 100px;
+    
+    .searchArea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: 0.5px solid $color-grey;
+        padding: 5%;
+
+        h2{
+            
+            width: 100%;
+            text-align: left;
+            border-bottom: 0.5px solid $color-grey;
+            
+        }
+        .formulaire{
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            label{
+                width: 30%;
+            }
+            input{
+                width: 70%;
+                border-radius: 0;
+                border: 0.5px solid $color-grey;
+            }
+            select{
+                width: 70%;
+            }
+
+        }
+        .searchButton{
+            width: 50%;
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.boxDOWN{
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.storeListContainer{
+    margin: 10px;
+    .listStore{
+        width: 100%;
+        height: 500px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .store{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 50px;
+            .imageStore{
+                width: 30%;
+                
+                img{
+                    width: 100%;
+                }
+            }
+
+            .infoStore{
+                width: 70%;
+                
+                h3{
+                    margin-top: 0;
+                    color: black;
+                }
+                p{
+                    color: $color-grey;
+                    font-size: 0.8rem;
+                    margin-bottom: 20px;
+                }
+                h3, p, a{
+                    margin-left: 20px;
+                }
+                a{
+                    width: 60%;
+                    background-color: black;
+                    color: white;
+                    text-decoration: none;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    .storeMap{
+        margin-top: 100px;
+        height: 300px;
+    }
+}
+

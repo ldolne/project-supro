@@ -1,0 +1,95 @@
+.title {
+  width: 100%;
+  background-color: #70849d;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  height: 100px;
+  padding-top: 30px; }
+
+.container {
+  margin: 0 auto;
+  width: 90%; }
+
+.boxUP {
+  width: 100%;
+  margin-bottom: 100px; }
+  .boxUP .searchArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 0.5px solid #999;
+    padding: 5%; }
+    .boxUP .searchArea h2 {
+      width: 100%;
+      text-align: left;
+      border-bottom: 0.5px solid #999; }
+    .boxUP .searchArea .formulaire {
+      width: 70%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex; }
+      .boxUP .searchArea .formulaire label {
+        width: 30%; }
+      .boxUP .searchArea .formulaire input {
+        width: 70%;
+        border-radius: 0;
+        border: 0.5px solid #999; }
+      .boxUP .searchArea .formulaire select {
+        width: 70%; }
+    .boxUP .searchArea .searchButton {
+      width: 50%;
+      background-color: black;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .boxUP .searchArea .searchButton p {
+        text-align: center; }
+
+.boxDOWN {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.storeListContainer {
+  margin: 10px; }
+  .storeListContainer .listStore {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap; }
+    .storeListContainer .listStore .store {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 50px; }
+      .storeListContainer .listStore .store .imageStore {
+        width: 30%; }
+        .storeListContainer .listStore .store .imageStore img {
+          width: 100%; }
+      .storeListContainer .listStore .store .infoStore {
+        width: 70%; }
+        .storeListContainer .listStore .store .infoStore h3 {
+          margin-top: 0;
+          color: black; }
+        .storeListContainer .listStore .store .infoStore p {
+          color: #999;
+          font-size: 0.8rem;
+          margin-bottom: 20px; }
+        .storeListContainer .listStore .store .infoStore h3, .storeListContainer .listStore .store .infoStore p, .storeListContainer .listStore .store .infoStore a {
+          margin-left: 20px; }
+        .storeListContainer .listStore .store .infoStore a {
+          width: 60%;
+          background-color: black;
+          color: white;
+          text-decoration: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+          padding-right: 20px; }
+  .storeListContainer .storeMap {
+    margin-top: 100px;
+    height: 300px; }

@@ -162,11 +162,10 @@
     color: #f68773;
     cursor: pointer; }
   .topSellers .topType2 {
-    width: 100%;
     margin-top: 40px;
     margin-bottom: 80px; }
     .topSellers .topType2 img {
-      width: 100%; }
+      width: 80%; }
     .topSellers .topType2 h3 {
       width: 100%;
       font-size: 2rem; }
@@ -439,6 +438,9 @@
     justify-content: space-between; }
     .latestNews .newsTablet {
       width: 45%; }
+    .latestNews a {
+      width: -moz-fit-content;
+      width: fit-content; }
   .newsletter {
     display: flex;
     width: 100%; }
@@ -525,7 +527,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
     margin: 0 auto; }
     .topSellers .topType1 {
       width: 30%;
@@ -548,7 +550,7 @@
       .topSellers .topType2 .boxDescription {
         background-color: white; }
   .newArrival {
-    width: 70%;
+    width: 80%;
     margin: 0 auto; }
     .newArrival .titreSection {
       display: flex;
@@ -567,6 +569,13 @@
     .newArrival .listProduct a {
       width: fit-content;
       font-size: 1.2rem; }
+    .newArrival .listProduct .color-blue {
+      padding: 3%;
+      color: blue;
+      border: 1px solid #eaeaea;
+      border-radius: 50%; }
+    .newArrival .listProduct .color-brown {
+      color: brown; }
   .dealDay .dealDayInfo .dealTagGroup .dealTag {
     width: 7%; }
   .dealDay .dealDayInfo .dealTagGroup .dealTagStock {
@@ -583,7 +592,7 @@
   .dealDay .dealDayInfo .decompte {
     width: 40%; }
   .latestNews {
-    width: 70%;
+    width: 80%;
     margin: 0 auto; }
     .latestNews .titreSection {
       display: flex;
@@ -597,8 +606,10 @@
         margin-bottom: 0; }
     .latestNews .news {
       width: 30%; }
+      .latestNews .news a {
+        width: fit-content; }
   .newsletter {
-    width: 70%;
+    width: 80%;
     margin: 0 auto; }
   .imageWall {
     width: 100%;
