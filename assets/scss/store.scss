@@ -11,10 +11,10 @@ $color-beige: #cfa58f;
 $color-pink: #f06292;
 .title{
     width: 100%;
-    background-color: $color-mattBlue;
+    background-color: #3C3C3C;
     color: white;
     text-align: center;
-    margin-top: 0;
+    margin-top: 40px;
     height: 100px;
     padding-top: 30px;
     
@@ -44,6 +44,8 @@ $color-pink: #f06292;
             
             width: 100%;
             text-align: left;
+            margin-top: 5px;
+            padding-bottom: 15px;
             border-bottom: 0.5px solid $color-grey;
             
         }
@@ -59,9 +61,11 @@ $color-pink: #f06292;
                 width: 70%;
                 border-radius: 0;
                 border: 0.5px solid $color-grey;
+                padding: 10px;
             }
             select{
                 width: 70%;
+                padding: 10px;
             }
 
         }
@@ -69,10 +73,14 @@ $color-pink: #f06292;
             width: 50%;
             background-color: black;
             color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
             margin-top: 20px;
             margin-bottom: 20px;
             p{
                 text-align: center;
+                font-weight: bold;
+                font-size: 0.7rem;
             }
         }
     }
@@ -82,13 +90,26 @@ $color-pink: #f06292;
     
     margin-top: 50px;
     margin-bottom: 50px;
+   
     
 }
 .storeListContainer{
-    margin: 10px;
+    
+    padding: 15px;
+    border-left: 0.5px solid $color-grey;
+    border-right: 0.5px solid $color-grey;
+    border-top: 0.5px solid $color-grey;
+    border-bottom: 0.5px solid $color-grey;
+    .titleList{
+        border-bottom: 0.5px solid $color-grey;
+    }
     .listStore{
+        padding: 15px;
+        
+        
         width: 100%;
-        height: 500px;
+        
+        height: 450px;
         overflow: auto;
         display: flex;
         flex-wrap: wrap;
@@ -133,10 +154,12 @@ $color-pink: #f06292;
             }
         }
     }
-    .storeMap{
-        margin-top: 100px;
-        height: 300px;
-    }
+
+}
+.storeMap{
+   
+    margin-top: 100px;
+    height: 300px;
 }
 
 
@@ -149,6 +172,8 @@ $color-pink: #f06292;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 0;
+        margin-top: 50px;
         .searchArea{
             width: 45%;
             display: flex;
@@ -156,11 +181,14 @@ $color-pink: #f06292;
             flex-direction: row;
             justify-content: space-between;
             .country, .state, .city, .zipcode{
-                width: 40%;
+                margin-top: 0;
+                width: 48%;
                 display: flex;
                 flex-wrap: wrap;
                 label{
                     width: 100%;
+                    
+                    margin-bottom: 15px;
                 }
                 input{
                     width: 100%;
@@ -173,8 +201,11 @@ $color-pink: #f06292;
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                margin-top: 0;
                 label{
                     width: 100%;
+                    
+                    margin-bottom: 15px;
                 }
                 input{
                     width: 100%;
@@ -183,6 +214,20 @@ $color-pink: #f06292;
             .searchButton{
                 width: 30%;
             }
+        }
+    }
+
+    .boxDOWN{
+        display: flex;
+        justify-content: space-between;
+        .storeListContainer{
+            width: 32%;
+        }
+        .storeMap{
+            width: 62%;
+            height: 560px;
+            margin-top: 0;
+            
         }
     }
 }

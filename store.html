@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Locator</title>
+    <script src="https://kit.fontawesome.com/2a970d462f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/store.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="assets/img/home/logo.png" alt="logo">
+            </a>
+            <ul class="navigation NOTnavMobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Shop</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search NOTnavMobile">
+                <input type="text" placeholder="  Start searching..." >
+            </div>
+            
+            <ul class="icones">
+                <li class="searchIcon"><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
+                <li class="userIcon"><a  href="#"><i class="far fa-user fa-lg"></i></a></li>
+                <li class="heartIcon"><a  href="#"><i class="far fa-heart fa-lg "></i></a></li>
+                <li class="cartIcon"><a  href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                <li class="settingIcon"><a  href="#"><i class="fas fa-cog fa-lg"></i></a></li>
+                <li class="hamburgerIcon"><a  href="#"><i class="fas fa-bars fa-lg"></i></a></li>
+            </ul>
+        </nav>
+        <div class="menuHAM">
+            <i class="fas fa-times fa-3x closeMenu"></i>
+            <ul>
+                <li><a href="#">Home</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Shop</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Collection</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Pages</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Blog</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <h3>Contact Us</h3>
+            <p>69 Halsey ST, Ny 10002, New York, United States support.center@unero.co <br>(0091) 8547632521</p>
+            
+        </div>
+    </header>
+
+
     <div class="title">
         <h1>
             Store Locator 
@@ -42,21 +87,21 @@
                     <input type="text">
                 </div>
                 <div class="searchButton">
-                    <p>search</p>
+                    <p>SEARCH</p>
                 </div>
             </div>
             <div class="searchArea">
                 <h2>SEARCH BY DISTANCE</h2>
                 <div class="formulaire location">
                     <label for="">Location</label>
-                    <input type="text">
+                    <input type="text" placeholder="Street, City, State, ...">
                 </div>
                 <div class="formulaire radius">
                     <label for="radius">Radius</label>
-                    <input type="text">
+                    <input type="text" placeholder="Kilomet">
                 </div>
                 <div class="searchButton">
-                    <p>search</p>
+                    <p>SEARCH</p>
                 </div>
             </div>
         </div>
@@ -126,9 +171,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="storeMap">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1wByDOwpLnhISKmXrZAIGF1U035I" width="100%" height="100%"></iframe>
-                </div>
+         
+            </div>
+            <div class="storeMap">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1wByDOwpLnhISKmXrZAIGF1U035I" width="100%" height="100%"></iframe>
             </div>
         </div>
 
@@ -136,7 +182,105 @@
 
        
     </div>
-
-
+    <footer>
+        <div class="footBlock1">
+            <div class="supro">
+                <a href=""><img src="assets/img/home/logo.png" alt=""></a>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>184 main Rd E, St Albans VIC 3021, Australia</li>
+                    <li><i class="far fa-envelope"></i>contact@company.com</li>
+                    <li><i class="fas fa-phone-alt"></i>+001 2233 456</li>
+                </ul>
+            </div>
+            <div class="help">
+                <h3>Help & information</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Premier Delivery</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>About Supro</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="shop">
+                <h3>Online Shop</h3>
+                <ul>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Belts</a></li>
+                </ul>
+            </div>
+            <div class="language">
+                <h3>Language</h3>
+                <select name="LANG" id="LANG">
+                    <option value="EN">English</option>
+                    <option value="FR">Francais</option>
+                    <option value="IT">Italiano</option>
+                </select>
+            </div>
+            <div class="currency">
+                <h3>Currency</h3>
+                <select name="CUR" id="CUR">
+                    <option value="USD">USD</option>
+                    <option value="EU">Euro</option>
+                    
+                </select>
+            </div>
+        </div>
+      
+        <div class="footBlock2">
+            <div class="copyright">
+                <p>
+                    ©2018 <b>Supro.</b> All rights reserved.
+                </p>
+                <a href="">Privacy policy</a>
+                <a href="">Term of use</a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="pay">
+                <ul>
+                    <li><img src="assets/img/home/payment1.png" alt="visa"></li>
+                    <li><img src="assets/img/home/payment2.png" alt="PayPal"></li>
+                    <li><img src="assets/img/home/payment3.png" alt="MasterCard"></li>
+                    <li><img src="assets/img/home/payment4.png" alt="Discover"></li>
+                    <li><img src="assets/img/home/payment5.png" alt="Amex"></li>
+                    
+                </ul>
+            </div>
+        </div>
+ 
+    </footer> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const hamburger = document.querySelector(".hamburgerIcon");
+            const closeMenu = document.querySelector(".closeMenu");
+            const menu = document.querySelector(".menuHAM");
+            let query = window.matchMedia("(min-width: 992px)");
+    
+            
+            hamburger.addEventListener("click", function(){
+                menu.classList.add("open");
+            })
+            closeMenu.addEventListener("click", function(){ 
+                menu.classList.remove("open");
+            })
+        });
+    </script>
 </body>
 </html>
