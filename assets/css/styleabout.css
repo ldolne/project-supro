@@ -326,6 +326,9 @@ td{
         margin-left: auto;
         margin-right: auto;
     }
+    .i1{
+        padding:20px
+    }
     .blockquote{
         margin-left: 10px;
         margin-right: 10px;
