@@ -207,8 +207,8 @@
     margin-right:none;
 }
 .img3{
-    max-height:200px;
-    max-width:200px;
+    max-height:250px;
+    max-width:250px;
     padding:20px;
     padding-top: none;
     margin-bottom: 30px;
@@ -278,8 +278,8 @@ td{
 }
 @media screen and (max-width:768px){
     .articlesection2{
-    margin-left: auto;
-    margin-right: none;
+    margin-left: 10px;
+    margin-right: 10px;
     }
     .articlesection3{
         margin-left: auto;
@@ -301,6 +301,12 @@ td{
         .article3-2-2015{
             text-align: right;
             }
+    .article7-1{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+            }
+        
     .article7-2{
         margin-left: auto;
         margin-right: auto;
@@ -308,7 +314,7 @@ td{
     }
     .iconssvideo{
         display: flex;
-        flex-direction: column;
+        flex-flow: column nowrap;
     }
     .title{
         margin-left: auto;
