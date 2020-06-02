@@ -22,7 +22,7 @@
     margin-bottom: 20px;
     margin-top: 20px;
     border: 0.5px solid #999;
-    padding: 5%; }
+    padding: 15px; }
     .boxUP .searchArea h2 {
       width: 100%;
       text-align: left;
@@ -93,3 +93,37 @@
   .storeListContainer .storeMap {
     margin-top: 100px;
     height: 300px; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%; }
+  .boxUP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .boxUP .searchArea {
+      width: 45%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between; }
+      .boxUP .searchArea .country, .boxUP .searchArea .state, .boxUP .searchArea .city, .boxUP .searchArea .zipcode {
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap; }
+        .boxUP .searchArea .country label, .boxUP .searchArea .state label, .boxUP .searchArea .city label, .boxUP .searchArea .zipcode label {
+          width: 100%; }
+        .boxUP .searchArea .country input, .boxUP .searchArea .state input, .boxUP .searchArea .city input, .boxUP .searchArea .zipcode input {
+          width: 100%; }
+        .boxUP .searchArea .country select, .boxUP .searchArea .state select, .boxUP .searchArea .city select, .boxUP .searchArea .zipcode select {
+          width: 100%; }
+      .boxUP .searchArea .location, .boxUP .searchArea .radius {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        .boxUP .searchArea .location label, .boxUP .searchArea .radius label {
+          width: 100%; }
+        .boxUP .searchArea .location input, .boxUP .searchArea .radius input {
+          width: 100%; }
+      .boxUP .searchArea .searchButton {
+        width: 30%; } }
