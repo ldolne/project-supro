@@ -1,0 +1,141 @@
+header nav {
+  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center; }
+  header nav .NOTnavMobile {
+    display: none; }
+  header nav .logo {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    margin-left: 20px; }
+  header nav .icones {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end; }
+    header nav .icones li {
+      margin-right: 15px;
+      list-style: none; }
+      header nav .icones li a {
+        text-decoration: none; }
+        header nav .icones li a i {
+          color: #3A3D45; }
+        header nav .icones li a i:hover {
+          color: #f68773;
+          transition: 1.5s; }
+    header nav .icones .settingIcon {
+      display: none; }
+
+.menuHAM {
+  display: none; }
+
+.open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 150; }
+  .open ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    width: 80%;
+    margin: 0 auto; }
+    .open ul li {
+      display: flex;
+      justify-content: space-between;
+      color: #999;
+      border-bottom: 1px solid #999;
+      width: 100%; }
+      .open ul li a {
+        text-decoration: none;
+        color: #999;
+        font-size: 1.8rem;
+        width: 80%;
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-bottom: 15px; }
+      .open ul li i {
+        margin-top: 15px;
+        width: 20%;
+        cursor: pointer; }
+  .open h3, .open p {
+    width: 80%;
+    margin: 30px auto; }
+  .open h3 {
+    margin-top: 80px;
+    color: black; }
+  .open p {
+    color: #999; }
+  .open .closeMenu {
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #999;
+    cursor: pointer; }
+
+@media screen and (min-width: 992px) {
+  header {
+    margin: 0; }
+    header nav .NOTnavMobile {
+      display: block; }
+    header nav .navigation {
+      width: 40%;
+      display: flex;
+      margin-right: 20px; }
+      header nav .navigation li {
+        margin-right: 12px;
+        list-style: none; }
+      header nav .navigation a {
+        text-decoration: none;
+        color: #3A3D45;
+        font-weight: bolder; }
+      header nav .navigation a:hover {
+        padding-bottom: 10px;
+        border-bottom: 3px solid #f68773; }
+    header nav .search {
+      border: 1px solid #999;
+      border-radius: 50px;
+      margin-top: 9px;
+      height: 30px;
+      width: 210px; }
+      header nav .search input[type=text] {
+        border-radius: 50px;
+        width: 200px;
+        height: 25px;
+        border: none;
+        margin: 0 auto;
+        background-image: url(../img/home/Loupe.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-origin: content-box;
+        margin-right: 20px;
+        background-size: 8%;
+        color: #999; }
+    header nav .icones {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      padding-left: 20px; }
+      header nav .icones li {
+        margin-left: 8px; }
+        header nav .icones li a {
+          text-decoration: none;
+          color: black; }
+      header nav .icones .settingIcon {
+        display: block; }
+      header nav .icones .searchIcon {
+        display: none; }
+      header nav .icones .hamburgerIcon {
+        display: none; } }

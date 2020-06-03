@@ -46,26 +46,13 @@ $font-size-large: 0.8rem;
     color: $color-black;
 }
 
-// MAIN ELEMENTS
-
-body
+%color-grey
 {
-    background-color: $color-white;
     color: $color-grey;
-    font-family: $font-family-main;
-    font-size: $font-size-small;
-    line-height: 1.8rem;
-
-    @include media(medium)
-    {
-        font-size: $font-size-medium;
-    }
-
-    @include media(large)
-    {
-        font-size: $font-size-large;
-    }
 }
+
+
+// MAIN ELEMENTS
 
 main
 {
@@ -95,7 +82,7 @@ main
     h3
     {
         @extend %color-black;
-        font-size: $font-size-large;
+        font-size: 0.75rem;
         margin: 1% 1% 1% 0;
         padding: 1% 1% 1% 0;
     }
@@ -110,11 +97,19 @@ main
     {
         list-style-type: none;
     }
+
+    p, ul, input
+    {
+        color: $color-grey;
+    }
 }
 
 .path
 {
-    margin-bottom: 7%;
+    margin-top: 12%;
+    margin-bottom: 3%;
+    font-size: 0.8rem;
+    padding-left: 1.5%;
 
     p
     {
@@ -124,6 +119,16 @@ main
     p:last-child
     {
         @extend %color-black;
+    }
+
+    @include media(medium)
+    {
+        margin-top: 6%;
+    }
+
+    @include media(large)
+    {
+        margin-top: 5%;
     }
 }
 
@@ -222,6 +227,7 @@ main
     grid-area: title;
     display: flex;
     flex-flow: column wrap;
+    padding: 2% 0;
 
     h2
     {
@@ -237,6 +243,7 @@ main
         margin: 0;
         padding: 0;
         text-align: center;
+        font-size: 0.8em;
 
         @include media(medium)
         {
@@ -254,7 +261,7 @@ main
     li
     {
         display: inline-block;
-        padding-left: 5%;
+        padding-left: 2%;
 
         &.sortOptions
         {
@@ -265,6 +272,16 @@ main
         &.sortOptions-value
         {
             padding-left: 1%;
+        }
+
+        @include media(medium)
+        {
+            padding-left: 5%;
+        }
+
+        @include media(large)
+        {
+            padding-left: 5%;
         }
     }
 
@@ -284,7 +301,8 @@ main
 
     ion-icon
     {
-        padding-right: 6px;
+        padding-right: 15px;
+        font-size: 1.1rem;
     }
 }
 
@@ -292,13 +310,28 @@ main
 {
     background-color: $color-white; //debug
     text-align: center;
+    margin: 4%;
 
-    img
+    .imgBox
     {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-        height: auto;
+        max-height: 250px;
+        overflow: hidden;
+        
+        img
+        {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+            transition: all 1s ease-out;
+
+            &:hover
+            {
+                filter: brightness(70%);
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+        }
     }
 
     @include media(medium)
@@ -376,11 +409,13 @@ main
 {
     grid-area: pageNumber;
     text-align: center;
+    font-weight: 500;
+    font-size: 0.8rem;
 
     li
     {
         display: inline-block;
-        padding-right: 5%;
+        padding-right: 10%;
 
         a
         {
@@ -396,7 +431,7 @@ main
 
     ion-icon
     {
-        font-size: 32px;
+        font-size: 40px;
         vertical-align: middle;
         color: $color-grey;
     }
@@ -408,45 +443,75 @@ main
 
     h2
     {
-        margin: 0 0 1% 0;
-        padding: 0 0 1% 0;
+        font-size: 1.3rem;
+        margin-bottom: 8%;
     }
 }
 
 .color
 {
+    margin-bottom: 10%;
+
     ul
     {
         padding: 0;
+        font-size: 0.7rem;
+
+        li
+        {
+            &:hover
+            {
+                color: $color-black;
+                cursor: pointer;
+            }
+        }
     }
 }
 
 .size
 {
+    margin-bottom: 10%;
+
     ul
     {
         padding: 0;
+        font-size: 0.7rem;
 
         li
         {
             display: inline-block;
             min-width: 5%;
-            padding: 1% 3%;
+            margin-right: 2%;
+            padding: 2% 3%;
             background-color: $color-white;
             border: 1px solid $color-lightgray;
             color: $color-grey;
             text-align: center;
+
+            &:hover
+            {
+                color: $color-black;
+                cursor: pointer;
+            }
         }
     }
 }
 
 .price
 {
+    margin-bottom: 10%;
+    
     img
     {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
+        margin: 4% 0;
     }
+}
+
+.brand
+{
+    margin-bottom: 10%;
 }
 
 .selection
@@ -454,21 +519,42 @@ main
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding: 3% 0;
+    color: $color-grey;
 
     label
     {
         flex: 5;
+        font-size: 0.8rem;
+
+        &:hover
+        {
+            color: $color-black;
+            cursor: pointer;
+        }
     }
 
     input[type="checkbox"]
     {
         flex: 1;
+        transform: scale(0.7);
     }
 }
 
 .compareProducts
 {
     grid-area: compareProducts;
+
+    h2
+    {
+        font-size: 1.3rem;
+        margin-bottom: 10%;
+    }
+
+    p
+    {
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -478,6 +564,7 @@ main
 {
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0;
+    font-size: 0.7rem;
 
     li
     {
@@ -491,6 +578,7 @@ main
     display: inline-block;
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0;
+    font-size: 0.8rem;
 
     &.striked
     {
@@ -500,14 +588,16 @@ main
 
 .size-tag
 {
+    @extend %color-grey;
     display: inline-block;
-    min-width: 16px;
-    min-height: 16px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     background-color: $color-lightgray;
     border-radius: 50%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-align: center;
-    padding: 1%;
 }
 
 .circle-color-black

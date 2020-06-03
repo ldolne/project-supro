@@ -1,0 +1,129 @@
+footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  footer .footBlock1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .footBlock1 ul {
+      padding: 0;
+      list-style: none; }
+      footer .footBlock1 ul li {
+        margin-bottom: 10px; }
+      footer .footBlock1 ul a {
+        text-decoration: none;
+        color: #999; }
+      footer .footBlock1 ul a:hover {
+        border-bottom: 3px solid #f68773; }
+    footer .footBlock1 .supro {
+      display: none; }
+    footer .footBlock1 .help {
+      width: 40%; }
+    footer .footBlock1 .about {
+      width: 40%; }
+    footer .footBlock1 .shop {
+      width: 40%; }
+    footer .footBlock1 .language {
+      width: 40%; }
+    footer .footBlock1 .currency {
+      width: 40%; }
+  footer .footBlock2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-top: 1px solid #999; }
+    footer .footBlock2 .copyright {
+      width: 100%; }
+      footer .footBlock2 .copyright p {
+        width: 100%;
+        color: #999; }
+      footer .footBlock2 .copyright a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #999; }
+      footer .footBlock2 .copyright b {
+        color: black; }
+    footer .footBlock2 .social {
+      display: none; }
+    footer .footBlock2 .pay {
+      display: none; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    width: 100%; }
+    footer .footBlock1 {
+      width: 90%;
+      margin: 0 auto; }
+      footer .footBlock1 .help {
+        width: 30%; }
+      footer .footBlock1 .about {
+        width: 30%; }
+      footer .footBlock1 .shop {
+        width: 30%; }
+      footer .footBlock1 .language {
+        width: 30%; }
+      footer .footBlock1 .currency {
+        width: 65%; }
+    footer .footBlock2 .copyright {
+      margin-left: 5%; } }
+
+@media screen and (min-width: 992px) {
+  footer .footBlock1 {
+    width: 80%;
+    margin: 0 auto; }
+    footer .footBlock1 .supro {
+      margin-top: 25px;
+      display: block;
+      width: 35%;
+      color: #999; }
+      footer .footBlock1 .supro i {
+        margin-right: 5px; }
+    footer .footBlock1 .help {
+      width: 20%; }
+    footer .footBlock1 .about {
+      width: 20%; }
+    footer .footBlock1 .shop {
+      width: 20%; }
+    footer .footBlock1 .language {
+      display: none; }
+    footer .footBlock1 .currency {
+      display: none; }
+  footer .footBlock2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-top: none; }
+    footer .footBlock2 .copyright {
+      width: 40%;
+      margin: 0; }
+      footer .footBlock2 .copyright a {
+        display: none; }
+    footer .footBlock2 .social {
+      display: block;
+      margin: 0 auto; }
+      footer .footBlock2 .social ul {
+        padding: 0;
+        display: flex;
+        list-style: none; }
+        footer .footBlock2 .social ul li {
+          margin-right: 10px; }
+          footer .footBlock2 .social ul li a {
+            text-decoration: none;
+            color: #999; }
+          footer .footBlock2 .social ul li a:hover {
+            color: #f68773; }
+    footer .footBlock2 .pay {
+      display: block;
+      width: 40%; }
+      footer .footBlock2 .pay ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end; }
+        footer .footBlock2 .pay ul li {
+          margin-right: 5px; } }
