@@ -120,23 +120,23 @@
     margin-bottom: 0;
     margin-top: 50px; }
     .boxUP .searchArea {
-      width: 45%;
+      width: 43%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between; }
       .boxUP .searchArea .country, .boxUP .searchArea .state, .boxUP .searchArea .city, .boxUP .searchArea .zipcode {
         margin-top: 0;
-        width: 48%;
+        width: 45%;
         display: flex;
         flex-wrap: wrap; }
         .boxUP .searchArea .country label, .boxUP .searchArea .state label, .boxUP .searchArea .city label, .boxUP .searchArea .zipcode label {
           width: 100%;
           margin-bottom: 15px; }
         .boxUP .searchArea .country input, .boxUP .searchArea .state input, .boxUP .searchArea .city input, .boxUP .searchArea .zipcode input {
-          width: 100%; }
+          width: 90%; }
         .boxUP .searchArea .country select, .boxUP .searchArea .state select, .boxUP .searchArea .city select, .boxUP .searchArea .zipcode select {
-          width: 100%; }
+          width: 90%; }
       .boxUP .searchArea .location, .boxUP .searchArea .radius {
         width: 100%;
         display: flex;
