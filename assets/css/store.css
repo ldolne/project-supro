@@ -21,14 +21,14 @@
     align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
-    border: 0.5px solid #999;
+    border: 1px solid #F4F4F4;
     padding: 15px; }
     .boxUP .searchArea h2 {
       width: 100%;
       text-align: left;
       margin-top: 5px;
       padding-bottom: 15px;
-      border-bottom: 0.5px solid #999; }
+      border-bottom: 1px solid #F4F4F4; }
     .boxUP .searchArea .formulaire {
       width: 70%;
       margin-top: 15px;
@@ -39,7 +39,7 @@
       .boxUP .searchArea .formulaire input {
         width: 70%;
         border-radius: 0;
-        border: 0.5px solid #999;
+        border: 1px solid #F4F4F4;
         padding: 10px; }
       .boxUP .searchArea .formulaire select {
         width: 70%;
@@ -68,12 +68,12 @@
 
 .storeListContainer {
   padding: 15px;
-  border-left: 0.5px solid #999;
-  border-right: 0.5px solid #999;
-  border-top: 0.5px solid #999;
-  border-bottom: 0.5px solid #999; }
+  border-left: 1px solid #F4F4F4;
+  border-right: 1px solid #F4F4F4;
+  border-top: 1px solid #F4F4F4;
+  border-bottom: 1px solid #F4F4F4; }
   .storeListContainer .titleList {
-    border-bottom: 0.5px solid #999; }
+    border-bottom: 1px solid #F4F4F4; }
   .storeListContainer .listStore {
     padding: 15px;
     width: 100%;

@@ -21,11 +21,12 @@ $color-pink: #f06292;
     width: 100%;
     h2{
         margin-bottom: 0;
+        font-size: 2rem;
     }
     p{
         margin-top: 5px;
         color: $color-grey;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 .highlight{
@@ -83,12 +84,13 @@ $color-pink: #f06292;
         text-decoration: none;
         text-transform: uppercase;
         
-        font-size: 0.8rem;
+        font-size: 1rem;
         border-bottom: 2px solid black;
     }
     a:hover{
-        border-bottom: 3px solid $color-orange;
+        border-bottom: none;
         color: $color-orange;
+        
     }
 }
 
@@ -338,6 +340,7 @@ $color-pink: #f06292;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    margin-top: 50px;
     .product:hover{
         color: $color-orange;
         cursor: pointer;
@@ -473,6 +476,10 @@ $color-pink: #f06292;
         width: fit-content;
         width: -moz-fit-content;
         margin-bottom: 70px;
+        &:hover{
+            color: $color-orange;
+            border: none;
+        }
     }
     .prices{
         display: flex;
@@ -526,7 +533,10 @@ $color-pink: #f06292;
             border-bottom: 2px solid black;
             width: fit-content;
             width: -moz-fit-content;
-            
+            &:hover{
+                color: $color-orange;
+                border: none;
+            }
         }
 
     }
@@ -586,6 +596,7 @@ $color-pink: #f06292;
         border-bottom: 0.5px solid $color-grey;
         margin: 20px auto;
         width: 100%;
+        height: 40px;
         color: $color-grey;
         justify-content: space-between;
         i{
@@ -761,13 +772,14 @@ $color-pink: #f06292;
             }
             p{
                 color: $color-orange;
-                font-size: 1rem;
+                font-size: 1.4rem;
             }
             h1{
-                font-size: 6rem;
+                font-size: 8rem;
                 width: 400px;
                 margin-top: 0;
                 margin-bottom: 30px;
+                
             }
          
         }

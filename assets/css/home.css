@@ -6,11 +6,12 @@
   margin-top: 80px;
   width: 100%; }
   .titreSection h2 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 2rem; }
   .titreSection p {
     margin-top: 5px;
     color: #999;
-    font-size: 0.8rem; }
+    font-size: 1rem; }
 
 .highlight {
   background-image: url(../img/home/sl2-1.jpg);
@@ -53,10 +54,10 @@
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-bottom: 2px solid black; }
   .groupTextCentral a:hover {
-    border-bottom: 3px solid #f68773;
+    border-bottom: none;
     color: #f68773; }
 
 .highlight3 {
@@ -223,7 +224,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  margin-top: 50px; }
   .listProduct .product:hover {
     color: #f68773;
     cursor: pointer; }
@@ -322,6 +324,9 @@
     width: fit-content;
     width: -moz-fit-content;
     margin-bottom: 70px; }
+    .dealDay a:hover {
+      color: #f68773;
+      border: none; }
   .dealDay .prices {
     display: flex;
     font-weight: bold; }
@@ -363,6 +368,9 @@
     border-bottom: 2px solid black;
     width: fit-content;
     width: -moz-fit-content; }
+    .latestNews .titreSection a:hover {
+      color: #f68773;
+      border: none; }
 
 .latestNews .news {
   display: flex;
@@ -407,6 +415,7 @@
     border-bottom: 0.5px solid #999;
     margin: 20px auto;
     width: 100%;
+    height: 40px;
     color: #999;
     justify-content: space-between; }
     .newsletter .inputSubmit i {
@@ -522,9 +531,9 @@
         display: block; }
       .highlight .groupTextCentral p {
         color: #f68773;
-        font-size: 1rem; }
+        font-size: 1.4rem; }
       .highlight .groupTextCentral h1 {
-        font-size: 6rem;
+        font-size: 8rem;
         width: 400px;
         margin-top: 0;
         margin-bottom: 30px; }

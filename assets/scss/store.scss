@@ -9,6 +9,7 @@ $color-brown: #945454;
 $color-mattBlue: #70849d;
 $color-beige: #cfa58f;
 $color-pink: #f06292;
+$border:#F4F4F4;
 .title{
     width: 100%;
     background-color: #3C3C3C;
@@ -37,7 +38,7 @@ $color-pink: #f06292;
         align-items: center;
         margin-bottom: 20px;
         margin-top: 20px;
-        border: 0.5px solid $color-grey;
+        border: 1px solid $border;
         padding: 15px;
 
         h2{
@@ -46,7 +47,7 @@ $color-pink: #f06292;
             text-align: left;
             margin-top: 5px;
             padding-bottom: 15px;
-            border-bottom: 0.5px solid $color-grey;
+            border-bottom: 1px solid $border;
             
         }
         .formulaire{
@@ -60,7 +61,7 @@ $color-pink: #f06292;
             input{
                 width: 70%;
                 border-radius: 0;
-                border: 0.5px solid $color-grey;
+                border: 1px solid $border;
                 padding: 10px;
             }
             select{
@@ -103,12 +104,12 @@ $color-pink: #f06292;
 .storeListContainer{
     
     padding: 15px;
-    border-left: 0.5px solid $color-grey;
-    border-right: 0.5px solid $color-grey;
-    border-top: 0.5px solid $color-grey;
-    border-bottom: 0.5px solid $color-grey;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
     .titleList{
-        border-bottom: 0.5px solid $color-grey;
+        border-bottom: 1px solid $border;
     }
     .listStore{
         padding: 15px;
