@@ -51,7 +51,12 @@
       padding-top: 5px;
       padding-bottom: 5px;
       margin-top: 20px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      transition: all 1s ease-out;
+      cursor: pointer; }
+      .boxUP .searchArea .searchButton:hover {
+        background-color: white;
+        color: #222; }
       .boxUP .searchArea .searchButton p {
         text-align: center;
         font-weight: bold;
@@ -104,7 +109,11 @@
           padding-top: 10px;
           padding-bottom: 10px;
           padding-left: 20px;
-          padding-right: 20px; }
+          padding-right: 20px;
+          transition: all 1s ease-out; }
+          .storeListContainer .listStore .store .infoStore a:hover {
+            background-color: white;
+            color: #222; }
 
 .storeMap {
   margin-top: 100px;

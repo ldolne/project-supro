@@ -77,6 +77,13 @@ $color-pink: #f06292;
             padding-bottom: 5px;
             margin-top: 20px;
             margin-bottom: 20px;
+            transition: all 1s ease-out;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $color-white;
+                color: $color-black;
+            }
             p{
                 text-align: center;
                 font-weight: bold;
@@ -150,6 +157,13 @@ $color-pink: #f06292;
                     padding-bottom: 10px;
                     padding-left: 20px;
                     padding-right: 20px;
+                    transition: all 1s ease-out;
+                    
+        
+                    &:hover{
+                        background-color: $color-white;
+                        color: $color-black;
+                    }
                 }
             }
         }

@@ -274,8 +274,6 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
     font-size: 0.8rem;
     border-bottom: 2px solid black;
     width: -moz-fit-content;
@@ -287,7 +285,8 @@
 .dealDay {
   margin-top: 30px;
   background-image: url(../img/home/deals_image.jpg);
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
   .dealDay .dealDayInfo {
     display: flex;
     flex-direction: column;
@@ -596,6 +595,8 @@
       width: 60%; }
       .topSellers .topType2 .boxDescription {
         background-color: white; }
+        .topSellers .topType2 .boxDescription h3 {
+          font-size: 5rem; }
   .newArrival {
     width: 80%;
     margin: 0 auto; }
@@ -611,7 +612,7 @@
           text-align: right;
           min-width: 60px; }
     .newArrival .listProduct .product {
-      width: 30%;
+      width: 31%;
       margin-bottom: 80px; }
     .newArrival .listProduct a {
       width: fit-content;

@@ -411,8 +411,8 @@ $color-pink: #f06292;
         text-transform: uppercase;
         text-align: center;
         margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        // padding-left: 10px;
+        // padding-right: 10px;
         font-size: 0.8rem;
         border-bottom: 2px solid black;
         width: -moz-fit-content;
@@ -428,6 +428,7 @@ $color-pink: #f06292;
     margin-top: 30px;
     background-image: url(../img/home/deals_image.jpg);
     background-position: center;
+    background-size: cover;
 
     .dealDayInfo{
         display: flex;
@@ -885,8 +886,11 @@ $color-pink: #f06292;
             
             .boxDescription{
                 background-color: white;
-                
+                h3{
+                    font-size: 5rem;
+                }
             }
+
             
         }
     }
@@ -913,7 +917,7 @@ $color-pink: #f06292;
         }
         .listProduct{
             .product{
-                width: 30%;
+                width: 31%;
                 margin-bottom: 80px;
             }
             a{
