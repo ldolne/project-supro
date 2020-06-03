@@ -96,33 +96,36 @@ $color-pink: #f06292;
 .highlight3{
     display: flex;
     flex-wrap: wrap;
-    /* test */
-    overflow: hidden;
-    position: relative;
-    /* fin test */
+
     div{
+        background-color: #D1D4CD;
         width: 100%;
-        
-        height: 300px;
+        height: 320px;
+        background-size: 120%;
+
+
+        transition: background-size 2s ease-in;
+        -moz-transition: background-size 2s ease-in;
+        -ms-transition: background-size 2s ease-in;
+        -o-transition: background-size 2s ease-in;
+        -webkit-transition: background-size 2s ease-in;
+
+
         p, h2, a{
             margin-left: 40px;
             
         }
         
     }
+    
     .hairBand{
         background-image: url(../img/home/banner_h1_1.jpg);
         background-position: right;
-        background-size: cover;
+        background-size: 120%;
         padding-left: 40px;
         
+        
 
-        
-        
-        
-        
-        // display: flex;
-        // flex-direction: column;
         h2{
             width: 150px;
             margin-top: 0;
@@ -144,10 +147,21 @@ $color-pink: #f06292;
         }
         
     }
+    div:hover{
+        
+        a{
+            color: $color-orange;
+            border-bottom: none;
+        }
+        
+
+    }
+    
     .studded{
         background-image: url(../img/home/banner_h1_2.jpg);
         background-position: center;
-        background-size: cover;
+        // background-size: cover;
+        background-size: 100%;
         text-align: center;
         h2{
             width: 250px;
@@ -172,11 +186,15 @@ $color-pink: #f06292;
         }
         
     }
+    .studded:hover{
+        background-size: 120%;
+    }
     .specialPrice{
         background-image: url(../img/home/banner_h1_3.jpg);
         background-position: left;
-        background-size: cover;
+        // background-size: cover;
         text-align: right;
+        background-size: 140%;
         
         h2{
             
@@ -207,6 +225,9 @@ $color-pink: #f06292;
             
         }
     }
+    .specialPrice:hover{
+        background-size: 160%;
+    }
   
 }
 .topSellers{
@@ -233,6 +254,11 @@ $color-pink: #f06292;
             width: fit-content;
             font-size: 0.8rem;
             border-bottom: 2px solid black;
+            &:hover{
+                color: $color-orange;
+                border-bottom: 2px solid $color-white;
+
+            }
         }
         p{
             color: $color-grey;
@@ -261,6 +287,10 @@ $color-pink: #f06292;
             width: fit-content;
             font-size: 0.8rem;
             border-bottom: 2px solid black;
+            &:hover{
+                color: $color-orange;
+                border-bottom: 2px solid $color-white;
+            }
         }
         p{
             color: $color-grey;
@@ -318,27 +348,6 @@ $color-pink: #f06292;
         width: 45%;
         margin-bottom: 50px;
         
-
-
-           /* test */
-        //    .imgBox
-        //    {
-        //        max-height: 250px;
-        //        overflow: hidden;
-       
-        //        img
-        //        {
-        //            transition: all 1s ease-out;
-       
-        //            &:hover
-        //            {
-        //                filter: brightness(70%);
-        //                transform: scale(1.2);
-        //            }
-        //        }
-        //    
-    // position: relative;
-            /* fin test */
         .imgBox{
             max-height: 450px;
             overflow: hidden;
@@ -402,10 +411,16 @@ $color-pink: #f06292;
         text-transform: uppercase;
         text-align: center;
         margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: 0.8rem;
         border-bottom: 2px solid black;
         width: -moz-fit-content;
         width: fit-content;
+        &:hover{
+            color: $color-orange;
+            border-bottom: none;
+        }
     }
 }
 
@@ -522,7 +537,11 @@ $color-pink: #f06292;
         img{
             display: block;
             width: 100%;
+            transition: all 1s ease-out;
             cursor: pointer;
+            &:hover{
+                filter: brightness(80%);
+            }
         }
         h3{
             width: 100%;
@@ -604,11 +623,16 @@ $color-pink: #f06292;
         
         img{
             width: 33%;
+            &:hover{
+                opacity: 0.8;
+            }
+            
         }
     
         .desktopOnly{
             display: none;
         }
+      
 }
 
 
@@ -772,11 +796,17 @@ $color-pink: #f06292;
         
         div{
             width: 33.33%;
-            height: 400px;
+            height: 285px;
+            background-size: 100%;
             
 
         }
+
+
         .studded{
+            background-size: 105%;
+            background-repeat: no-repeat;
+
             p{
                 margin-left: 0;
             }
@@ -785,13 +815,29 @@ $color-pink: #f06292;
             }
             
         }
+        .studded:hover{
+            background-size: 125%;
+        }
+
+
+
+
         .hairBand{
+            background-size: 140%;
+            
+            background-repeat: no-repeat;
             padding: 0;
             p, h2, a{
                 margin-left: 40px;
                 padding: 0;
                 
             }
+        }
+        div{
+            background-size: 140%;
+        }
+        div:hover{
+            background-size: 160%;
         }
     }
 
@@ -879,12 +925,13 @@ $color-pink: #f06292;
                 display: flex;
                 .color-blue{
                 
-                    border: 5px solid $color-lightgray;
+                    border: 3px solid $color-lightgray;
                     border-radius: 50%;
                     color: $color-blue;
+                    margin-right: 3px;
                 }
                 .color-brown{
-                    border: 5px solid $color-lightgray;
+                    border: 3px solid $color-lightgray;
                     border-radius: 50%;
                     color: $color-brown;
                 }

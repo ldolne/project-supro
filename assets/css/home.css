@@ -61,20 +61,23 @@
 
 .highlight3 {
   display: flex;
-  flex-wrap: wrap;
-  /* test */
-  overflow: hidden;
-  position: relative;
-  /* fin test */ }
+  flex-wrap: wrap; }
   .highlight3 div {
+    background-color: #D1D4CD;
     width: 100%;
-    height: 300px; }
+    height: 320px;
+    background-size: 120%;
+    transition: background-size 2s ease-in;
+    -moz-transition: background-size 2s ease-in;
+    -ms-transition: background-size 2s ease-in;
+    -o-transition: background-size 2s ease-in;
+    -webkit-transition: background-size 2s ease-in; }
     .highlight3 div p, .highlight3 div h2, .highlight3 div a {
       margin-left: 40px; }
   .highlight3 .hairBand {
     background-image: url(../img/home/banner_h1_1.jpg);
     background-position: right;
-    background-size: cover;
+    background-size: 120%;
     padding-left: 40px; }
     .highlight3 .hairBand h2 {
       width: 150px;
@@ -91,10 +94,13 @@
       text-transform: uppercase;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
+  .highlight3 div:hover a {
+    color: #f68773;
+    border-bottom: none; }
   .highlight3 .studded {
     background-image: url(../img/home/banner_h1_2.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     text-align: center; }
     .highlight3 .studded h2 {
       width: 250px;
@@ -112,11 +118,13 @@
       color: white;
       margin-top: 80px;
       margin-bottom: 10px; }
+  .highlight3 .studded:hover {
+    background-size: 120%; }
   .highlight3 .specialPrice {
     background-image: url(../img/home/banner_h1_3.jpg);
     background-position: left;
-    background-size: cover;
-    text-align: right; }
+    text-align: right;
+    background-size: 140%; }
     .highlight3 .specialPrice h2 {
       margin-top: 0;
       margin-bottom: 5px;
@@ -134,6 +142,8 @@
       margin-right: 50px;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
+  .highlight3 .specialPrice:hover {
+    background-size: 160%; }
 
 .topSellers {
   display: flex;
@@ -156,6 +166,9 @@
       width: fit-content;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
+      .topSellers .topType1 a:hover {
+        color: #f68773;
+        border-bottom: 2px solid white; }
     .topSellers .topType1 p {
       color: #999; }
   .topSellers .topType1:hover {
@@ -177,6 +190,9 @@
       width: fit-content;
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
+      .topSellers .topType2 a:hover {
+        color: #f68773;
+        border-bottom: 2px solid white; }
     .topSellers .topType2 p {
       color: #999; }
   .topSellers .topType2:hover {
@@ -215,9 +231,7 @@
     display: flex;
     flex-direction: column;
     width: 45%;
-    margin-bottom: 50px;
-    /* test */
-    /* fin test */ }
+    margin-bottom: 50px; }
     .listProduct .product .imgBox {
       max-height: 450px;
       overflow: hidden; }
@@ -260,10 +274,15 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 0.8rem;
     border-bottom: 2px solid black;
     width: -moz-fit-content;
     width: fit-content; }
+    .listProduct a:hover {
+      color: #f68773;
+      border-bottom: none; }
 
 .dealDay {
   margin-top: 30px;
@@ -354,7 +373,10 @@
   .latestNews .news img {
     display: block;
     width: 100%;
+    transition: all 1s ease-out;
     cursor: pointer; }
+    .latestNews .news img:hover {
+      filter: brightness(80%); }
   .latestNews .news h3 {
     width: 100%;
     margin-bottom: 0;
@@ -415,6 +437,8 @@
   display: flex; }
   .imageWall img {
     width: 33%; }
+    .imageWall img:hover {
+      opacity: 0.8; }
   .imageWall .desktopOnly {
     display: none; }
 
@@ -523,16 +547,28 @@
     justify-content: space-between; }
     .highlight3 div {
       width: 33.33%;
-      height: 400px; }
-    .highlight3 .studded p {
-      margin-left: 0; }
-    .highlight3 .studded a {
-      margin-left: 0; }
+      height: 285px;
+      background-size: 100%; }
+    .highlight3 .studded {
+      background-size: 105%;
+      background-repeat: no-repeat; }
+      .highlight3 .studded p {
+        margin-left: 0; }
+      .highlight3 .studded a {
+        margin-left: 0; }
+    .highlight3 .studded:hover {
+      background-size: 125%; }
     .highlight3 .hairBand {
+      background-size: 140%;
+      background-repeat: no-repeat;
       padding: 0; }
       .highlight3 .hairBand p, .highlight3 .hairBand h2, .highlight3 .hairBand a {
         margin-left: 40px;
         padding: 0; }
+    .highlight3 div {
+      background-size: 140%; }
+    .highlight3 div:hover {
+      background-size: 160%; }
   .topSellers {
     display: flex;
     flex-direction: row;
@@ -583,11 +619,12 @@
     .newArrival .listProduct .colorProduct {
       display: flex; }
       .newArrival .listProduct .colorProduct .color-blue {
-        border: 5px solid #eaeaea;
+        border: 3px solid #eaeaea;
         border-radius: 50%;
-        color: #1857f7; }
+        color: #1857f7;
+        margin-right: 3px; }
       .newArrival .listProduct .colorProduct .color-brown {
-        border: 5px solid #eaeaea;
+        border: 3px solid #eaeaea;
         border-radius: 50%;
         color: #945454; }
   .dealDay .dealDayInfo .dealTagGroup .dealTag {

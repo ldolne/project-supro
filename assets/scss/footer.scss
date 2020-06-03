@@ -43,9 +43,15 @@ footer{
         }
         .language{
             width: 40%;
+            select{
+                color: $color-grey;
+            }
         }
         .currency{
             width: 40%;
+            select{
+                color: $color-grey;
+            }
         }
     }
 
