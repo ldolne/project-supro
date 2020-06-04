@@ -78,10 +78,10 @@
   .highlight3 .hairBand {
     background-image: url(../img/home/banner_h1_1.jpg);
     background-position: right;
-    background-size: 120%;
+    background-size: 160%;
     padding-left: 40px; }
     .highlight3 .hairBand:hover {
-      background-size: 140%; }
+      background-size: 170%; }
     .highlight3 .hairBand h2 {
       width: 150px;
       margin-top: 0;
@@ -103,6 +103,7 @@
   .highlight3 .studded {
     background-image: url(../img/home/banner_h1_2.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     text-align: center; }
     .highlight3 .studded h2 {
@@ -127,7 +128,7 @@
     background-image: url(../img/home/banner_h1_3.jpg);
     background-position: left;
     text-align: right;
-    background-size: 140%; }
+    background-size: 155%; }
     .highlight3 .specialPrice h2 {
       margin-top: 0;
       margin-bottom: 5px;
@@ -146,7 +147,7 @@
       font-size: 0.8rem;
       border-bottom: 2px solid black; }
   .highlight3 .specialPrice:hover {
-    background-size: 160%; }
+    background-size: 175%; }
 
 .topSellers {
   display: flex;
@@ -284,7 +285,7 @@
     width: fit-content; }
     .listProduct a:hover {
       color: #f68773;
-      border-bottom: none; }
+      border-bottom: 2px solid white; }
 
 .dealDay {
   margin-top: 30px;
@@ -372,7 +373,7 @@
     width: -moz-fit-content; }
     .latestNews .titreSection a:hover {
       color: #f68773;
-      border: none; }
+      border: 2px solid white; }
 
 .latestNews .news {
   display: flex;
@@ -397,7 +398,11 @@
     text-transform: uppercase;
     font-size: 1rem;
     border-bottom: 2px solid black;
-    width: -moz-fit-content; }
+    width: -moz-fit-content;
+    width: fit-content; }
+    .latestNews .news a:hover {
+      color: #f68773;
+      border: none; }
   .latestNews .news .infoNews {
     display: flex;
     margin-bottom: 0; }
@@ -577,7 +582,7 @@
         padding: 0; }
     .highlight3 div {
       background-size: 140%; }
-    .highlight3 div:hover {
+    .highlight3 .hairBand:hover {
       background-size: 160%; }
   .topSellers {
     display: flex;
@@ -604,9 +609,12 @@
       margin-left: 20%; }
     .topSellers .topType2 {
       width: 60%; }
+      .topSellers .topType2 img {
+        width: 80%; }
       .topSellers .topType2 .boxDescription {
         background-color: white; }
         .topSellers .topType2 .boxDescription h3 {
+          margin-top: 10px;
           font-size: 5rem; }
   .newArrival {
     width: 80%;

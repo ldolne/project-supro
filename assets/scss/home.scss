@@ -123,10 +123,10 @@ $color-pink: #f06292;
     .hairBand{
         background-image: url(../img/home/banner_h1_1.jpg);
         background-position: right;
-        background-size: 120%;
+        background-size: 160%;
         padding-left: 40px;
         &:hover{
-            background-size: 140%;
+            background-size: 170%;
         }
         
 
@@ -164,6 +164,7 @@ $color-pink: #f06292;
     .studded{
         background-image: url(../img/home/banner_h1_2.jpg);
         background-position: center;
+        background-repeat: no-repeat;
         // background-size: cover;
         background-size: 100%;
         text-align: center;
@@ -198,7 +199,7 @@ $color-pink: #f06292;
         background-position: left;
         // background-size: cover;
         text-align: right;
-        background-size: 140%;
+        background-size: 155%;
         
         h2{
             
@@ -230,7 +231,7 @@ $color-pink: #f06292;
         }
     }
     .specialPrice:hover{
-        background-size: 160%;
+        background-size: 175%;
     }
   
 }
@@ -424,7 +425,7 @@ $color-pink: #f06292;
         width: fit-content;
         &:hover{
             color: $color-orange;
-            border-bottom: none;
+            border-bottom: 2px solid white;
         }
     }
 }
@@ -537,7 +538,7 @@ $color-pink: #f06292;
             width: -moz-fit-content;
             &:hover{
                 color: $color-orange;
-                border: none;
+                border: 2px solid white;
             }
         }
 
@@ -569,7 +570,11 @@ $color-pink: #f06292;
             font-size: 1rem;
             border-bottom: 2px solid black;
             width: -moz-fit-content;
-            
+            width: fit-content;
+            &:hover{
+                color: $color-orange;
+                border: none;
+            }
         }
         .infoNews{
             display: flex;
@@ -851,7 +856,7 @@ $color-pink: #f06292;
         div{
             background-size: 140%;
         }
-        div:hover{
+        .hairBand:hover{
             background-size: 160%;
         }
     }
@@ -896,11 +901,14 @@ $color-pink: #f06292;
             width: 60%;
             // margin-bottom: 0;
             
-            
+            img{
+                width: 80%;
+            }
             
             .boxDescription{
                 background-color: white;
                 h3{
+                    margin-top: 10px;
                     font-size: 5rem;
                 }
             }
