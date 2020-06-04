@@ -80,6 +80,8 @@
     background-position: right;
     background-size: 120%;
     padding-left: 40px; }
+    .highlight3 .hairBand:hover {
+      background-size: 140%; }
     .highlight3 .hairBand h2 {
       width: 150px;
       margin-top: 0;

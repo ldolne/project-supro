@@ -125,7 +125,9 @@ $color-pink: #f06292;
         background-position: right;
         background-size: 120%;
         padding-left: 40px;
-        
+        &:hover{
+            background-size: 140%;
+        }
         
 
         h2{

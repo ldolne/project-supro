@@ -21,7 +21,7 @@ main {
   main h2 {
     font-size: 1.5rem; }
   main h3 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin: 1% 1% 1% 0;
     padding: 1% 1% 1% 0; }
   main a {
@@ -34,15 +34,17 @@ main {
 
 .path {
   margin-top: 12%;
-  margin-bottom: 5%; }
+  margin-bottom: 3%;
+  font-size: 0.8rem;
+  padding-left: 1.5%; }
   .path p {
     display: inline; }
   @media (min-width: 768px) {
     .path {
-      margin-top: 8%; } }
+      margin-top: 6%; } }
   @media (min-width: 992px) {
     .path {
-      margin-top: 8%; } }
+      margin-top: 5%; } }
 
 .container {
   display: grid;
@@ -85,7 +87,8 @@ main {
 .title {
   grid-area: title;
   display: flex;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  padding: 2% 0; }
   .title h2 {
     flex: 1;
     margin: 0;
@@ -95,7 +98,8 @@ main {
     justify-self: right;
     margin: 0;
     padding: 0;
-    text-align: center; }
+    text-align: center;
+    font-size: 0.8em; }
     @media (min-width: 768px) {
       .title ul {
         min-width: 90%;
@@ -106,11 +110,17 @@ main {
         text-align: right; } }
   .title li {
     display: inline-block;
-    padding-left: 5%; }
+    padding-left: 2%; }
     .title li.sortOptions {
       font-weight: 700; }
     .title li.sortOptions-value {
       padding-left: 1%; }
+    @media (min-width: 768px) {
+      .title li {
+        padding-left: 5%; } }
+    @media (min-width: 992px) {
+      .title li {
+        padding-left: 5%; } }
   @media (min-width: 768px) {
     .title {
       flex-flow: row wrap;
@@ -122,16 +132,26 @@ main {
       justify-content: space-between;
       align-items: flex-end; } }
   .title ion-icon {
-    padding-right: 6px; }
+    padding-right: 15px;
+    font-size: 1.1rem; }
 
 .item {
   background-color: white;
-  text-align: center; }
-  .item img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto; }
+  text-align: center;
+  margin: 4%; }
+  .item .imgBox {
+    max-height: 250px;
+    overflow: hidden; }
+    .item .imgBox img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+      transition: all 1s ease-out; }
+      .item .imgBox img:hover {
+        filter: brightness(70%);
+        transform: scale(1.2);
+        cursor: pointer; }
   @media (min-width: 768px) {
     .item {
       text-align: justify; } }
@@ -177,57 +197,91 @@ main {
 
 .pageNumber {
   grid-area: pageNumber;
-  text-align: center; }
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem; }
   .pageNumber li {
     display: inline-block;
-    padding-right: 5%; }
+    padding-right: 10%; }
   .pageNumber .first {
     padding-bottom: 2%;
     border-bottom: 1px solid #222; }
   .pageNumber ion-icon {
-    font-size: 32px;
+    font-size: 40px;
     vertical-align: middle;
     color: #999; }
 
 .shopBy {
   grid-area: shopBy; }
   .shopBy h2 {
-    margin: 0 0 1% 0;
-    padding: 0 0 1% 0; }
+    font-size: 1.3rem;
+    margin-bottom: 8%; }
 
-.color ul {
-  padding: 0; }
+.color {
+  margin-bottom: 10%; }
+  .color ul {
+    padding: 0;
+    font-size: 0.7rem; }
+    .color ul li:hover {
+      color: #222;
+      cursor: pointer; }
 
-.size ul {
-  padding: 0; }
-  .size ul li {
-    display: inline-block;
-    min-width: 5%;
-    padding: 1% 3%;
-    background-color: white;
-    border: 1px solid #eaeaea;
-    color: #999;
-    text-align: center; }
+.size {
+  margin-bottom: 10%; }
+  .size ul {
+    padding: 0;
+    font-size: 0.7rem; }
+    .size ul li {
+      display: inline-block;
+      min-width: 5%;
+      margin-right: 2%;
+      padding: 2% 3%;
+      background-color: white;
+      border: 1px solid #eaeaea;
+      color: #999;
+      text-align: center; }
+      .size ul li:hover {
+        color: #222;
+        cursor: pointer; }
 
-.price img {
-  max-width: 100%;
-  height: auto; }
+.price {
+  margin-bottom: 10%; }
+  .price img {
+    max-width: 90%;
+    height: auto;
+    margin: 4% 0; }
+
+.brand {
+  margin-bottom: 10%; }
 
 .selection {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 3% 0;
+  color: #999; }
   .selection label {
-    flex: 5; }
+    flex: 5;
+    font-size: 0.8rem; }
+    .selection label:hover {
+      color: #222;
+      cursor: pointer; }
   .selection input[type="checkbox"] {
-    flex: 1; }
+    flex: 1;
+    transform: scale(0.7); }
 
 .compareProducts {
   grid-area: compareProducts; }
+  .compareProducts h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10%; }
+  .compareProducts p {
+    font-size: 0.8rem; }
 
 .rankingStars {
   margin: 1% 1% 1% 0;
-  padding: 1% 1% 1% 0; }
+  padding: 1% 1% 1% 0;
+  font-size: 0.7rem; }
   .rankingStars li {
     display: inline-block;
     color: #f68773; }
@@ -235,7 +289,8 @@ main {
 .price-tag {
   display: inline-block;
   margin: 1% 1% 1% 0;
-  padding: 1% 1% 1% 0; }
+  padding: 1% 1% 1% 0;
+  font-size: 0.8rem; }
   .price-tag.striked {
     text-decoration-line: line-through; }
 
@@ -246,8 +301,8 @@ main {
   line-height: 20px;
   background-color: #eaeaea;
   border-radius: 50%;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 600;
   text-align: center; }
 
 .circle-color-black {
