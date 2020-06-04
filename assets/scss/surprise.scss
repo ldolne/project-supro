@@ -4,7 +4,9 @@ body{
     background-color: white;
     color: #3a86ff;
 }
-
+.container{
+    font-family: 'Fredoka One', cursive;
+}
 .mobile{
     
     width: 80%;
@@ -40,7 +42,6 @@ body{
     .container{
         height: 100vh;
         overflow: hidden;
-        font-family: 'Fredoka One', cursive;
         font-size: 3rem;
         .message{
             
