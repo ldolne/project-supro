@@ -3,282 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clothes web store "/>
+    <meta name="author" content="LAMAMI TEAM" />
+    <meta name="robots" content="index"/>
     <title>Supro.</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a970d462f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
 
 <!-- debut header -->
     <header>
         <nav>
-            <a href="index.html" alt="logo">
-                <img src="/assets/img/home/logo.png" alt="logo">
+            <a class="logo" href="index.html">
+                <img src="assets/img/home/logo.png" alt="logo">
             </a>
-            <ul class="navigation">
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Products</li>
-                <li>Pages</li>
-                <li>Blog</li>
-                <li>Contact</li>
+            <ul class="navigation NOTnavMobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/shop.html">Shop</a></li>
+                <li><a href="html/product.html">Products</a></li>
+                <li><a href="html/surprise.html">Pages</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/store.html">Contact</a></li>
             </ul>
-            <input type="text" placeholder="search">
-            <ul>
-                <li>icone loupe</li>
-                <li>icone perso</li>
-                <li>icone coeur</li>
-                <li>icone cart</li>
-                <li>icone parametres</li>
-                <li>3 barres mobile</li>
+            <div class="search NOTnavMobile">
+                <input type="text" placeholder="  Start searching..." >
+            </div>
+            
+            <ul class="icones">
+                <li class="searchIcon"><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
+                <li class="userIcon"><a  href="#"><i class="far fa-user fa-lg"></i></a></li>
+                <li class="heartIcon"><a  href="#"><i class="far fa-heart fa-lg "></i></a></li>
+                <li class="cartIcon"><a  href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                <li class="settingIcon"><a  href="#"><i class="fas fa-cog fa-lg"></i></a></li>
+                <li class="hamburgerIcon"><a  href="#"><i class="fas fa-bars fa-lg"></i></a></li>
             </ul>
         </nav>
+        <div class="menuHAM">
+            <i class="fas fa-times fa-3x closeMenu"></i>
+            <ul>
+                <li><a href="index.html">Home</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="html/shop.html">Shop</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="html/product.html">Products</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="html/surprise.html">Pages</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="html/about.html">About</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="html/store.html">Contact</a></li>
+            </ul>
+            
+            <h3>Contact Us</h3>
+            <p>69 Halsey ST, Ny 10002, New York, United States support.center@unero.co <br>(0091) 8547632521</p>
+            
+        </div>
     </header>
-<!-- fin header -->
+ <!--fin header -->
+
+    <main class="container">
 
 
-    <main>
+
         <section class="highlight">
-
-            <div>
-                <ul>
-                    <li><a href="#">fb</a></li>
-                    <li><a href="#">twitter</a></li>
-                    <li><a href="#">g+</a></li>
-                    <li><a href="#">pin</a></li>
-                </ul>
-                <p>Next SS Preview</p>
-                <p>Trendy Pink</p>
-                <h1>Woman shoes</h1>
-                <p>Sneakers</p>
+            <div class="groupTextCentral">
+                <p class="mobileNo">Next SS Preview</p>
+                <p class="orange smallOnly">Trendy Pink</p>
+                <h1 class="mobileNo">Woman Shoes</h1>
+                <p class="bigFont smallOnly">Sneakers</p>
                 <a href="#">Discover more</a>
                 <!-- 3 petite boule -->
             </div>
-            <div>
+            <ul class="socialBar">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+        </section>
+
+
+
+
+        <section class="highlight3">
+            <div class="hairBand">
+                <p>Jaccquard Print</p>
                 <h2>Hairband Collection</h2>
                 <a href="#">Discover more</a>
             </div>
-            <div>
+            <div class="studded">
                 <p>Mini studded</p>
                 <h2>Split suede bucet bag</h2>
                 <a href="#">Discover more</a>
             </div>
-            <div>
+            <div class="specialPrice">
                 <p>Special price</p>
-                <h2>Corduroy Culottes</h2>
+                <h2>Corduroy <br> Culottes</h2>
                 <a href="#">Discover more</a>
             </div>
         </section>
 
+
+
+
         <section class="topSellers">
-            <div>
+            <div class="titreSection">
                 <h2>Top sellers</h2>
                 <p>Browse the huge variety of our products</p>
             </div>
             
-            <div class="">
+            <div class="topType1">
+                <img src="assets/img/home/bsl1.jpg" alt="leather shop bag">
                 <h3>Leather shop bags</h3>
-                <p>price</p>
+                <p>$59.90</p>
                 <a href="#">Shop now</a>
             </div>
-            <div class="">
-                <h3>Flower designs blouse</h3>
-                <p>price</p>
-                <a href="#">Shop now</a>
+            <div class="topType2 topSellersImg1">
+                <img src="assets/img/home/bsl2.jpg" alt="Flower designs blouse">
+                <div class="boxDescription">
+                    <h3>Flower designs blouse</h3>
+                    <p>$89.90</p>
+                    <a href="#">Shop now</a>
+                </div>
+       
             </div>
-            <div class="">
-                <h3>Glitter decorate shoes</h3>
-                <p>price</p>
-                <a href="#">Shop now</a>
+            <div class="topType2 topSellersImg2">
+                <img src="assets/img/home/bsl3.jpg" alt="Glitter decorate shoes">
+                <div class="boxDescription">
+                    <h3>Glitter decorate shoes</h3>
+                    <p>$89.90</p>
+                    <a href="#">Shop now</a>
+                </div>
+                
             </div>
-            <div class="">
+            <div class="topType1 imageDroiteDesktop">
+                <img src="assets/img/home/bsl4.jpg" alt="Metallic frames glasses">
                 <h3>Metallic frames glasses</h3>
-                <p>price</p>
+                <p>$29.90</p>
                 <a href="#">Shop now</a>
             </div>
         </section>
+
+
+
         <section class="newArrival">
-            <div>
-                <h2>New Arrival</h2>
-                <p>Browse the huge variety of our products</p>
-                <ul>
-                    <li>Clothing</li>
-                    <li>Shoes</li>
-                    <li>Bags</li>
-                    <li>Wallets</li>
-                    <li>Belts</li>
+            <div class="titreSection">
+                <div class="titreBlock">
+                    <h2>New Arrival</h2>
+                    <p>Browse the huge variety of our products</p>
+                </div>
+                <ul class="category">
+                    <li><a class="fontBlack" href="">Clothing</a></li>
+                    <li><a class="fontgrey" href="">Shoes</a></li>
+                    <li><a class="fontgrey" href="">Bags</a></li>
+                    <li><a class="fontgrey" href="">Wallets</a></li>
+                    <li><a class="fontgrey" href="">Belts</a></li>
                 </ul>
             </div>
-                <div>
-                    <div>
-                        <img src="" alt="">
+                <div class="listProduct">
+                    <div class="product">
+                        <div class="imgBox">
+                            <img src="assets/img/home/prd_05_1_2.jpg" alt="tuk peacock shoes">
+                        </div>
                         <h3>Tuk peacock shoes</h3>
-                        <!-- stars -->
-                        <p>old price</p>
+                        <ul class="rankingStars">
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star greyStar"></i></li>
+                        </ul>
+                        <div class="priceGroup">
+                            <p>$69.90</p>
+                            <!-- <p class="newPrice">$70</p> -->
+                        </div>
+                        <div class="colorProduct">
+                            <i class="fas fa-circle color-blue"></i>
+                            <i class="fas fa-circle color-brown"></i>
+                        </div>
                         <!-- <p>new price</p> -->
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="product">
+                        <div class="imgBox">
+                            <img src="assets/img/home/prd_14_1_1.jpg" alt="Contour skinny">
+                        </div>
                         <h3>Contour skinny</h3>
-                        <!-- stars -->
-                        <p>old price</p>
-                        <!-- <p>new price</p> -->
+                        <ul class="rankingStars">
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star greyStar"></i></li>
+                        </ul>
+                        <div class="priceGroup">
+                            <p class="oldPrice">$95.50</p>
+                            <p class="newPrice">$70</p>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="product">
+                        <div class="imgBox">
+                            <img src="assets/img/home/prd_19_1_1.jpg" alt="tess cropped stretch-cloque top">
+                        </div>
                         <h3>Tess cropped stretch-cloque top</h3>
-                        <!-- stars -->
-                        <p>old price</p>
-                        <!-- <p>new price</p> -->
+                        <ul class="rankingStars">
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star greyStar"></i></li>
+                        </ul>
+                        <div class="priceGroup">
+                            <p>$65.90</p>
+                            <!-- <p class="newPrice">$70</p> -->
+                        </div>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="product">
+                        <div class="imgBox">
+                            <img src="assets/img/home/prd_07_1_2.jpg" alt="wholesale fashion handbags">
+                        </div>
+                        
                         <h3>wholesale fashion handbags</h3>
-                        <!-- stars -->
-                        <p>old price</p>
-                        <!-- <p>new price</p> -->
+                        <ul class="rankingStars">
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star greyStar"></i></li>
+                        </ul>
+                        <div class="priceGroup">
+                            <p>$19.00</p>
+                            <!-- <p class="newPrice">$70</p> -->
+                        </div>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="product">
+                        <div class="imgBox">
+                            <img src="assets/img/home/prd_09_1_1_5.jpg" alt="beebay full lenght denim">
+                        </div>
                         <h3>Beebay Full lenght denim</h3>
-                        <!-- stars -->
-                        <p>old price</p>
-                        <!-- <p>new price</p> -->
+                        <ul class="rankingStars">
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star greyStar"></i></li>
+                        </ul>
+                        <div class="priceGroup">
+                            <p>$89.00</p>
+                            <!-- <p class="newPrice">$70</p> -->
+                        </div>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="product">
+                        <div class="imgBox">
+                            <img src="assets/img/home/prd_08_1_6.jpg" alt="cyan boheme">
+                        </div>
                         <h3>Cyan boheme</h3>
-                        <!-- stars -->
-                        <p>old price</p>
-                        <!-- <p>new price</p> -->
+                        <ul class="rankingStars">
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star orangeStar"></i></li>
+                            <li><i class="fas fa-star greyStar"></i></li>
+                        </ul>
+                        <div class="priceGroup">
+                            <p>$56.00</p>
+                            <!-- <p class="newPrice">$70</p> -->
+                        </div>
                     </div>
                     <a href="#">Discover more</a>
                 </div>
+                
         </section>
+
+
+
         <section class="dealDay">
-            <h2>Deal of the day</h2>
-            <p>Hobo shopper bag</p>
-            <p>old price</p>
-            <p>new price</p>
-            <p>Save 50%</p>
-            <p>In stock</p>
-            <ul>
-                <li>301 days</li>
-                <li>00 Hours</li>
-                <li>59 Mins</li>
-                <li>35 Seconds</li>
-            </ul>
-            <a href="#">Shop now</a>
+            <div class="dealDayInfo">
+                <h2>Deal of the day</h2>
+                <h3>Hobo Shopper Bag</h3>
+                <div class="prices">
+                    <p class="oldPrice">$79.90</p>
+                    <p class="newPrice">$39.90</p>
+                </div>
+                <div class="dealTagGroup">
+                    <p class="dealTag">Save 50%</p>
+                <p class="dealTagStock">In stock</p>
+                </div>
+                <ul class="decompte">
+                    <li><p class="numDecompte">301</p><p class="infoDecompte">days</p></li>
+                    <li><p class="numDecompte">15</p><p class="infoDecompte">hours</p></li>
+                    <li><p class="numDecompte">18</p><p class="infoDecompte">minutes</p></li>
+                    <li><p class="numDecompte">57</p><p class="infoDecompte">seconds</p></li>
+                  
+                </ul>
+                <a href="#">Shop now</a>
+            </div>
+
         </section>
+
+
+
+
         <section class="latestNews">
-            <div>
-                <h2>Latest news</h2>
-                <p>Our recent articles about fashion ideas & products</p>
+            <div class="titreSection">
+                <div class="titreBlock">
+                    <h2>Latest news</h2>
+                    <p>Our recent articles about fashion ideas & products</p>
+                </div>
                 <a href="#">See more news</a>
             </div>
             <div class="news">
-                <a href=""><img src="" alt=""></a>
+                <img src="assets/img/home/blog1.jpg" alt="">
                 <h3>The best red carpet looks from the NAACP image Awards</h3>
-                <p>Christine Jan 30, 2019</p>
+                <div class="infoNews">
+                    <p class="author">Christine</p> 
+                    <p class="dateNews">Jan 30, 2019</p>
+                </div>
+                <a href="">read more</a>
             </div>
-            <div class="news">
-                <a href=""><img src="" alt=""></a>
+            <div class="news newsTablet">
+                <img src="assets/img/home/blog2.jpg" alt="">
                 <h3>How Bella hadid dresses down a ladylike coat</h3>
-                <p>Jonh peter</p> 
-                <p>Jan 30, 2019</p>
+                <div class="infoNews">
+                    <p class="author">Jonh Peter</p> 
+                    <p class="dateNews">Jan 30, 2019</p>
+                </div>
+                <a href="">read more</a>
             </div>
-            <div class="news">
-                <a href=""><img src="" alt=""></a>
+                
+            <div class="news newsTablet">
+                <img src="assets/img/home/blog3.jpg" alt="">
                 <h3>The best street style from Berlin fashion week fall 2018</h3>
-                <p>Anna</p>
-                <p>Jan 30, 2019</p>
+                <div class="infoNews">
+                    <p class="author">Anna</p> 
+                    <p class="dateNews">Jan 30, 2019</p>
+                </div>
+                <a href="">read more</a>
             </div>
         </section>
+
+
+
         <section class="newsletter">
-            <h2>Keep connected</h2>
-            <p>get updates by subscribe our weekly newsletter</p>
-            <input type="email" placeholder="Email Adress">
-            <input type="submit">
-        </section>
-        <section>
-            <!-- banner whit img -->
+            <div class="titreSection">
+                <h2>Keep connected</h2>
+                <p>get updates by subscribe our weekly newsletter</p>
+            </div>
+            <div class="inputSubmit">
+                <i class="far fa-envelope"></i>
+                <input type="text" value="Email Address">
+                <a class="subscribe" href="#">subscribe</a>
+            </div>
+            
         </section>
     </main>
 
 
+    <div class="Wall">
+        <div class="imageWall">
+            <img class="desktopOnly" src="assets/img/home/blog11.png" alt="">
+            <img src="assets/img/home/blog4_1.jpg" alt="">
+            <img src="assets/img/home/blog5_1.jpg" alt="">
+            <img src="assets/img/home/blog6_1.jpg" alt="">
+            
+            
+            <img class="desktopOnly tabletOnly" src="assets/img/home/blog8.jpg" alt="">
+            <img class="desktopOnly tabletOnly" src="assets/img/home/blog9.jpg" alt="">
+            <img class="desktopOnly" src="assets/img/home/blog12.png" alt="">
+            
+            
+        </div>
+    </div>
+
+
 <!-- debut footer -->
     <footer>
-        <div class="supro">
-            <a href=""></a>
-            <ul>
-                <li>184 main Rd E, St Albans VIC 3021, Australia</li>
-                <li>contact@company.com</li>
-                <li>+001 2233 456</li>
-            </ul>
+        <div class="footBlock1">
+            <div class="supro">
+                <a href=""><img src="assets/img/home/logo.png" alt=""></a>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>184 main Rd E, St Albans VIC 3021, Australia</li>
+                    <li><i class="far fa-envelope"></i>contact@company.com</li>
+                    <li><i class="fas fa-phone-alt"></i>+001 2233 456</li>
+                </ul>
+            </div>
+            <div class="help">
+                <h3>Help & information</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Premier Delivery</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>About Supro</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="shop">
+                <h3>Online Shop</h3>
+                <ul>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Belts</a></li>
+                </ul>
+            </div>
+            <div class="language">
+                <h3>Language</h3>
+                <select name="LANG" id="LANG">
+                    <option value="EN">English</option>
+                    <option value="FR">Francais</option>
+                    <option value="IT">Italiano</option>
+                </select>
+            </div>
+            <div class="currency">
+                <h3>Currency</h3>
+                <select name="CUR" id="CUR">
+                    <option value="USD">USD</option>
+                    <option value="EU">Euro</option>
+                    
+                </select>
+            </div>
         </div>
-        <div class="help">
-            <h3>Help & information</h3>
-            <ul>
-                <li><a href="#">Track Order</a></li>
-                <li><a href="#">Premier Delivery</a></li>
-                <li><a href="#">Student Discount</a></li>
-            </ul>
+      
+        <div class="footBlock2">
+            <div class="copyright">
+                <p>
+                    ©2018 <b>Supro.</b> All rights reserved.
+                </p>
+                <a href="">Privacy policy</a>
+                <a href="">Term of use</a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="pay">
+                <ul>
+                    <li><img src="assets/img/home/payment1.png" alt="visa"></li>
+                    <li><img src="assets/img/home/payment2.png" alt="PayPal"></li>
+                    <li><img src="assets/img/home/payment3.png" alt="MasterCard"></li>
+                    <li><img src="assets/img/home/payment4.png" alt="Discover"></li>
+                    <li><img src="assets/img/home/payment5.png" alt="Amex"></li>
+                    
+                </ul>
+            </div>
         </div>
-        <div class="about">
-            <h3>About Supro</h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#"></a>Careers</li>
-                <li><a href="#">Corporate</a></li>
-                <li><a href="#">Investors</a></li>
-            </ul>
-        </div>
-        <div class="shop">
-            <ul>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Bags</a></li>
-                <li><a href="#">Wallets</a></li>
-                <li><a href="#">Belts</a></li>
-            </ul>
-        </div>
-        <div class="language">
-            <select name="" id="">
-                <option value="">bla bla</option>
-            </select>
-        </div>
-        <div class="currency">
-            <select name="" id="">
-                <option value="">bla bla</option>
-            </select>
-        </div>
-        <div class="copyright">
-            <p>
-                ©2018 Supro. All rights reserved.
-            </p>
-            <a href="">Privacy policy</a>
-            <a href="">Term of use</a>
-        </div>
-        <div class="social">
-            <ul>
-                <li><a href="#">fb</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">g+</a></li>
-                <li><a href="#">pin</a></li>
-                <li><a href="#">insta</a></li>
-            </ul>
-        </div>
-        <div class="pay">
-            <ul>
-                <li>visa</li>
-                <li>paypal</li>
-                <li>mastercard</li>
-                <li>discover</li>
-                <li>amex</li>
-            </ul>
-        </div>
+ 
     </footer>    
 <!-- fin footer -->
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const hamburger = document.querySelector(".hamburgerIcon");
+        const closeMenu = document.querySelector(".closeMenu");
+        const menu = document.querySelector(".menuHAM");
+        let query = window.matchMedia("(min-width: 992px)");
 
-
+        
+        hamburger.addEventListener("click", function(){
+            menu.classList.add("open");
+        })
+        closeMenu.addEventListener("click", function(){ 
+            menu.classList.remove("open");
+        })
+    });
+</script>
 </body>
 </html>

@@ -27,8 +27,12 @@ footer {
       width: 40%; }
     footer .footBlock1 .language {
       width: 40%; }
+      footer .footBlock1 .language select {
+        color: #999; }
     footer .footBlock1 .currency {
       width: 40%; }
+      footer .footBlock1 .currency select {
+        color: #999; }
   footer .footBlock2 {
     display: flex;
     flex-wrap: wrap;

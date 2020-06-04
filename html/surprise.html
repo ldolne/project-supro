@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supro. We have a little gift ...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/2a970d462f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/surprise.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="../index.html">
+                <img src="../assets/img/home/logo.png" alt="logo">
+            </a>
+            <ul class="navigation NOTnavMobile">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="surprise.html">Pages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Contact</a></li>
+            </ul>
+            <div class="search NOTnavMobile">
+                <input type="text" placeholder="  Start searching..." >
+            </div>
+            
+            <ul class="icones">
+                <li class="searchIcon"><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
+                <li class="userIcon"><a  href="#"><i class="far fa-user fa-lg"></i></a></li>
+                <li class="heartIcon"><a  href="#"><i class="far fa-heart fa-lg "></i></a></li>
+                <li class="cartIcon"><a  href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                <li class="settingIcon"><a  href="#"><i class="fas fa-cog fa-lg"></i></a></li>
+                <li class="hamburgerIcon"><a  href="#"><i class="fas fa-bars fa-lg"></i></a></li>
+            </ul>
+        </nav>
+        <div class="menuHAM">
+            <i class="fas fa-times fa-3x closeMenu"></i>
+            <ul>
+                <li><a href="../index.html">Home</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="shop.html">Shop</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="product.html">Products</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="surprise.html">Pages</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="about.html">About</a><i class="fas fa-plus fa-2x"></i></li>
+                <li><a href="store.html">Contact</a></li>
+            </ul>
+            
+            <h3>Contact Us</h3>
+            <p>69 Halsey ST, Ny 10002, New York, United States support.center@unero.co <br>(0091) 8547632521</p>
+            
+        </div>
+    </header>
+    <div class="container">
+       <div class="mobile">
+        <p>GO CHECK THIS PAGE IN DESKTOP IF YOU WANT YOUR PRESENT</p>
+            <img src="https://media.giphy.com/media/3oz8xBkRsgPTnbK1GM/giphy.gif" alt="gift">
+       </div>
+        <div class="message">
+            <p class="one animate__animated animate__bounceInLeft animate__delay-1s">Hello</p>
+        <p class="two animate__animated animate__bounceInRight animate__delay-1s">Mr Lafrite</p>
+        <p class="three animate__animated animate__bounceInLeft animate__delay-2s">we have</p>
+        <p class="four animate__animated animate__bounceInRight animate__delay-2s">A GIFT</p>
+        <p class="five animate__animated animate__bounceInLeft animate__delay-3s">just for YOU </p>
+        <img class="six animate__animated animate__jackInTheBox animate__delay-5s" src="https://media.giphy.com/media/Qv6Gi17pd23NS/giphy.gif" alt="">
+        <p class="seven animate__animated animate__rotateInDownLeft animate__delay-5s">with love from</p>
+        <p class="eight animate__animated animate__rotateInDownRight animate__delay-5s" ><span class="LA">LA</span><span class="MA">MA</span><span class="MI">MI</span> team</p>
+        </div>
+        
+
+
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const hamburger = document.querySelector(".hamburgerIcon");
+            const closeMenu = document.querySelector(".closeMenu");
+            const menu = document.querySelector(".menuHAM");
+            let query = window.matchMedia("(min-width: 992px)");
+    
+            
+            hamburger.addEventListener("click", function(){
+                menu.classList.add("open");
+            })
+            closeMenu.addEventListener("click", function(){ 
+                menu.classList.remove("open");
+            })
+        });
+    </script>   
+</body>
+</html>

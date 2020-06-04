@@ -1,0 +1,73 @@
+body {
+  margin: 0 auto;
+  background-color: white;
+  color: #3a86ff; }
+
+.container {
+  font-family: 'Fredoka One', cursive; }
+
+.mobile {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .mobile p {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 4vh; }
+  .mobile img {
+    width: 80%;
+    margin: 0 auto; }
+
+.message {
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none; }
+  .container {
+    background-image: url(https://media.giphy.com/media/hPGloL5hneaSA/giphy.gif);
+    background-size: cover; }
+  .container {
+    height: 100vh;
+    overflow: hidden;
+    font-size: 3rem; }
+    .container .message {
+      width: 400px;
+      margin-top: 80px;
+      margin-left: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container .message p {
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: center; }
+      .container .message .one {
+        color: #3a86ff;
+        font-size: 8vh; }
+      .container .message .two {
+        color: #ffbe0b;
+        font-size: 8vh; }
+      .container .message .three {
+        color: #ff006e;
+        font-size: 5vh; }
+      .container .message .four {
+        color: #8338ec;
+        font-size: 5vh; }
+      .container .message .five {
+        color: #fb5607;
+        font-size: 5vh; }
+      .container .message .seven {
+        color: #3a86ff; }
+      .container .message .eight {
+        color: #fb5607;
+        font-size: 5vh; }
+        .container .message .eight .LA {
+          color: #ffbe0b; }
+        .container .message .eight .MA {
+          color: #ff006e; }
+        .container .message .eight .MI {
+          color: #8338ec; } }

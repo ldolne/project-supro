@@ -1,0 +1,66 @@
+header .nav {
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center; }
+  header .nav .NOTnavMobile {
+    display: none; }
+  header .nav .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 40px; }
+  header .nav .icones {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end; }
+    header .nav .icones li {
+      margin-right: 15px;
+      list-style: none; }
+      header .nav .icones li a {
+        text-decoration: none;
+        color: black; }
+    header .nav .icones .settingIcon {
+      display: none; }
+
+@media screen and (min-width: 992px) {
+  header {
+    margin: 0; }
+    header nav .NOTnavMobile {
+      display: block; }
+    header nav .navigation {
+      width: 40%;
+      display: flex; }
+      header nav .navigation li {
+        margin-right: 12px;
+        list-style: none; }
+      header nav .navigation a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder; }
+    header nav .search {
+      width: 10%;
+      margin-top: 16px;
+      margin-bottom: 16px; }
+    header nav .icones {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      list-style: none; }
+      header nav .icones li {
+        margin-left: 8px; }
+        header nav .icones li a {
+          text-decoration: none;
+          color: black; }
+      header nav .icones .settingIcon {
+        display: block; }
+      header nav .icones .searchIcon {
+        display: none; }
+      header nav .icones .hamburgerIcon {
+        display: none; } }

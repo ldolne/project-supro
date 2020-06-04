@@ -1,0 +1,100 @@
+header{
+    .nav{
+        overflow: hidden;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        z-index: 100;
+        background-color: white;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        .NOTnavMobile{
+            display: none;
+        }
+        .logo{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: 40px;
+        }
+        .icones{
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            li{
+                margin-right: 15px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .settingIcon{
+                display: none;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+    header{
+        // background-color: #F2EDE9;
+        margin: 0;
+        nav{
+   
+            .NOTnavMobile{
+                display: block;
+            }
+           
+            .navigation{
+                width: 40%;
+                display: flex;
+                li{
+                    margin-right: 12px;
+                    list-style: none;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+            .search{
+
+                width: 10%;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            .icones{
+                width: 20%;
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                li{
+                    margin-left: 8px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .settingIcon{
+                    display: block;
+                }
+                .searchIcon{
+                    display: none;
+                }
+                .hamburgerIcon{
+                    display:none;
+                }
+            }
+        }
+    }
+}
+

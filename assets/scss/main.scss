@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "../css/normalize.css";
 
 // VARIABLES
 // COLORS
@@ -15,19 +15,11 @@ $font-family-main: 'Roboto', sans-serif;
 
 body
 {
+    margin: 0;
     background-color: $color-white;
     color: $color-black;
     font-family: $font-family-main;
     font-size: 1rem;
 }
 
-header
-{
-    ul
-    {
-        li
-        {
-            display: inline-block;
-        }
-    }
-}
+

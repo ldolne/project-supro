@@ -1,0 +1,691 @@
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.titreSection {
+  margin-top: 80px;
+  width: 100%; }
+  .titreSection h2 {
+    margin-bottom: 0;
+    font-size: 2rem; }
+  .titreSection p {
+    margin-top: 5px;
+    color: #999;
+    font-size: 1rem; }
+
+.highlight {
+  background-image: url(../img/home/sl2-1.jpg);
+  background-repeat: none;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.mobileNo {
+  display: none; }
+
+.socialBar {
+  width: 150px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  justify-content: center; }
+  .socialBar li {
+    margin: 10px; }
+    .socialBar li a {
+      color: #999; }
+    .socialBar li i:hover {
+      color: #f68773;
+      transition: 1s; }
+
+.groupTextCentral {
+  margin-top: 200px;
+  margin-left: 30px; }
+  .groupTextCentral .bigFont {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 20px; }
+  .groupTextCentral .orange {
+    color: #f68773; }
+  .groupTextCentral a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black; }
+  .groupTextCentral a:hover {
+    border-bottom: none;
+    color: #f68773; }
+
+.highlight3 {
+  display: flex;
+  flex-wrap: wrap; }
+  .highlight3 div {
+    background-color: #D1D4CD;
+    width: 100%;
+    height: 320px;
+    background-size: 120%;
+    transition: background-size 2s ease-in;
+    -moz-transition: background-size 2s ease-in;
+    -ms-transition: background-size 2s ease-in;
+    -o-transition: background-size 2s ease-in;
+    -webkit-transition: background-size 2s ease-in; }
+    .highlight3 div p, .highlight3 div h2, .highlight3 div a {
+      margin-left: 40px; }
+  .highlight3 .hairBand {
+    background-image: url(../img/home/banner_h1_1.jpg);
+    background-position: right;
+    background-size: 160%;
+    padding-left: 40px; }
+    .highlight3 .hairBand:hover {
+      background-size: 170%; }
+    .highlight3 .hairBand h2 {
+      width: 150px;
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 2rem; }
+    .highlight3 .hairBand p {
+      margin-bottom: 5px;
+      margin-top: 80px;
+      color: #999; }
+    .highlight3 .hairBand a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      border-bottom: 2px solid black; }
+  .highlight3 div:hover a {
+    color: #f68773;
+    border-bottom: none; }
+  .highlight3 .studded {
+    background-image: url(../img/home/banner_h1_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center; }
+    .highlight3 .studded h2 {
+      width: 250px;
+      margin: 0 auto;
+      color: white;
+      font-size: 2rem; }
+    .highlight3 .studded a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      border-bottom: 2px solid white; }
+    .highlight3 .studded p {
+      color: white;
+      margin-top: 80px;
+      margin-bottom: 10px; }
+  .highlight3 .studded:hover {
+    background-size: 120%; }
+  .highlight3 .specialPrice {
+    background-image: url(../img/home/banner_h1_3.jpg);
+    background-position: left;
+    text-align: right;
+    background-size: 155%; }
+    .highlight3 .specialPrice h2 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      margin-right: 50px;
+      font-size: 2.2rem; }
+    .highlight3 .specialPrice p {
+      margin-bottom: 5px;
+      margin-top: 80px;
+      margin-right: 50px;
+      color: #999; }
+    .highlight3 .specialPrice a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 50px;
+      font-size: 0.8rem;
+      border-bottom: 2px solid black; }
+  .highlight3 .specialPrice:hover {
+    background-size: 175%; }
+
+.topSellers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .topSellers .topType1 {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 80px; }
+    .topSellers .topType1 img {
+      width: 80%; }
+    .topSellers .topType1 h3 {
+      width: 50%;
+      font-size: 2rem; }
+    .topSellers .topType1 a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 0.8rem;
+      border-bottom: 2px solid black; }
+      .topSellers .topType1 a:hover {
+        color: #f68773;
+        border-bottom: 2px solid white; }
+    .topSellers .topType1 p {
+      color: #999; }
+  .topSellers .topType1:hover {
+    color: #f68773;
+    cursor: pointer; }
+  .topSellers .topType2 {
+    margin-top: 40px;
+    margin-bottom: 80px; }
+    .topSellers .topType2 img {
+      width: 100%; }
+    .topSellers .topType2 h3 {
+      width: 100%;
+      font-size: 2rem; }
+    .topSellers .topType2 a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 0.8rem;
+      border-bottom: 2px solid black; }
+      .topSellers .topType2 a:hover {
+        color: #f68773;
+        border-bottom: 2px solid white; }
+    .topSellers .topType2 p {
+      color: #999; }
+  .topSellers .topType2:hover {
+    color: #f68773;
+    cursor: pointer; }
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: left;
+  padding-left: 0; }
+  .category li {
+    width: 33%;
+    font-size: 1rem; }
+  .category a {
+    text-decoration: none; }
+  .category a:hover {
+    color: #f68773; }
+  .category .fontBlack {
+    color: black;
+    text-decoration: none; }
+  .category .fontgrey {
+    color: #999;
+    text-decoration: none; }
+
+.listProduct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px; }
+  .listProduct .product:hover {
+    color: #f68773;
+    cursor: pointer; }
+  .listProduct .product {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 50px; }
+    .listProduct .product .imgBox {
+      max-height: 450px;
+      overflow: hidden; }
+    .listProduct .product img {
+      width: 100%;
+      transition: all 1s ease-out; }
+    .listProduct .product img:hover {
+      filter: brightness(70%);
+      transform: scale(1.1); }
+    .listProduct .product h3 {
+      width: 100%; }
+    .listProduct .product .rankingStars {
+      width: 60%;
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0; }
+      .listProduct .product .rankingStars li {
+        width: 30%; }
+        .listProduct .product .rankingStars li .orangeStar {
+          color: #f68773; }
+        .listProduct .product .rankingStars li .greyStar {
+          color: #999; }
+    .listProduct .product .priceGroup {
+      display: flex; }
+      .listProduct .product .priceGroup .oldPrice {
+        text-decoration: line-through;
+        color: #999; }
+      .listProduct .product .priceGroup .newPrice {
+        color: black; }
+      .listProduct .product .priceGroup p {
+        margin-top: 0;
+        margin-right: 10px;
+        color: #999; }
+    .listProduct .product .colorProduct {
+      display: none; }
+  .listProduct a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    border-bottom: 2px solid black;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .listProduct a:hover {
+      color: #f68773;
+      border-bottom: 2px solid white; }
+
+.dealDay {
+  margin-top: 30px;
+  background-image: url(../img/home/deals_image.jpg);
+  background-position: center;
+  background-size: cover; }
+  .dealDay .dealDayInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; }
+    .dealDay .dealDayInfo h2 {
+      margin-top: 80px;
+      font-size: 1.2rem;
+      color: #999;
+      font-weight: lighter; }
+    .dealDay .dealDayInfo h3 {
+      font-size: 2rem;
+      margin: 0; }
+    .dealDay .dealDayInfo .dealTagGroup {
+      display: flex; }
+      .dealDay .dealDayInfo .dealTagGroup .dealTag {
+        border-radius: 5%;
+        padding: 5px;
+        width: 20%;
+        background-color: #f68773;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px; }
+      .dealDay .dealDayInfo .dealTagGroup .dealTagStock {
+        display: none; }
+  .dealDay a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-bottom: 70px; }
+    .dealDay a:hover {
+      color: #f68773;
+      border: none; }
+  .dealDay .prices {
+    display: flex;
+    font-weight: bold; }
+    .dealDay .prices p {
+      width: 70px; }
+    .dealDay .prices .oldPrice {
+      text-decoration: line-through;
+      color: #999; }
+
+.decompte {
+  padding: 0;
+  margin-bottom: 70px;
+  display: flex;
+  list-style: none;
+  background-color: white;
+  justify-content: center;
+  text-align: center; }
+  .decompte li {
+    width: 20%; }
+    .decompte li .numDecompte {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 0; }
+    .decompte li .infoDecompte {
+      color: #999;
+      margin-top: 5px; }
+
+.latestNews .titreSection {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%; }
+  .latestNews .titreSection a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    width: -moz-fit-content; }
+    .latestNews .titreSection a:hover {
+      color: #f68773;
+      border: 2px solid white; }
+
+.latestNews .news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 70px; }
+  .latestNews .news img {
+    display: block;
+    width: 100%;
+    transition: all 1s ease-out;
+    cursor: pointer; }
+    .latestNews .news img:hover {
+      filter: brightness(80%); }
+  .latestNews .news h3 {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 30px;
+    cursor: pointer; }
+  .latestNews .news a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .latestNews .news a:hover {
+      color: #f68773;
+      border: none; }
+  .latestNews .news .infoNews {
+    display: flex;
+    margin-bottom: 0; }
+    .latestNews .news .infoNews .author {
+      color: #f68773;
+      font-weight: bold;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      cursor: pointer; }
+    .latestNews .news .infoNews .dateNews {
+      margin-bottom: 10px; }
+
+.newsletter {
+  /**********************************************************/ }
+  .newsletter .inputSubmit {
+    display: flex;
+    border-bottom: 0.5px solid #999;
+    margin: 20px auto;
+    width: 100%;
+    height: 40px;
+    color: #999;
+    justify-content: space-between; }
+    .newsletter .inputSubmit i {
+      margin-top: 3px; }
+    .newsletter .inputSubmit input[type=text] {
+      height: 20px;
+      border: none;
+      color: #999;
+      margin-left: 20px;
+      font-size: 0.8rem; }
+    .newsletter .inputSubmit a {
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+      font-size: 0.7rem;
+      text-align: center;
+      width: 20%; }
+
+.imageWall {
+  width: 90%;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  display: flex; }
+  .imageWall img {
+    width: 33%; }
+    .imageWall img:hover {
+      opacity: 0.8; }
+  .imageWall .desktopOnly {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  .topType1 {
+    display: none; }
+  .topType2 {
+    display: flex; }
+    .topType2 img {
+      width: 80%;
+      order: 2; }
+    .topType2 .boxDescription {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      z-index: 2; }
+      .topType2 .boxDescription h3 {
+        font-size: 3rem; }
+  .listProduct .product {
+    margin-bottom: 80px; }
+    .listProduct .product .rankingStars {
+      width: 25%; }
+  .decompte {
+    width: 60%; }
+  .category li {
+    width: 20%; }
+  .latestNews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .latestNews .newsTablet {
+      width: 45%; }
+    .latestNews a {
+      width: -moz-fit-content;
+      width: fit-content; }
+  .newsletter {
+    display: flex;
+    width: 100%; }
+    .newsletter .titreSection {
+      width: 50%;
+      margin-top: 0; }
+    .newsletter .inputSubmit {
+      width: 50%;
+      display: flex; }
+      .newsletter .inputSubmit .inputEmail {
+        width: 70%; }
+      .newsletter .inputSubmit .subscribe {
+        width: 30%; }
+  .imageWall {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: flex; }
+    .imageWall img {
+      width: 20%; }
+    .imageWall .tabletOnly {
+      display: block; } }
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100%; }
+  .highlight {
+    background-image: url(../img/home/abc.jpg);
+    background-color: #F2EDE9;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; }
+    .highlight .groupTextCentral {
+      width: 50%;
+      order: 2; }
+      .highlight .groupTextCentral .smallOnly {
+        display: none; }
+      .highlight .groupTextCentral .mobileNo {
+        display: block; }
+      .highlight .groupTextCentral p {
+        color: #f68773;
+        font-size: 1.4rem; }
+      .highlight .groupTextCentral h1 {
+        font-size: 8rem;
+        width: 400px;
+        margin-top: 0;
+        margin-bottom: 30px; }
+    .highlight .socialBar {
+      width: 60%;
+      order: 1; }
+      .highlight .socialBar li {
+        margin-left: 90px; }
+  .highlight {
+    height: 100vh;
+    background-image: url(../img/home/abc.jpg); }
+    .highlight .socialBar {
+      display: flex;
+      flex-direction: column; }
+  .highlight3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; }
+    .highlight3 div {
+      width: 33.33%;
+      height: 285px;
+      background-size: 100%; }
+    .highlight3 .studded {
+      background-size: 105%;
+      background-repeat: no-repeat; }
+      .highlight3 .studded p {
+        margin-left: 0; }
+      .highlight3 .studded a {
+        margin-left: 0; }
+    .highlight3 .studded:hover {
+      background-size: 125%; }
+    .highlight3 .hairBand {
+      background-size: 140%;
+      background-repeat: no-repeat;
+      padding: 0; }
+      .highlight3 .hairBand p, .highlight3 .hairBand h2, .highlight3 .hairBand a {
+        margin-left: 40px;
+        padding: 0; }
+    .highlight3 div {
+      background-size: 140%; }
+    .highlight3 .hairBand:hover {
+      background-size: 160%; }
+  .topSellers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto; }
+    .topSellers .topType1 {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      margin-top: 100px; }
+      .topSellers .topType1 h3 {
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 80px;
+        height: 10px;
+        font-size: 1.8rem; }
+    .topSellers .imageDroiteDesktop img {
+      margin-left: 20%; }
+    .topSellers .imageDroiteDesktop h3, .topSellers .imageDroiteDesktop p, .topSellers .imageDroiteDesktop a {
+      margin-left: 20%; }
+    .topSellers .topType2 {
+      width: 60%; }
+      .topSellers .topType2 img {
+        width: 80%; }
+      .topSellers .topType2 .boxDescription {
+        background-color: white; }
+        .topSellers .topType2 .boxDescription h3 {
+          margin-top: 10px;
+          font-size: 5rem; }
+  .newArrival {
+    width: 80%;
+    margin: 0 auto; }
+    .newArrival .titreSection {
+      display: flex;
+      justify-content: space-between; }
+      .newArrival .titreSection .titreBlock {
+        width: 30%; }
+      .newArrival .titreSection ul {
+        width: 50%;
+        align-self: flex-end; }
+        .newArrival .titreSection ul li {
+          text-align: right;
+          min-width: 60px; }
+    .newArrival .listProduct .product {
+      width: 31%;
+      margin-bottom: 80px; }
+    .newArrival .listProduct a {
+      width: fit-content;
+      font-size: 1.2rem; }
+    .newArrival .listProduct .colorProduct {
+      display: flex; }
+      .newArrival .listProduct .colorProduct .color-blue {
+        border: 3px solid #eaeaea;
+        border-radius: 50%;
+        color: #1857f7;
+        margin-right: 3px; }
+      .newArrival .listProduct .colorProduct .color-brown {
+        border: 3px solid #eaeaea;
+        border-radius: 50%;
+        color: #945454; }
+  .dealDay .dealDayInfo .dealTagGroup .dealTag {
+    width: 7%; }
+  .dealDay .dealDayInfo .dealTagGroup .dealTagStock {
+    display: inline-block;
+    border-radius: 5%;
+    padding: 5px;
+    width: 7%;
+    background-color: #0AA605;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 20px; }
+  .dealDay .dealDayInfo .decompte {
+    width: 40%; }
+  .latestNews {
+    width: 80%;
+    margin: 0 auto; }
+    .latestNews .titreSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .latestNews .titreSection .titreBlock {
+        width: 30%; }
+      .latestNews .titreSection a {
+        align-self: flex-end; }
+      .latestNews .titreSection p {
+        margin-bottom: 0; }
+    .latestNews .news {
+      width: 30%; }
+      .latestNews .news a {
+        width: fit-content; }
+  .newsletter {
+    width: 80%;
+    margin: 0 auto; }
+  .imageWall {
+    width: 100%;
+    display: flex; }
+    .imageWall img {
+      width: 14.28%; }
+    .imageWall .desktopOnly {
+      display: block; } }

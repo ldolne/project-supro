@@ -1,0 +1,201 @@
+$color-grey: #999;
+$color-orange: #f68773;
+$color-grey: #999;
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    
+    .footBlock1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between ;
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $color-grey;
+            }
+            a:hover{
+                border-bottom: 3px solid $color-orange;
+                
+            }
+        }
+        
+        .supro{
+            display: none;
+        }
+        .help{
+            width: 40%;
+        }
+        .about{
+            width: 40%;
+        }
+        .shop{
+            width: 40%;
+        }
+        .language{
+            width: 40%;
+            select{
+                color: $color-grey;
+            }
+        }
+        .currency{
+            width: 40%;
+            select{
+                color: $color-grey;
+            }
+        }
+    }
+
+    .footBlock2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        border-top: 1px solid $color-grey;
+        .copyright{
+            width: 100%;
+            p{
+                width: 100%;
+                color: $color-grey;
+            }
+            a{
+                margin-right: 20px;
+                text-decoration: none;
+                color: $color-grey;
+            }
+            b{
+                color: black;
+            }
+        }
+        .social{
+            display: none;
+        }
+        .pay{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        width: 100%;
+        .footBlock1{
+            width: 90%;
+            margin: 0 auto;
+            .help{
+                width: 30%;
+                
+            }
+            .about{
+                width: 30%;
+            }
+            .shop{
+                width: 30%;
+            }
+            .language{
+                width: 30%;
+            }
+            .currency{
+                width: 65%;
+            }
+        }
+        .footBlock2{
+            .copyright{
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    footer{
+        .footBlock1{
+            width: 80%;
+            margin: 0 auto;
+            .supro{
+                margin-top: 25px;
+                display: block;
+                width: 35%;
+                color: $color-grey;
+                i{
+                    margin-right: 5px;
+                }
+                
+            }
+            .help{
+                width: 20%;
+            }
+            .about{
+                width: 20%;
+            }
+            .shop{
+                width: 20%;
+            }
+            .language{
+                display: none;
+            }
+            .currency{
+                display: none;
+            }
+        }
+        .footBlock2{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            border-top: none;
+
+            .copyright{
+                width: 40%;
+                margin: 0;
+                a{
+                    display: none;
+                }
+                
+            }
+            .social{
+                display: block;
+                // width: 30%;
+                margin: 0 auto;
+                ul{
+                    padding: 0;
+                    display: flex;
+                    list-style: none;
+                    li{
+                        margin-right: 10px;
+                        a{
+                            text-decoration: none;
+                            color: $color-grey;
+                        }
+                        a:hover{
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+            .pay{
+                display: block;
+                width: 40%;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

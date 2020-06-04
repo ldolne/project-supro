@@ -6,7 +6,7 @@
         color: white;
         font-weight: bold;
         text-align: center;
-        padding-top: none;
+        padding-top: 40px;
     }
 .ssheader{
     display: grid;
@@ -23,16 +23,16 @@
 }
 .article1{
     padding-top: 60px;
-    margin-left: 100px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-row: 3;
     grid-column: 1;
 
 }
 .article2{
-    padding-top: 30px;
-    margin-left: 100px;
+    padding: 30px;
+    margin-left: auto;
     margin-right: 60px;
     display: grid;
     grid-row: 4;
@@ -140,8 +140,8 @@
 }
 .article9{
     background-color: rgb(211, 211, 211);
-    margin-left: none;
-    margin-right: none;
+    margin-left: 0;
+    margin-right: 0;
     text-align:center;
     display: grid;
     grid-row: 12;
@@ -193,7 +193,7 @@
     display: grid;
     grid-column: 2;
     grid-row:3;
-    height: 300px;
+    height: 250px;
     padding-top: 60px;
 }
 .img2{
@@ -203,13 +203,13 @@
     height: 300px;
     padding-top: 60px;
     margin-left: auto;
-    margin-right:none;
+    margin-right:0;
 }
 .img3{
     max-height:250px;
     max-width:250px;
     padding:20px;
-    padding-top: none;
+    padding-top: 0;
     margin-bottom: 30px;
 }
 .img4{
@@ -257,7 +257,7 @@
     color: #999;
 }
 .job{
-    font-size: 12;
+    font-size: 12px;
     color: #999;
 }
 .interligne{
@@ -266,20 +266,30 @@
 .table2{
     line-height: 10px;
 }
-main{
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows:60px 20px repeat(12 1fr);
-    font-family: "Roboto",sans-serif;
-}
-td{
-    vertical-align: top;
-}
 .li{
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
+.centre{
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows:60px 20px repeat(12fr);
+    font-family: "Roboto",sans-serif;
+    width:75%;
+}
+
+td{
+    vertical-align: top;
+}
+body{
+    font-family: "roboto", sans-serif;
+}
+
 @media screen and (max-width:768px){
     .articlesection2{
     margin-left: 10px;
@@ -348,5 +358,7 @@ td{
     main{
         display: flex;
         flex-direction: column;
+        width:100%;
     }
+    
 }

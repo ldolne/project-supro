@@ -1,0 +1,207 @@
+$color-grey: #999;
+$other-grey: #3A3D45;
+$color-orange: #f68773;
+
+header{
+    nav{
+        height: 50px;
+        overflow: hidden;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        z-index: 100;
+        background-color: white;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        .NOTnavMobile{
+            display: none;
+        }
+        .logo{
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 20px;
+        }
+        .icones{
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            li{
+                margin-right: 15px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    // color: black;
+                    i{
+                        color: $other-grey;
+                        
+                        
+                    }
+                    i:hover{
+                        color: $color-orange;
+                        transition: 1.5s;
+                    }
+                }
+            }
+            .settingIcon{
+                display: none;
+            }
+          
+        }
+       
+ 
+
+           
+       }
+     }
+     .menuHAM{
+         display: none;
+     }
+     .open{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        
+        z-index: 150;
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding-left: 0;
+            width: 80%;
+            margin: 0 auto;
+            li{
+                display: flex;
+                justify-content: space-between;
+                color: $color-grey ;
+                border-bottom: 1px solid $color-grey;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    color: $color-grey;
+                    font-size: 1.8rem;
+                    width: 80%;
+                    margin-top: 15px;
+                    margin-left: 30px;
+                    margin-bottom: 15px;
+                }
+                i{
+                    margin-top: 15px;
+                    width: 20%;
+                    cursor: pointer;
+                }
+            }
+        }
+        h3, p{
+            width: 80%;
+            margin: 30px auto;
+        }
+        h3{
+            margin-top: 80px;
+            color: black;
+        }
+        p{
+            color: $color-grey;
+        }
+        .closeMenu{
+            margin-left: 30px;
+            margin-top: 20px;
+            color: $color-grey;
+            cursor: pointer;
+        }
+       
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+    header{
+        // background-color: #F2EDE9;
+        margin: 0;
+        nav{
+   
+            .NOTnavMobile{
+                display: block;
+            }
+           
+            .navigation{
+                width: 40%;
+                display: flex;
+                margin-right: 20px;
+                li{
+                    margin-right: 12px;
+                    list-style: none;
+                }
+                a{
+                    text-decoration: none;
+                    color: $other-grey;
+                    font-weight: bolder;
+                    
+                    
+                }
+                a:hover{
+                    padding-bottom: 10px;
+                    border-bottom: 3px solid $color-orange;
+                    
+                    
+                }
+            }
+            .search{
+                input[type=text]{
+                    border-radius: 50px;
+                    width: 200px;
+                    height: 25px;
+                    border: none;
+                    margin: 0 auto;
+                    background-image: url(../img/home/Loupe.svg);
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-origin: content-box;
+                    margin-right: 20px;
+                    background-size: 8%;
+                    color: $color-grey;
+                    
+                    
+                    
+                    
+                }
+                border: 1px solid $color-grey;
+                border-radius: 50px;
+                margin-top: 9px;
+                height: 30px;
+                width: 210px;
+            }
+            .icones{
+                width: 20%;
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                padding-left: 20px;
+                li{
+                    margin-left: 8px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .settingIcon{
+                    display: block;
+                }
+                .searchIcon{
+                    display: none;
+                }
+                .hamburgerIcon{
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
