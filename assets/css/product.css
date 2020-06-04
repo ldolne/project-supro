@@ -396,40 +396,6 @@ main {
         font-size: 0.8rem; }
       .relatedProducts .title a {
         color: #222; } }
-  .relatedProducts .item {
-    margin: 3% 0 3% 0;
-    padding: 0; }
-    .relatedProducts .item h3 {
-      font-size: 1rem;
-      font-weight: 400;
-      margin: 0;
-      padding: 0; }
-    .relatedProducts .item p {
-      margin: 0;
-      padding: 0; }
-    .relatedProducts .item .price-tag {
-      font-size: 0.9rem; }
-      .relatedProducts .item .price-tag.new-price {
-        color: #222; }
-  .relatedProducts .imgBox {
-    max-height: 250px;
-    overflow: hidden;
-    margin-bottom: 7%; }
-    .relatedProducts .imgBox img {
-      transition: all 1s ease-out; }
-      .relatedProducts .imgBox img:hover {
-        filter: brightness(70%);
-        transform: scale(1.2);
-        cursor: pointer; }
-  .relatedProducts .itemContainer {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center; }
-    @media (min-width: 768px) {
-      .relatedProducts .itemContainer {
-        flex-flow: row wrap;
-        align-item: flex-start;
-        justify-content: space-between; } }
   @media (min-width: 768px) {
     .relatedProducts {
       display: flex;
@@ -450,35 +416,45 @@ main {
         text-align: center;
         font-size: 2rem;
         margin: 1% 0; }
-      .upsellProducts .itemContainer {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between; }
       .upsellProducts .item {
-        margin: 3% 0 8% 0;
-        padding: 0; }
-        .upsellProducts .item h3 {
-          font-size: 1rem;
-          font-weight: 400;
-          margin: 0;
-          padding: 0; }
-        .upsellProducts .item p {
-          margin: 0;
-          padding: 0; }
-        .upsellProducts .item .price-tag {
-          font-size: 0.9rem; }
-          .upsellProducts .item .price-tag.new-price {
-            color: #222; }
-      .upsellProducts .imgBox {
-        max-height: 250px;
-        overflow: hidden;
-        margin-bottom: 7%; }
-        .upsellProducts .imgBox img {
-          transition: all 1s ease-out; }
-          .upsellProducts .imgBox img:hover {
-            filter: brightness(70%);
-            transform: scale(1.2);
-            cursor: pointer; } }
+        margin: 3% 0 8% 0; } }
+
+.itemContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .itemContainer {
+      flex-flow: row wrap;
+      align-item: flex-start;
+      justify-content: space-between; } }
+
+.imgBox {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 7%; }
+  .imgBox img {
+    transition: all 1s ease-out; }
+    .imgBox img:hover {
+      filter: brightness(70%);
+      transform: scale(1.2);
+      cursor: pointer; }
+
+.item {
+  margin: 3% 0 3% 0;
+  padding: 0; }
+  .item h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; }
+  .item p {
+    margin: 0;
+    padding: 0; }
+  .item .price-tag {
+    font-size: 0.9rem; }
+    .item .price-tag.new-price {
+      color: #222; }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -504,11 +480,9 @@ input[type=number] {
   display: inline-block;
   margin: 1% 1% 1% 0;
   padding: 1% 1% 1% 0;
-  font-size: 1.4rem;
   color: #999; }
   .price-tag.striked {
-    text-decoration-line: line-through;
-    font-size: 1.3rem; }
+    text-decoration-line: line-through; }
 
 .size-tag {
   display: inline-block;
