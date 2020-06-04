@@ -1,92 +1,72 @@
 # README
 
-This project is about... Here's a link to the website we built: [Project Supro](https://ldolne.github.io/project-supro/ "Project Supro")
+Here's a link to the final product: [Project Supro](https://ldolne.github.io/project-supro/ "Project Supro").
 
 
-# Project Title
+## Project Description
 
-One Paragraph of project description goes here
+This project has been ordered by web designer John Lafrite for his client Supro, a fashion company. Supro wanted to improve their presence on the web and John Lafrite was charged with designing a website that met their desires. Our mission was to build the front-end integration. John Lafrite provided us with the design, which we followed strictly, adding hover effects and animations where suited.
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Project Structure
 
-### Prerequisites
+The website that we built is an e-shop which presents the company's products.
 
-What things you need to install the software and how to install them
+These are the different pages on the website :
 
-```
-Give examples
-```
+* Homepage
+* Shop page
+* Single product page
+* About page
+* Contact page
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
+## Project Chronology
 
-Say what the step will be
+The Lamami startup started working on this project on May 26, 2020 and delivered the final product on June 4, 2020.
 
-```
-Give the example
-```
+### Release Notes
 
-And repeat
+The website is at his first version. It will be updated and improved in the future, depending on our client's demands.
 
-```
-until finished
-```
+* ...
+* ...
+* 2020 June 4: first complete version of website launched
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Project Techonology
 
-Explain how to run the automated tests for this system
+To build this project, we used mainly HTML5 and CSS3 markup languages. We used a bit of JavaScript for the hamburger menu and speeded up the CSS by using SASS. We followed John Lafrite's design.
 
-### Break down into end to end tests
+Icons and images are coming from different free ressources. Here are some of them:
+* [Font Awesome](https://fontawesome.com "Font Awesome")
+* [Ionicons](https://ionicons.com "Ion Icons")
+* [Google Fonts](https://fonts.google.com "Google Fonts")
+* [Google Maps](https://www.google.be/maps "Google Maps")
+* [Animate.css](https://animate.style/ "Animate.css")
 
-Explain what these tests test and why
 
-```
-Give an example
-```
+## The Lamami Startup
 
-### And coding style tests
+![Lamami Team](lamami.gif "Lamami Team")
 
-Explain what these tests test and why
+We are a team of 3 freelancer developers still in training [@Becode Liège](https://becode.org "BeCode"):
+* Mathieu Bourlard: [Mathieu Bourlard's GitHub](https://github.com/biomath-421 "Mathieu Bourlard")
+* Laëtitia Dolne: [Laëtitia Dolne's GitHub](https://github.com/ldolne/ "Laëtitia Dolne")
+* Michael Marino: [Michael Marino's GitHub](https://github.com/MmarinoM "Michael Marino")
 
-```
-Give an example
-```
+Project Supro was our first serious mission and we hope we succeeded in bringing to the client what he was hoping for.
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project has been financed by John Lafrite for his client, Supro, and is rightfully his.
+
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Thanks to:
+
+* John Lafrite and Supro for the job
+* The Becode Team and our coaches for moral support
+* All the other learners for sharing tips and helping each other out
