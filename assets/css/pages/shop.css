@@ -1,5 +1,5 @@
 @import url(../../node_modules/normalize.css/normalize.css);
-main h2, main h3, .path p:last-child, .title li.sortOptions, .pageNumber li a {
+.path p:last-child, .title li.sortOptions, .pageNumber li a {
   color: #222; }
 
 .size-tag {

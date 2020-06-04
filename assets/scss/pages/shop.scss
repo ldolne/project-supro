@@ -1,23 +1,14 @@
 @import "../../node_modules/normalize.css/normalize.css";
-//@use 'pages/shop';
-
 
 // VARIABLES
 // COLORS
 $color-black: #222;
 $color-white: white;
 $color-grey: #999;
-$color-lightgray: #eaeaea;
+$color-lightgrey: #eaeaea;
 $color-orange: #f68773;
 $color-blue: #1857f7;
 $color-brown: #945454;
-
-// FONTS
-$font-family-main: 'Roboto', sans-serif;
-$font-size-small: 0.6rem;
-$font-size-medium: 0.7rem;
-$font-size-large: 0.8rem;
-
 
 // MEDIA QUERIES
 // Breakpoint manager
@@ -75,13 +66,11 @@ main
 
     h2
     {
-        @extend %color-black;
         font-size: 1.5rem;
     }
 
     h3
     {
-        @extend %color-black;
         font-size: 0.75rem;
         margin: 1% 1% 1% 0;
         padding: 1% 1% 1% 0;
@@ -484,7 +473,7 @@ main
             margin-right: 2%;
             padding: 2% 3%;
             background-color: $color-white;
-            border: 1px solid $color-lightgray;
+            border: 1px solid $color-lightgrey;
             color: $color-grey;
             text-align: center;
 
@@ -593,7 +582,7 @@ main
     width: 20px;
     height: 20px;
     line-height: 20px;
-    background-color: $color-lightgray;
+    background-color: $color-lightgrey;
     border-radius: 50%;
     font-size: 0.7rem;
     font-weight: 600;
